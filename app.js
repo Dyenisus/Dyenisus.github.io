@@ -1,6 +1,7 @@
 let questions = [];
 let currentIndex = 0;
 let score = 0;
+const QUIZ_LENGTH = 10; // Number of questions asked per session
 
 // Fisher-Yates (Knuth) in-place shuffle
 function shuffle(array) {
@@ -16,15 +17,16 @@ async function initQuiz() {
     const res = await fetch('questions.json');
     const data = await res.json();
 
-    // 1. Shuffle question pool order
-    questions = shuffle(data).map(q => {
-      // 2. Map options with correctness flag so position doesn't break scoring
+    // 1. Shuffle full pool and select only QUIZ_LENGTH items
+    const selectedSubset = shuffle(data).slice(0, QUIZ_LENGTH);
+
+    // 2. Pair options with their original indices and shuffle each question's options
+    questions = selectedSubset.map(q => {
       const pairedOptions = q.options.map((opt, idx) => ({
         text: opt,
         isCorrect: idx === q.correctIndex
       }));
 
-      // 3. Shuffle options internally
       return {
         ...q,
         shuffledOptions: shuffle(pairedOptions)
@@ -74,7 +76,6 @@ function selectOption(selectedOpt, selectedBtn) {
     score++;
   } else {
     selectedBtn.classList.add('incorrect');
-    // Highlight the correct answer
     q.shuffledOptions.forEach((opt, idx) => {
       if (opt.isCorrect) {
         allBtns[idx].classList.add('correct');
@@ -91,15 +92,11 @@ document.getElementById('next-btn').onclick = () => {
   if (currentIndex < questions.length) {
     renderQuestion();
   } else {
-    // Fill progress bar on completion
     document.getElementById('progress-bar').style.width = '100%';
-
-    // Hide gameplay UI
     document.getElementById('quiz-header').classList.add('hidden');
     document.getElementById('options-container').classList.add('hidden');
     document.getElementById('feedback').classList.add('hidden');
 
-    // Display summary
     const results = document.getElementById('results');
     results.classList.remove('hidden');
     document.getElementById('score-text').textContent = `You scored ${score} out of ${questions.length}!`;
