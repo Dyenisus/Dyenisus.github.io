@@ -18,13 +18,13 @@ async function initQuiz() {
 
     // 1. Shuffle question pool order
     questions = shuffle(data).map(q => {
-      // 2. Pair options with their original indices so correctness isn't lost
+      // 2. Map options with correctness flag so position doesn't break scoring
       const pairedOptions = q.options.map((opt, idx) => ({
         text: opt,
         isCorrect: idx === q.correctIndex
       }));
 
-      // 3. Shuffle options for this question
+      // 3. Shuffle options internally
       return {
         ...q,
         shuffledOptions: shuffle(pairedOptions)
@@ -74,7 +74,7 @@ function selectOption(selectedOpt, selectedBtn) {
     score++;
   } else {
     selectedBtn.classList.add('incorrect');
-    // Reveal correct option to user
+    // Highlight the correct answer
     q.shuffledOptions.forEach((opt, idx) => {
       if (opt.isCorrect) {
         allBtns[idx].classList.add('correct');
@@ -91,7 +91,7 @@ document.getElementById('next-btn').onclick = () => {
   if (currentIndex < questions.length) {
     renderQuestion();
   } else {
-    // Fill bar completely on completion
+    // Fill progress bar on completion
     document.getElementById('progress-bar').style.width = '100%';
 
     // Hide gameplay UI
