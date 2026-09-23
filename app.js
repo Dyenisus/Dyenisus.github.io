@@ -1,5 +1,5 @@
 // 1. Paste your deployed Google Apps Script Web App URL here:
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwmT20Mxfn88y-AgPLcyJ5GS5T1Q9wxLz0E7zN5wbcclVf1TNR6vaEb9N2vDt6bEAqO/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxXWs-B9ez_WH49TiHep7H1urz82uZoNOFyXABbngu4ZPApqBUnUfxUHwipP_HHE34H/exec";
 
 let questions = [];
 let currentIndex = 0;
@@ -156,41 +156,31 @@ async function saveScore(name) {
   saveBtn.disabled = true;
   saveBtn.textContent = 'Saving...';
 
-  const payload = {
+  // Use URLSearchParams for clean submission through Google's redirect proxy
+  const params = new URLSearchParams({
     name: name.trim() || 'Anonymous',
-    score: score,
-    time: totalTimeTaken
-  };
+    score: score.toString(),
+    time: totalTimeTaken.toString()
+  });
 
   try {
-    // Content-Type text/plain avoids CORS preflight OPTIONS failures with Apps Script
     await fetch(GOOGLE_SCRIPT_URL, {
       method: 'POST',
       mode: 'no-cors',
-      headers: { 'Content-Type': 'text/plain' },
-      body: JSON.stringify(payload)
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: params.toString()
     });
 
     document.getElementById('score-form').classList.add('hidden');
-    // Allow sheet 1.5 seconds to commit the row before refetching
-    setTimeout(displayLeaderboard, 1500);
+    // Allow Google Sheets 2 seconds to write the row
+    setTimeout(displayLeaderboard, 2000);
   } catch (err) {
     console.error('Error saving score:', err);
     saveBtn.disabled = false;
     saveBtn.textContent = 'Retry';
   }
 }
-
-function escapeHTML(str) {
-  const div = document.createElement('div');
-  div.textContent = str;
-  return div.innerHTML;
-}
-
-document.getElementById('score-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const nameInput = document.getElementById('player-name');
-  saveScore(nameInput.value);
-});
 
 initQuiz();
