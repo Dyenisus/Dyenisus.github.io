@@ -1,602 +1,602 @@
 [
   {
     "id": 1,
-    "question": "What is the primary function of the Translation Lookaside Buffer (TLB)?",
+    "question": "Why was the very first computer bug called an actual 'bug'?",
     "options": [
-      "Cache virtual-to-physical address translations",
-      "Store branch prediction history",
-      "Buffer pending disk I/O interrupts",
-      "Cache Level 1 instruction sets"
+      "A real moth was trapped inside a Harvard Mark II relay",
+      "Thomas Edison coined it for a glitch in his telephone line",
+      "Early punch cards were eaten by silverfish insects",
+      "It was a joke created by the developers of Unix"
     ],
     "correctIndex": 0,
-    "explanation": "The TLB is a dedicated MMU cache that speeds up virtual memory translation by holding recent virtual-to-physical page mappings."
+    "explanation": "In 1947, computer pioneer Grace Hopper's team taped a real moth removed from relay #70 into their logbook with the note: 'First actual case of bug being found.'"
   },
   {
     "id": 2,
-    "question": "Which scheduling algorithm is susceptible to indefinite starvation under continuous arrivals?",
+    "question": "What does the 'Wi-Fi' name actually stand for?",
     "options": [
-      "Round Robin",
-      "Shortest Job First (SJF)",
-      "First-Come, First-Served (FCFS)",
-      "Completely Fair Scheduler (CFS)"
+      "Wireless Fidelity",
+      "Wireless Frequency Interface",
+      "Wide-range Filter",
+      "Nothing, it is a catchy branded marketing term"
     ],
-    "correctIndex": 1,
-    "explanation": "SJF always prioritizes shorter tasks, so an ongoing arrival of brief tasks will indefinitely starve longer processes."
+    "correctIndex": 3,
+    "explanation": "Contrary to popular belief, Wi-Fi doesn't stand for 'Wireless Fidelity'. The branding firm Interbrand proposed it simply because it sounded catchy and rhymed with 'hi-fi'."
   },
   {
     "id": 3,
-    "question": "In networking, what is the standard minimum size of an IPv4 header without options?",
+    "question": "Which programming language was named after a British comedy sketch show?",
     "options": [
-      "20 bytes",
-      "32 bytes",
-      "40 bytes",
-      "64 bytes"
+      "Ruby",
+      "Python",
+      "Perl",
+      "Rust"
     ],
-    "correctIndex": 0,
-    "explanation": "A standard IPv4 header consists of five 32-bit words, which equals 20 bytes."
+    "correctIndex": 1,
+    "explanation": "Guido van Rossum named Python after the BBC show 'Monty Python's Flying Circus' because he was reading the published scripts while developing it."
   },
   {
     "id": 4,
-    "question": "What is the worst-case time complexity of QuickSelect when using a naive pivot?",
+    "question": "What was the original name of Google before Larry Page and Sergey Brin renamed it?",
     "options": [
-      "O(n log n)",
-      "O(log n)",
-      "O(n)",
-      "O(n²)"
+      "Backrub",
+      "PageRank",
+      "WebCrawler",
+      "IndexPlus"
     ],
-    "correctIndex": 3,
-    "explanation": "QuickSelect has an average time complexity of O(n), but bad pivot choices degrade performance to O(n²)."
+    "correctIndex": 0,
+    "explanation": "Google started out in 1996 under the working title 'Backrub' because its system analyzed backlinks to estimate the importance of websites."
   },
   {
     "id": 5,
-    "question": "Which cache coherency protocol state indicates a line is present exclusively in the local cache and is clean?",
+    "question": "What is the famous '404' HTTP status code named after according to popular web lore?",
     "options": [
-      "Shared (S)",
-      "Exclusive (E)",
-      "Modified (M)",
-      "Forward (F)"
+      "A CERN room where the central database server was supposedly kept",
+      "The year the Library of Alexandria burned down",
+      "The telephone area code of Silicon Valley",
+      "Just an arbitrary sequence number chosen by the IETF"
     ],
-    "correctIndex": 1,
-    "explanation": "In the MESI protocol, Exclusive (E) means the line resides only in this cache and matches main memory."
+    "correctIndex": 3,
+    "explanation": "While urban legend claims Room 404 at CERN housed the original web files, Tim Berners-Lee confirmed the number was simply assigned arbitrarily in the 4xx client-error range."
   },
   {
     "id": 6,
-    "question": "Which layer of the OSI model does a standard network switch primarily operate at?",
+    "question": "Which iconic video game easter egg is widely credited as the first popular digital easter egg in gaming?",
     "options": [
-      "Physical (Layer 1)",
-      "Data Link (Layer 2)",
-      "Network (Layer 3)",
-      "Transport (Layer 4)"
+      "The secret room in Atari 2600's Adventure revealing the developer's name",
+      "The Konami Code in Gradius",
+      "The warp zones in Super Mario Bros.",
+      "The cow level in Diablo"
     ],
-    "correctIndex": 1,
-    "explanation": "Traditional network switches inspect MAC addresses, operating at the Data Link Layer (Layer 2)."
+    "correctIndex": 0,
+    "explanation": "Programmer Warren Robinett hid 'Created by Warren Robinett' in Atari's Adventure (1980) because Atari refused to credit game designers on cartridges."
   },
   {
     "id": 7,
-    "question": "What is the primary condition that causes a Thrashing state in an operating system?",
+    "question": "What animal is Tux, the famous official mascot of the Linux operating system?",
     "options": [
-      "Excessive context switching among kernel threads",
-      "A deadlock between multiple high-priority processes",
-      "A page fault occurs faster than the OS can handle page replacements",
-      "Memory fragmentation exceeds available physical RAM"
+      "Penguin",
+      "Platypus",
+      "Badger",
+      "Gopher"
     ],
-    "correctIndex": 2,
-    "explanation": "Thrashing happens when processes lack sufficient frames, causing them to spend more time swapping pages in/out than executing code."
+    "correctIndex": 0,
+    "explanation": "Tux the penguin was chosen by Linus Torvalds after he visited a zoo in Canberra and was famously pecked by a little penguin."
   },
   {
     "id": 8,
-    "question": "Which data structure guarantees worst-case O(log n) lookup, insertion, and deletion?",
+    "question": "What does the 'Turing Test' originally evaluate?",
     "options": [
-      "Binary Search Tree",
-      "Red-Black Tree",
-      "Skip List",
-      "Hash Table"
+      "How fast a computer can solve a mathematical puzzle",
+      "Whether a machine can exhibit intelligent behavior indistinguishable from a human",
+      "Whether a system can prove its own consistency without halting",
+      "The durability of silicon chips under electrical stress"
     ],
     "correctIndex": 1,
-    "explanation": "Self-balancing binary search trees like Red-Black Trees guarantee O(log n) bounds in the worst case."
+    "explanation": "Proposed by Alan Turing in 1950 (the 'Imitation Game'), it checks whether an evaluator can reliably tell a machine from a human based on text responses."
   },
   {
     "id": 9,
-    "question": "What is the main purpose of the TCP Three-Way Handshake?",
+    "question": "What key sequence was invented by David Bradley to reboot an IBM PC without powering it off?",
     "options": [
-      "Establish encryption keys for TLS",
-      "Synchronize sequence numbers and establish socket connection state",
-      "Calculate round-trip time (RTT) for congestion control",
-      "Authenticate client identity to the host server"
+      "Alt + F4",
+      "Ctrl + Alt + Delete",
+      "Cmd + Shift + Esc",
+      "Ctrl + Shift + R"
     ],
     "correctIndex": 1,
-    "explanation": "SYN, SYN-ACK, and ACK establish initial Sequence Numbers (ISNs) and confirm bidirectional communication capability."
+    "explanation": "David Bradley designed Ctrl+Alt+Del for PC developers to quickly restart locked systems without wearing out the mechanical power switch."
   },
   {
     "id": 10,
-    "question": "What hazard occurs in a pipelined CPU when an instruction depends on the result of a prior instruction still in flight?",
+    "question": "Which company originally created JavaScript in just 10 days in 1995?",
     "options": [
-      "Structural Hazard",
-      "Control Hazard",
-      "Data Hazard",
-      "Branch Misprediction"
+      "Microsoft",
+      "Sun Microsystems",
+      "Netscape",
+      "Apple"
     ],
     "correctIndex": 2,
-    "explanation": "Data hazards (e.g., Read-After-Write) occur when an operand has not yet been computed or forwarded by an earlier stage."
+    "explanation": "Brendan Eich famously wrote the first prototype of JavaScript (under the name Mocha) in May 1995 while working for Netscape Communications."
   },
   {
     "id": 11,
-    "question": "Which of the following is NOT one of the four Coffman conditions necessary for deadlock?",
+    "question": "What was the very first message transmitted over ARPANET (the predecessor to the Internet) in 1969?",
     "options": [
-      "Mutual Exclusion",
-      "Preemption Allowed",
-      "Hold and Wait",
-      "Circular Wait"
+      "HELLO",
+      "LO",
+      "LOGIN",
+      "PING"
     ],
     "correctIndex": 1,
-    "explanation": "The condition is *No Preemption*. Resources cannot be forcibly seized from a thread holding them."
+    "explanation": "Researchers at UCLA typed 'L-O-G' to log into a Stanford computer, but the system crashed right after typing the 'O', making 'LO' the first message transmitted."
   },
   {
     "id": 12,
-    "question": "What is the average time complexity of searching for an element in an unsorted array of size n?",
+    "question": "In the famous 1999 movie 'The Matrix', what were the green falling characters actually made of?",
     "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
+      "Japanese sushi recipe cookbook characters and numerals",
+      "Machine assembly language code from early Intel CPUs",
+      "Random mathematical symbols and Sanskrit script",
+      "Fragmented fragments of the Linux kernel source code"
     ],
-    "correctIndex": 2,
-    "explanation": "Searching an unsorted array requires scanning elements sequentially, taking linear time O(n)."
+    "correctIndex": 0,
+    "explanation": "Production designer Simon Whiteley scanned Japanese Katakana and Kanji characters directly from his wife's Japanese cookbooks to create the digital rain."
   },
   {
     "id": 13,
-    "question": "In Little-Endian byte ordering, how is the 32-bit integer 0x12345678 stored across increasing memory addresses?",
+    "question": "What does 'CAPTCHA' stand for?",
     "options": [
-      "0x12, 0x34, 0x56, 0x78",
-      "0x78, 0x56, 0x34, 0x12",
-      "0x21, 0x43, 0x65, 0x87",
-      "0x78, 0x12, 0x56, 0x34"
+      "Computer Automated Prompt to Confirm Human Activity",
+      "Completely Automated Public Turing test to tell Computers and Humans Apart",
+      "Centralized Automated Program for Tracking Computerized Hacker Attacks",
+      "Cryptographic Algorithm for Packet Testing and Cipher Handling"
     ],
     "correctIndex": 1,
-    "explanation": "Little-endian architectures store the least significant byte (0x78) at the lowest memory address."
+    "explanation": "CAPTCHA stands for 'Completely Automated Public Turing test to tell Computers and Humans Apart', coined at Carnegie Mellon in 2003."
   },
   {
     "id": 14,
-    "question": "Which transport protocol uses a best-effort, connectionless delivery model without flow control?",
+    "question": "What is the primary reason why incandescent lava lamps are used by Cloudflare in San Francisco?",
     "options": [
-      "TCP",
-      "UDP",
-      "SCTP",
-      "QUIC"
+      "Retro interior aesthetic for tech office tours",
+      "To generate unpredictable random noise for cryptographic keys",
+      "To keep ambient room temperature calibrated for network racks",
+      "To test optical color sensor fidelity"
     ],
     "correctIndex": 1,
-    "explanation": "UDP sends datagrams without establishing a handshake, retransmitting lost packets, or enforcing flow/congestion windows."
+    "explanation": "Cloudflare points a video camera at a wall of 100 lava lamps; the chaotic movement of floating wax creates physical entropy for high-security encryption."
   },
   {
     "id": 15,
-    "question": "What problem does Dijkstra's shortest path algorithm fail to handle correctly?",
+    "question": "Who is widely celebrated as the world's first computer programmer for writing an algorithm for the Analytical Engine?",
     "options": [
-      "Directed acyclic graphs (DAGs)",
-      "Graphs with negative edge weights",
-      "Dense graphs with many cycles",
-      "Graphs with disconnected components"
+      "Alan Turing",
+      "Ada Lovelace",
+      "Charles Babbage",
+      "Katherine Johnson"
     ],
     "correctIndex": 1,
-    "explanation": "Dijkstra assumes that adding an edge never decreases path cost. Negative weights violate this greedy invariant (use Bellman-Ford instead)."
+    "explanation": "Ada Lovelace published the first algorithm intended to be executed by Charles Babbage's mechanical general-purpose computer in 1843."
   },
   {
     "id": 16,
-    "question": "What is a system call (syscall)?",
+    "question": "What is the origin of the term 'spam' for unwanted junk emails?",
     "options": [
-      "A high-level library call like printf()",
-      "The programmatic interface between user mode and kernel mode",
-      "An asynchronous hardware signal generated by peripherals",
-      "A method of communicating between web servers"
+      "A Monty Python sketch where diners can't escape chanting 'Spam'",
+      "An acronym for 'Simultaneous Promotional Advertising Mail'",
+      "A trademark dispute involving canned meat in 1991",
+      "A nickname given to early Usenet mass-posters from the Midwest"
     ],
-    "correctIndex": 1,
-    "explanation": "Syscalls allow user-space applications to safely request privileged services from the operating system kernel."
+    "correctIndex": 0,
+    "explanation": "In Monty Python's diner sketch, customers repeat the word 'Spam' so relentlessly that no other conversation can be heard—early internet users applied it to unwanted repeated posts."
   },
   {
     "id": 17,
-    "question": "What type of branch predictor uses a 2-bit saturating counter?",
+    "question": "Which game famously had its entire 3D infinite sandbox world originally written by one person (Markus Persson / Notch)?",
     "options": [
-      "Static Predictor",
-      "Bimodal Predictor",
-      "Tournament Predictor",
-      "Perceptron Predictor"
+      "Terraria",
+      "Minecraft",
+      "Roblox",
+      "No Man's Sky"
     ],
     "correctIndex": 1,
-    "explanation": "A bimodal branch predictor maps branch addresses to 2-bit saturating counters (Strongly Not Taken, Weakly Not Taken, Weakly Taken, Strongly Taken)."
+    "explanation": "Swedish developer Markus Persson built the early alpha versions of Minecraft in Java as an indie project over a long weekend in May 2009."
   },
   {
     "id": 18,
-    "question": "What is the primary role of ARP (Address Resolution Protocol)?",
+    "question": "What is a 'Trojan Horse' in computer security?",
     "options": [
-      "Resolve domain names to IPv4 addresses",
-      "Map an IPv4 address to a physical MAC address",
-      "Assign dynamic IP addresses to subnet clients",
-      "Route packets across autonomous systems"
+      "Malware disguised as legitimate or harmless software",
+      "A physical USB drop attack left in parking lots",
+      "A distributed denial of service attack from smart fridges",
+      "A password guessing bot scanning common wordlists"
     ],
-    "correctIndex": 1,
-    "explanation": "ARP operates on local broadcast domains to discover the hardware (MAC) address corresponding to a target IP address."
+    "correctIndex": 0,
+    "explanation": "Borrowing from Greek mythology, Trojan malware tricks users into downloading and installing it by masquerading as a benign application or game."
   },
   {
     "id": 19,
-    "question": "What is the time complexity of building a Binary Heap from an unordered array of n elements?",
+    "question": "Which key on a standard QWERTY keyboard is deliberately marked with small physical bumps or ridges for touch typing?",
     "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n log n)"
+      "C and M",
+      "F and J",
+      "A and L",
+      "G and H"
     ],
-    "correctIndex": 2,
-    "explanation": "Using bottom-up heapification (Floyd's algorithm), building a heap takes linear time O(n), not O(n log n)."
+    "correctIndex": 1,
+    "explanation": "The 'F' and 'J' keys have tactile ridges so touch-typists can position their index fingers on the home row without glancing down."
   },
   {
     "id": 20,
-    "question": "In ACID transactions, which property ensures transactions that execute concurrently do not leave data in an inconsistent state?",
+    "question": "What does open-source software mean?",
     "options": [
-      "Atomicity",
-      "Consistency",
-      "Isolation",
-      "Durability"
+      "The program is free of charge forever with no license restrictions",
+      "Anyone can inspect, modify, and enhance the underlying source code",
+      "The software can only be run on Linux machines",
+      "The developer accepts zero liability for any security breaches"
     ],
-    "correctIndex": 2,
-    "explanation": "Isolation prevents uncommitted writes or reads of concurrent transactions from interfering with each other."
+    "correctIndex": 1,
+    "explanation": "Open-source software provides access to its source code under a license that allows anyone to inspect, modify, and redistribute it."
   },
   {
     "id": 21,
-    "question": "What happens during a TLB shootdown in a multicore system?",
+    "question": "Why did early floppy disks have a physical sliding tab or notch on the edge?",
     "options": [
-      "The MMU reboots due to an uncorrectable ECC error",
-      "One core invalidates stale TLB entries across all other cores via IPIs",
-      "The OS flushes all L3 cache lines to maintain memory coherency",
-      "The CPU dumps registers to stack during a kernel panic"
+      "To toggle write-protection so files couldn't be accidentally deleted",
+      "To accelerate drive read spin speeds",
+      "To release trapped dust from the magnetic diskette inside",
+      "To switch between Apple Macintosh and IBM PC file modes"
     ],
-    "correctIndex": 1,
-    "explanation": "When page table mappings change, the initiating core uses Inter-Processor Interrupts (IPIs) to force other cores to flush their cached TLB mappings."
+    "correctIndex": 0,
+    "explanation": "Sliding the plastic tab open prevented the drive's read/write head from writing to or erasing the disk."
   },
   {
     "id": 22,
-    "question": "What is the purpose of the Subnet Mask in IPv4 networking?",
+    "question": "What popular handheld device introduced the world to the 'Slide to Unlock' gesture in 2007?",
     "options": [
-      "Encrypt packets traveling between subnets",
-      "Distinguish the Network ID portion from the Host ID portion",
-      "Identify the gateway router's MAC address",
-      "Assign priority levels to outgoing packets"
+      "Original iPhone",
+      "BlackBerry Bold",
+      "HTC Dream",
+      "Palm Pre"
     ],
-    "correctIndex": 1,
-    "explanation": "Applying a bitwise AND between an IP address and its subnet mask isolates the network prefix from the host address."
+    "correctIndex": 0,
+    "explanation": "Steve Jobs introduced 'Slide to Unlock' on the original iPhone in 2007 to prevent unintentional pocket dialing on a capacitive multi-touch screen."
   },
   {
     "id": 23,
-    "question": "What is the space complexity of Depth-First Search (DFS) on a tree of maximum depth d and branching factor b?",
+    "question": "In internet slang, what does 'TL;DR' stand for?",
     "options": [
-      "O(b · d)",
-      "O(b^d)",
-      "O(d)",
-      "O(1)"
+      "Too Long; Didn't Read",
+      "Total Loss; Data Reset",
+      "Technical Logic; Do Retry",
+      "Text Line; Delete Record"
     ],
-    "correctIndex": 2,
-    "explanation": "DFS only needs to store the stack frames along the current branch, leading to O(d) memory usage."
+    "correctIndex": 0,
+    "explanation": "'TL;DR' is commonly written before a brief summary of a lengthy article or forum post."
   },
   {
     "id": 24,
-    "question": "Which CPU register holds the memory address of the next instruction to fetch?",
+    "question": "Which of these everyday devices has enough computing power today to dwarf the Apollo 11 moon guidance computer?",
     "options": [
-      "Accumulator (ACC)",
-      "Instruction Register (IR)",
-      "Program Counter (PC)",
-      "Memory Buffer Register (MBR)"
+      "A modern smartphone charger block",
+      "A standard electronic musical greeting card",
+      "A simple graphing calculator",
+      "All of the above"
     ],
-    "correctIndex": 2,
-    "explanation": "The Program Counter (PC, or Instruction Pointer on x86) stores the address of the next instruction to be fetched from memory."
+    "correctIndex": 3,
+    "explanation": "The Apollo Guidance Computer had just 4KB of RAM and ran at 1.024 MHz—even digital greeting cards and USB-C smart charging controllers surpass its specs."
   },
   {
     "id": 25,
-    "question": "What mechanism does an operating system use to prevent user applications from directly executing privileged I/O instructions?",
+    "question": "What does the 'S' in 'HTTPS' stand for?",
     "options": [
-      "Dual-mode execution (Ring 0 vs. Ring 3)",
-      "Virtual address space randomization (ASLR)",
-      "Static code analysis via compilers",
-      "Hardware-enforced software sandboxing"
+      "Speed",
+      "Secure",
+      "Standard",
+      "Socket"
     ],
-    "correctIndex": 0,
-    "explanation": "CPUs provide protection rings. User applications run in unprivileged mode (Ring 3) and must transition to supervisor mode (Ring 0) for hardware tasks."
+    "correctIndex": 1,
+    "explanation": "Hypertext Transfer Protocol Secure (HTTPS) encrypts communication between the web browser and the server using TLS/SSL."
   },
   {
     "id": 26,
-    "question": "What is the primary difference between a process and a thread?",
+    "question": "What is the purpose of the 'Rubber Duck Debugging' technique used by software developers?",
     "options": [
-      "Threads have separate virtual address spaces; processes share one",
-      "Threads within the same process share memory space; processes do not",
-      "Processes can run concurrently; threads execute strictly in serial",
-      "Threads are managed only by user-space runtimes without OS knowledge"
+      "Testing if electronic components are waterproof",
+      "Explaining code line-by-line out loud to an inanimate object to spot mistakes",
+      "Using machine learning models to highlight syntax errors",
+      "A stress-relief toy during competitive hackathons"
     ],
     "correctIndex": 1,
-    "explanation": "Threads belong to a process and share its heap, global memory, and file descriptors, while having their own registers and stack."
+    "explanation": "By verbally explaining code line-by-line to a rubber duck on your desk, your brain naturally re-evaluates assumptions and spots the bug."
   },
   {
     "id": 27,
-    "question": "Which protocol operates at the Application Layer to resolve human-readable domain names into IP addresses?",
+    "question": "What was the first music video ever uploaded to YouTube in 2005?",
     "options": [
-      "DHCP",
-      "DNS",
-      "BGP",
-      "ICMP"
+      "Gangnam Style",
+      "Never Gonna Give You Up",
+      "Me at the zoo",
+      "Crazy Frog"
     ],
-    "correctIndex": 1,
-    "explanation": "DNS (Domain Name System) translates names like `example.com` into routable IP addresses."
+    "correctIndex": 2,
+    "explanation": "'Me at the zoo', recorded by co-founder Jawed Karim at the San Diego Zoo, was the first video uploaded to YouTube on April 23, 2005."
   },
   {
     "id": 28,
-    "question": "What is an Inverted Page Table?",
+    "question": "What does a VPN (Virtual Private Network) do for an average internet user?",
     "options": [
-      "A page table indexed by virtual page number rather than physical frame",
-      "A page table indexed by physical frame number, containing one entry per frame",
-      "A two-level tree used only for 64-bit address translation",
-      "A table that maps physical disk blocks directly to L2 cache"
+      "Triples your download internet speed automatically",
+      "Encrypts your internet traffic and routes it through an intermediary server",
+      "Deletes all cookies and browsing history from server databases",
+      "Blocks every hacker attempt with 100% certainty"
     ],
     "correctIndex": 1,
-    "explanation": "An inverted page table has one entry for each physical frame in memory rather than every virtual page, saving large amounts of memory."
+    "explanation": "A VPN wraps internet traffic in an encrypted tunnel and masks your real IP address by routing data through a remote server."
   },
   {
     "id": 29,
-    "question": "Which sorting algorithm is guaranteed to be stable and run in O(n log n) time in all cases?",
+    "question": "Which video game holds the Guinness World Record for the best-selling standalone video game of all time?",
     "options": [
-      "QuickSort",
-      "HeapSort",
-      "MergeSort",
-      "SelectionSort"
+      "Grand Theft Auto V",
+      "Minecraft",
+      "Tetris",
+      "Wii Sports"
     ],
-    "correctIndex": 2,
-    "explanation": "MergeSort divides arrays and merges sorted segments without altering relative orders of equal items, guaranteeing O(n log n) stable sorts."
+    "correctIndex": 1,
+    "explanation": "Minecraft has sold over 300 million copies across platforms, making it the best-selling video game in history."
   },
   {
     "id": 30,
-    "question": "What is the purpose of the TTL (Time to Live) field in an IPv4 packet header?",
+    "question": "What is phishing?",
     "options": [
-      "Measure total latency between client and host",
-      "Prevent packets from circulating endlessly in routing loops",
-      "Enforce session timeout periods for idle TCP sockets",
-      "Control how long the DNS record remains cached"
+      "Overclocking your GPU until the fans produce a humming sound",
+      "Deceptive emails or messages mimicking trusted entities to steal credentials",
+      "Scanning open Wi-Fi networks in coffee shops for unencrypted photos",
+      "Scraping public social media accounts for training AI chatbots"
     ],
     "correctIndex": 1,
-    "explanation": "Each router decrements the TTL field by 1. When it reaches 0, the packet is discarded and an ICMP Time Exceeded message is returned."
+    "explanation": "Phishing is a social engineering attack where malicious actors impersonate legitimate institutions (banks, services) to trick people into revealing sensitive data."
   },
   {
     "id": 31,
-    "question": "What does RAID 0 provide across multiple storage drives?",
+    "question": "Which giant company had the famous early corporate motto 'Don't be evil'?",
     "options": [
-      "Mirroring with high fault tolerance",
-      "Block-level striping with no parity or redundancy",
-      "Byte-level striping with dedicated parity disk",
-      "Distributed parity across all member disks"
+      "Microsoft",
+      "Google",
+      "Amazon",
+      "Meta"
     ],
     "correctIndex": 1,
-    "explanation": "RAID 0 stripes blocks across drives for read/write performance, but losing one drive causes complete data loss."
+    "explanation": "Google founders adopted 'Don't be evil' in their corporate code of conduct in 2000, later adjusted to 'Do the right thing' under Alphabet."
   },
   {
     "id": 32,
-    "question": "Which synchronization primitive uses a counter and wake/sleep queues to control access to a finite number of shared resources?",
+    "question": "What does the 'Cloud' actually mean when companies say your data is 'stored in the cloud'?",
     "options": [
-      "Spinlock",
-      "Semaphore",
-      "Barrier",
-      "Memory Fence"
+      "Data is broadcast across satellite microwave frequencies",
+      "Data is stored on physical computers/servers owned by someone else in data centers",
+      "Files are fragmented into microscopic radio waves in the atmosphere",
+      "Data is saved on your device's motherboard ROM chips"
     ],
     "correctIndex": 1,
-    "explanation": "A counting semaphore maintains a counter that decrements on acquire (wait/P) and increments on release (signal/V)."
+    "explanation": "As the common programmer joke goes: 'There is no cloud, it's just someone else's computer in a climate-controlled warehouse.'"
   },
   {
     "id": 33,
-    "question": "What is the primary trade-off when using a B+ Tree instead of a B Tree in relational databases?",
+    "question": "What was the very first commercial product to be scanned with a modern barcode at a supermarket checkout?",
     "options": [
-      "B+ Trees have slower range scans",
-      "B+ Trees store records only at the leaf nodes, making leaf traversals fast",
-      "B+ Trees have unbounded tree height under random inserts",
-      "B+ Trees cannot use composite primary keys"
+      "A pack of Wrigley's Juicy Fruit chewing gum",
+      "A bottle of Coca-Cola",
+      "A box of Kellogg's Corn Flakes",
+      "A can of Campbell's Tomato Soup"
     ],
-    "correctIndex": 1,
-    "explanation": "In B+ Trees, internal nodes only hold keys for routing, and leaves form a linked sequence that simplifies sequential and range scans."
+    "correctIndex": 0,
+    "explanation": "On June 26, 1974, a cashier in Troy, Ohio scanned a 10-pack of Wrigley's Juicy Fruit gum using the first commercial UPC barcode scanner."
   },
   {
     "id": 34,
-    "question": "What is Amdahl's Law used to calculate?",
+    "question": "What does AI 'hallucination' refer to in large language models like ChatGPT?",
     "options": [
-      "The theoretical maximum speedup of a program using multiple processors",
-      "The probability of cache misses in direct-mapped caches",
-      "The transmission delay across multi-hop WAN links",
-      "The energy dissipation of CMOS logic gates under clock scaling"
+      "The model producing psychedelic graphics and pixel noise",
+      "The model generating confident but factually incorrect or fabricated answers",
+      "The computer overheating and shutting down due to graphics load",
+      "The chatbot refusing to answer ethical or dangerous prompts"
     ],
-    "correctIndex": 0,
-    "explanation": "Amdahl's Law models theoretical speedup as a function of the parallelizable fraction of the workload and the number of processors."
+    "correctIndex": 1,
+    "explanation": "Hallucination happens when an AI model strings together plausible-sounding sentences that have no factual grounding in its training data."
   },
   {
     "id": 35,
-    "question": "What is a Copy-on-Write (COW) mechanism used for during a Unix fork() operation?",
+    "question": "What happens when you open an 'Incognito' or 'Private Browsing' window in your browser?",
     "options": [
-      "To instantly duplicate all parent pages to the child immediately",
-      "To share read-only pages until either process writes, saving memory",
-      "To prevent files opened by the parent from being read by the child",
-      "To back up the process image onto swap space"
+      "You become completely invisible to your internet service provider and school network",
+      "Your browser doesn't save your history, cookies, or form data locally after closing the tab",
+      "Your IP address is hidden from the websites you visit",
+      "All online advertisements and video popups are permanently disabled"
     ],
     "correctIndex": 1,
-    "explanation": "COW marks parent and child pages as read-only. A private copy of a page is created only when one process attempts to write to it."
+    "explanation": "Incognito mode only prevents local session data (history, cookies, form autofills) from remaining on your device; websites and network admins can still observe traffic."
   },
   {
     "id": 36,
-    "question": "Which routing protocol uses the Bellman-Ford algorithm to calculate network distances?",
+    "question": "What is the world's most widely used mobile operating system by global market share?",
     "options": [
-      "OSPF",
-      "RIP (Routing Information Protocol)",
-      "BGP",
-      "IS-IS"
+      "iOS",
+      "Android",
+      "HarmonyOS",
+      "KaiOS"
     ],
     "correctIndex": 1,
-    "explanation": "RIP is a distance-vector protocol that uses the Bellman-Ford algorithm, bounding metric path costs by a 15-hop limit."
+    "explanation": "Android powers over 70% of smartphones worldwide due to its open availability across multiple hardware manufacturers."
   },
   {
     "id": 37,
-    "question": "What is the expected average-case complexity to insert an element into an open-addressing Hash Table?",
+    "question": "What is a 'Zero-Day' vulnerability in cybersecurity?",
     "options": [
-      "O(1)",
-      "O(log n)",
-      "O(n)",
-      "O(n²)"
+      "A security flaw known to attackers before the developer has released a patch or fix",
+      "A bug that only occurs on the first day of a calendar year",
+      "An attack that wipes out all data on a target system within 24 hours",
+      "A virus that fails to execute because its certificate expired"
     ],
     "correctIndex": 0,
-    "explanation": "With a uniform hash distribution and reasonable load factor, average insertion is O(1)."
+    "explanation": "A Zero-Day flaw is named because developers have had 'zero days' to patch it once exposed or actively exploited in the wild."
   },
   {
     "id": 38,
-    "question": "What component in a modern superscalar CPU is responsible for executing instructions out of order while committing them in order?",
+    "question": "Which everyday household device was famously targeted to build the historic 2016 Mirai Botnet that took down major internet services?",
     "options": [
-      "Branch Target Buffer (BTB)",
-      "Reorder Buffer (ROB)",
-      "Memory Management Unit (MMU)",
-      "Level 2 Cache Controller"
+      "Smart TVs, security cameras, and home routers with default passwords",
+      "Desktop PCs running pirated Windows software",
+      "Tesla vehicles connected to home Wi-Fi chargers",
+      "Smart electric toothbrushes and fitness bands"
     ],
-    "correctIndex": 1,
-    "explanation": "The Reorder Buffer allows speculative, out-of-order execution while ensuring changes commit to registers in original program order."
+    "correctIndex": 0,
+    "explanation": "The Mirai botnet infected hundreds of thousands of cheap IoT gadgets (IP cameras and basic routers) that still used factory default usernames and passwords like 'admin/1234'."
   },
   {
     "id": 39,
-    "question": "What network diagnostic tool sends packets with gradually incrementing TTL values to discover intermediate router hops?",
+    "question": "What does URL stand for in web terminology?",
     "options": [
-      "ping",
-      "traceroute",
-      "netstat",
-      "nslookup"
+      "Universal Remote Link",
+      "Uniform Resource Locator",
+      "Unified Routing Line",
+      "User Resource Layer"
     ],
     "correctIndex": 1,
-    "explanation": "Traceroute sends packets starting with TTL=1, TTL=2, etc., using ICMP Time Exceeded messages to map the path."
+    "explanation": "A Uniform Resource Locator (URL) is the standard web address format that specifies where a resource lives on the internet."
   },
   {
     "id": 40,
-    "question": "Which of the following is true about non-maskable interrupts (NMI)?",
+    "question": "What is the famous Konami Code sequence that appeared in dozens of classic video games?",
     "options": [
-      "They can be disabled by setting the CPU interrupt flag (e.g., CLI)",
-      "They are typically reserved for critical hardware events like memory parity errors",
-      "They are prioritized lower than regular peripheral I/O interrupts",
-      "They are only generated by software syscall instructions"
+      "Up, Up, Down, Down, Left, Right, Left, Right, B, A",
+      "Down, Down, Up, Up, Right, Left, Right, Left, A, B",
+      "A, B, A, B, Up, Down, Left, Right, Start",
+      "Select, Start, Up, Down, Left, Right, A, B"
     ],
-    "correctIndex": 1,
-    "explanation": "NMIs cannot be ignored by standard interrupt-masking instructions and are reserved for critical hardware faults."
+    "correctIndex": 0,
+    "explanation": "Created by Kazuhisa Hashimoto in 1985 for testing Gradius, ↑ ↑ ↓ ↓ ← → ← → B A granted power-ups in dozens of legendary games."
   },
   {
     "id": 41,
-    "question": "In Big-O analysis, what does the Master Theorem directly solve?",
+    "question": "Why are GPUs (Graphics Processing Units) so heavily used for training AI models instead of regular CPUs?",
     "options": [
-      "The shortest path on an unweighted grid",
-      "Divide-and-conquer recurrence relations of the form T(n) = aT(n/b) + f(n)",
-      "The minimum spanning tree edge costs",
-      "The cache hit ratios of multi-level hierarchies"
+      "They have higher clock speeds than CPUs",
+      "They are designed to perform thousands of simple math operations in parallel",
+      "They consume significantly less electrical power than processors",
+      "They have built-in natural language parsers"
     ],
     "correctIndex": 1,
-    "explanation": "The Master Theorem provides asymptotic solutions for divide-and-conquer recurrences."
+    "explanation": "CPUs excel at complex sequential logic, while GPUs are built with thousands of cores designed to crunch massive matrix multiplications simultaneously."
   },
   {
     "id": 42,
-    "question": "What type of attack involves an attacker overflowing the bounds of a local buffer to overwrite the function return address on the stack?",
+    "question": "What was the very first item purchased on Amazon when it opened as an online bookstore in 1995?",
     "options": [
-      "Stack Buffer Overflow",
-      "Cross-Site Scripting (XSS)",
-      "SQL Injection",
-      "Man-in-the-Middle (MitM)"
+      "A computer science textbook on fluid concepts and creative analogies",
+      "A Harry Potter novel",
+      "A Sony portable Walkman CD player",
+      "A map of Seattle, Washington"
     ],
     "correctIndex": 0,
-    "explanation": "Stack smashing overwrites the return pointer in the activation frame, directing execution flow to arbitrary code."
+    "explanation": "The first book ordered on Amazon was Douglas Hofstadter's 'Fluid Concepts and Creative Analogies: Computer Models of the Fundamental Mechanisms of Thought'."
   },
   {
     "id": 43,
-    "question": "What is the primary role of the Dynamic Host Configuration Protocol (DHCP)?",
+    "question": "What does two-factor authentication (2FA) protect you against?",
     "options": [
-      "Map domain names to web servers",
-      "Automatically distribute IP addresses and network configuration parameters to hosts",
-      "Maintain route advertisement tables across the internet",
-      "Convert private IP addresses to public IPs"
+      "Malicious ads showing up on video streaming sites",
+      "An attacker accessing your account using only a stolen password",
+      "Accidentally deleting important files in your cloud storage",
+      "Slow Wi-Fi performance caused by neighboring signals"
     ],
     "correctIndex": 1,
-    "explanation": "DHCP leases IP addresses, subnet masks, default gateways, and DNS server addresses to client devices upon connection."
+    "explanation": "2FA requires two distinct pieces of evidence (something you know, like a password, and something you have, like a phone prompt), neutralizing stolen passwords."
   },
   {
     "id": 44,
-    "question": "What is Spatial Locality in computer memory access?",
+    "question": "What is the main idea behind 'Moore's Law'?",
     "options": [
-      "Accessing the exact same memory location repeatedly within a short window",
-      "Accessing memory locations with addresses physically close to recently accessed locations",
-      "Distributing data evenly across all cache ways to minimize conflicts",
-      "Writing dirty blocks back to main memory only on line eviction"
+      "Internet bandwidth triples every calendar year",
+      "The number of transistors on a microchip roughly doubles every two years",
+      "Software gets 50% slower as hardware gets 50% faster",
+      "Every major software project finishes over budget and late"
     ],
     "correctIndex": 1,
-    "explanation": "Spatial locality refers to the likelihood that adjacent memory addresses will be needed soon (e.g., iterating through an array)."
+    "explanation": "Gordon Moore (co-founder of Intel) observed in 1965 that the transistor density on silicon chips doubles roughly every 18 to 24 months."
   },
   {
     "id": 45,
-    "question": "What does the CAP theorem state regarding distributed data stores?",
+    "question": "What is the difference between the 'Deep Web' and the 'Dark Web'?",
     "options": [
-      "A system can simultaneously guarantee Consistency, Availability, and Partition Tolerance",
-      "In the presence of a network partition, a system must choose between Consistency and Availability",
-      "Concurrent transactions cannot be both isolated and durable",
-      "Performance scales linearly only if transactions avoid network hops"
+      "They are the exact same thing under two different buzzword names",
+      "The Deep Web is unindexed content (emails, banking portals); the Dark Web requires special routing software like Tor",
+      "The Deep Web is illegal; the Dark Web is legal academic research",
+      "The Deep Web is run by military agencies; the Dark Web is run by tech companies"
     ],
     "correctIndex": 1,
-    "explanation": "The CAP theorem proves that in an asynchronous network prone to partitions (P), a distributed system can maintain Consistency (C) or Availability (A), but not both."
+    "explanation": "The Deep Web is simply non-public content search engines can't crawl (medical records, your private inbox). The Dark Web is a tiny slice intentionally hidden and accessible via anonymity networks."
   },
   {
     "id": 46,
-    "question": "Which CPU cache mapping policy allows any memory block to be placed in any cache line?",
+    "question": "Which programming language was developed by Sun Microsystems under the original code name 'Oak'?",
     "options": [
-      "Direct-Mapped",
-      "2-Way Set Associative",
-      "Fully Associative",
-      "Skewed-Associative"
+      "Java",
+      "C#",
+      "Kotlin",
+      "Swift"
     ],
-    "correctIndex": 2,
-    "explanation": "In a Fully Associative cache, a memory block can occupy any entry, requiring comparison against all tags simultaneously."
+    "correctIndex": 0,
+    "explanation": "James Gosling named it Oak after an oak tree that stood outside his office window, before it was renamed Java after coffee."
   },
   {
     "id": 47,
-    "question": "What is a zombie process in Unix-like operating systems?",
+    "question": "What do the blue checkmarks next to usernames on early social media originally symbolize?",
     "options": [
-      "A process executing an infinite CPU loop",
-      "A process that has terminated, but whose entry remains in the process table so its parent can read its exit code",
-      "A process whose parent terminated, leaving it adopted by PID 1 (init/systemd)",
-      "A process whose memory pages were swapped out to disk"
+      "The account pays a monthly recurring server maintenance subscription",
+      "The platform verified that the account belongs to the real public figure or brand",
+      "The user passed an online digital citizenship exam",
+      "The user has posted at least 1,000 verified authentic messages"
     ],
     "correctIndex": 1,
-    "explanation": "A process becomes a zombie upon exit until its parent collects its exit status via `wait()` or `waitpid()`."
+    "explanation": "Verification badges were introduced by Twitter in 2009 after celebrities were impersonated, confirming that notable accounts were who they claimed to be."
   },
   {
     "id": 48,
-    "question": "What does CSMA/CD do in Ethernet networks?",
+    "question": "What is the term for a software program that automatically repeats tasks over the web much faster than a human could?",
     "options": [
-      "Enforces dynamic token-passing around a logical ring",
-      "Detects collisions on a shared medium and retransmits using binary exponential backoff",
-      "Allocates specific time slots to nodes to prevent simultaneous transmissions",
-      "Encrypts layer 2 frame payloads"
+      "Bot",
+      "Cookie",
+      "Glitch",
+      "Proxy"
     ],
-    "correctIndex": 1,
-    "explanation": "Carrier Sense Multiple Access with Collision Detection monitors the bus and halts transmission upon collision, waiting a random backoff interval before retry."
+    "correctIndex": 0,
+    "explanation": "Derived from 'robot', bots automate repetitive jobs like indexing web pages, buying concert tickets, or chatting with users."
   },
   {
     "id": 49,
-    "question": "What is the worst-case time complexity of searching for an element in an unaugmented Trie containing N words of maximum length L?",
+    "question": "What does a QR code stand for?",
     "options": [
-      "O(N)",
-      "O(L)",
-      "O(N · L)",
-      "O(log N)"
+      "Quick Response code",
+      "Quality Raster code",
+      "Quantum Radio code",
+      "Quick Recognition code"
     ],
-    "correctIndex": 1,
-    "explanation": "Looking up a word in a Trie only requires following character transitions down the tree, taking O(L) time where L is the key length."
+    "correctIndex": 0,
+    "explanation": "Developed by the Japanese automotive company Denso Wave in 1994, 'Quick Response' codes were designed to be scanned at high speeds during manufacturing."
   },
   {
     "id": 50,
-    "question": "What mechanism does TCP use to prevent a fast sender from overwhelming a slow receiver's buffer?",
+    "question": "What is an 'Easter Egg' in software and tech culture?",
     "options": [
-      "Slow Start",
-      "Flow Control (sliding window advertisement)",
-      "Fast Retransmit",
-      "Selective Acknowledgment (SACK)"
+      "A critical security vulnerability that detonates on a specific holiday",
+      "A hidden feature, joke, or surprise deliberately left by developers",
+      "A prototype device given only to corporate executives",
+      "A corrupted data packet that causes memory leakage"
     ],
     "correctIndex": 1,
-    "explanation": "TCP Flow Control uses the Receive Window (rwnd) field in the TCP header so the receiver can tell the sender how much buffer capacity is left."
+    "explanation": "An Easter Egg is an intentional hidden inside joke, message, or secret mini-game concealed in software for curious users to discover."
   }
 ]
