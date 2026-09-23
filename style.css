@@ -60,7 +60,25 @@ body {
   box-shadow: var(--shadow);
 }
 
-/* Header & Progress Indicator */
+/* Progress Bar Track & Fill */
+.progress-bar-container {
+  width: 100%;
+  height: 6px;
+  background-color: var(--border-color);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: var(--accent);
+  border-radius: 999px;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Header & Progress Text */
 #progress {
   font-size: 0.875rem;
   font-weight: 600;
@@ -137,7 +155,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Primary Action Buttons */
+/* Action Buttons */
 #next-btn,
 #results button {
   display: inline-block;
@@ -177,23 +195,4 @@ body {
 /* Utility */
 .hidden {
   display: none !important;
-}
-
-/* Progress Bar Track */
-.progress-bar-container {
-  width: 100%;
-  height: 6px;
-  background-color: var(--border-color);
-  border-radius: 999px;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-}
-
-/* Animated Progress Fill */
-#progress-bar {
-  height: 100%;
-  width: 0%;
-  background-color: var(--accent);
-  border-radius: 999px;
-  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
