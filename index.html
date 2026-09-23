@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CompEng Knowledge Check</title>
+  <title>Tech Club Knowledge Quiz</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,10 +24,26 @@
       <button id="next-btn">Next Question</button>
     </div>
 
+    <!-- Results & Live Global Leaderboard -->
     <div id="results" class="hidden">
       <h2>Quiz Complete!</h2>
       <p id="score-text"></p>
-      <button onclick="location.reload()">Retry</button>
+      <p id="time-text"></p>
+
+      <form id="score-form" class="leaderboard-form">
+        <label for="player-name">Enter your Name or Handle:</label>
+        <div class="input-row">
+          <input type="text" id="player-name" maxlength="20" placeholder="e.g. Alex" required />
+          <button type="submit" id="save-btn">Save Score</button>
+        </div>
+      </form>
+
+      <div class="leaderboard-section">
+        <h3>🏆 Live Hall of Fame</h3>
+        <ol id="leaderboard-list"></ol>
+      </div>
+
+      <button id="restart-btn" class="restart-btn" onclick="location.reload()">Take Quiz Again</button>
     </div>
   </main>
   <script src="app.js"></script>
