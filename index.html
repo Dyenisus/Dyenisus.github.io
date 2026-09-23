@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CompEng Knowledge Check</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="quiz-container">
+    <div id="progress">Question <span id="current-q">1</span></div>
+    <h2 id="question-text">Loading question...</h2>
+    <div id="options-container" class="options-grid"></div>
+    <div id="feedback" class="hidden">
+      <p id="explanation-text"></p>
+      <button id="next-btn">Next Question</button>
+    </div>
+    <div id="results" class="hidden">
+      <h2>Quiz Complete!</h2>
+      <p id="score-text"></p>
+      <button onclick="location.reload()">Retry</button>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

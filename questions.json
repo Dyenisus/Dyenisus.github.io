@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "question": "What is the primary function of the Translation Lookaside Buffer (TLB)?",
+    "options": [
+      "Cache virtual-to-physical address translations",
+      "Store branch prediction history",
+      "Buffer pending disk I/O interrupts",
+      "Cache L1 CPU instructions"
+    ],
+    "correctIndex": 0,
+    "explanation": "The TLB is an MMU cache that speeds up virtual-to-physical address translations by storing recent page table mappings."
+  },
+  {
+    "id": 2,
+    "question": "Which scheduling algorithm can cause starvation if new tasks keep arriving?",
+    "options": [
+      "Round Robin",
+      "Shortest Job First (SJF)",
+      "First-Come, First-Served (FCFS)",
+      "Completely Fair Scheduler (CFS)"
+    ],
+    "correctIndex": 1,
+    "explanation": "SJF prioritizes shorter jobs, so a continuous stream of short processes can starve longer ones indefinitely."
+  }
+]
