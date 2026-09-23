@@ -13,7 +13,7 @@
   },
   {
     "id": 2,
-    "question": "Which scheduling algorithm is susceptible to indefinite starvation under continuous new arrivals?",
+    "question": "Which scheduling algorithm is susceptible to indefinite starvation under continuous arrivals?",
     "options": [
       "Round Robin",
       "Shortest Job First (SJF)",
@@ -25,7 +25,7 @@
   },
   {
     "id": 3,
-    "question": "In networking, what is the size of an IPv4 header without options?",
+    "question": "In networking, what is the standard minimum size of an IPv4 header without options?",
     "options": [
       "20 bytes",
       "32 bytes",
@@ -45,11 +45,11 @@
       "O(n²)"
     ],
     "correctIndex": 3,
-    "explanation": "QuickSelect has an average time complexity of O(n), but bad pivot choices (such as continually picking extreme values) degrade performance to O(n²)."
+    "explanation": "QuickSelect has an average time complexity of O(n), but bad pivot choices degrade performance to O(n²)."
   },
   {
     "id": 5,
-    "question": "Which cache coherency protocol state indicates a cache line is present exclusively in the current cache and is clean (matches main memory)?",
+    "question": "Which cache coherency protocol state indicates a line is present exclusively in the local cache and is clean?",
     "options": [
       "Shared (S)",
       "Exclusive (E)",
@@ -57,6 +57,546 @@
       "Forward (F)"
     ],
     "correctIndex": 1,
-    "explanation": "In the MESI protocol, Exclusive (E) means the line resides only in this cache and is identical to main memory."
+    "explanation": "In the MESI protocol, Exclusive (E) means the line resides only in this cache and matches main memory."
+  },
+  {
+    "id": 6,
+    "question": "Which layer of the OSI model does a standard network switch primarily operate at?",
+    "options": [
+      "Physical (Layer 1)",
+      "Data Link (Layer 2)",
+      "Network (Layer 3)",
+      "Transport (Layer 4)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Traditional network switches inspect MAC addresses, operating at the Data Link Layer (Layer 2)."
+  },
+  {
+    "id": 7,
+    "question": "What is the primary condition that causes a Thrashing state in an operating system?",
+    "options": [
+      "Excessive context switching among kernel threads",
+      "A deadlock between multiple high-priority processes",
+      "A page fault occurs faster than the OS can handle page replacements",
+      "Memory fragmentation exceeds available physical RAM"
+    ],
+    "correctIndex": 2,
+    "explanation": "Thrashing happens when processes lack sufficient frames, causing them to spend more time swapping pages in/out than executing code."
+  },
+  {
+    "id": 8,
+    "question": "Which data structure guarantees worst-case O(log n) lookup, insertion, and deletion?",
+    "options": [
+      "Binary Search Tree",
+      "Red-Black Tree",
+      "Skip List",
+      "Hash Table"
+    ],
+    "correctIndex": 1,
+    "explanation": "Self-balancing binary search trees like Red-Black Trees guarantee O(log n) bounds in the worst case."
+  },
+  {
+    "id": 9,
+    "question": "What is the main purpose of the TCP Three-Way Handshake?",
+    "options": [
+      "Establish encryption keys for TLS",
+      "Synchronize sequence numbers and establish socket connection state",
+      "Calculate round-trip time (RTT) for congestion control",
+      "Authenticate client identity to the host server"
+    ],
+    "correctIndex": 1,
+    "explanation": "SYN, SYN-ACK, and ACK establish initial Sequence Numbers (ISNs) and confirm bidirectional communication capability."
+  },
+  {
+    "id": 10,
+    "question": "What hazard occurs in a pipelined CPU when an instruction depends on the result of a prior instruction still in flight?",
+    "options": [
+      "Structural Hazard",
+      "Control Hazard",
+      "Data Hazard",
+      "Branch Misprediction"
+    ],
+    "correctIndex": 2,
+    "explanation": "Data hazards (e.g., Read-After-Write) occur when an operand has not yet been computed or forwarded by an earlier stage."
+  },
+  {
+    "id": 11,
+    "question": "Which of the following is NOT one of the four Coffman conditions necessary for deadlock?",
+    "options": [
+      "Mutual Exclusion",
+      "Preemption Allowed",
+      "Hold and Wait",
+      "Circular Wait"
+    ],
+    "correctIndex": 1,
+    "explanation": "The condition is *No Preemption*. Resources cannot be forcibly seized from a thread holding them."
+  },
+  {
+    "id": 12,
+    "question": "What is the average time complexity of searching for an element in an unsorted array of size n?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Searching an unsorted array requires scanning elements sequentially, taking linear time O(n)."
+  },
+  {
+    "id": 13,
+    "question": "In Little-Endian byte ordering, how is the 32-bit integer 0x12345678 stored across increasing memory addresses?",
+    "options": [
+      "0x12, 0x34, 0x56, 0x78",
+      "0x78, 0x56, 0x34, 0x12",
+      "0x21, 0x43, 0x65, 0x87",
+      "0x78, 0x12, 0x56, 0x34"
+    ],
+    "correctIndex": 1,
+    "explanation": "Little-endian architectures store the least significant byte (0x78) at the lowest memory address."
+  },
+  {
+    "id": 14,
+    "question": "Which transport protocol uses a best-effort, connectionless delivery model without flow control?",
+    "options": [
+      "TCP",
+      "UDP",
+      "SCTP",
+      "QUIC"
+    ],
+    "correctIndex": 1,
+    "explanation": "UDP sends datagrams without establishing a handshake, retransmitting lost packets, or enforcing flow/congestion windows."
+  },
+  {
+    "id": 15,
+    "question": "What problem does Dijkstra's shortest path algorithm fail to handle correctly?",
+    "options": [
+      "Directed acyclic graphs (DAGs)",
+      "Graphs with negative edge weights",
+      "Dense graphs with many cycles",
+      "Graphs with disconnected components"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dijkstra assumes that adding an edge never decreases path cost. Negative weights violate this greedy invariant (use Bellman-Ford instead)."
+  },
+  {
+    "id": 16,
+    "question": "What is a system call (syscall)?",
+    "options": [
+      "A high-level library call like printf()",
+      "The programmatic interface between user mode and kernel mode",
+      "An asynchronous hardware signal generated by peripherals",
+      "A method of communicating between web servers"
+    ],
+    "correctIndex": 1,
+    "explanation": "Syscalls allow user-space applications to safely request privileged services from the operating system kernel."
+  },
+  {
+    "id": 17,
+    "question": "What type of branch predictor uses a 2-bit saturating counter?",
+    "options": [
+      "Static Predictor",
+      "Bimodal Predictor",
+      "Tournament Predictor",
+      "Perceptron Predictor"
+    ],
+    "correctIndex": 1,
+    "explanation": "A bimodal branch predictor maps branch addresses to 2-bit saturating counters (Strongly Not Taken, Weakly Not Taken, Weakly Taken, Strongly Taken)."
+  },
+  {
+    "id": 18,
+    "question": "What is the primary role of ARP (Address Resolution Protocol)?",
+    "options": [
+      "Resolve domain names to IPv4 addresses",
+      "Map an IPv4 address to a physical MAC address",
+      "Assign dynamic IP addresses to subnet clients",
+      "Route packets across autonomous systems"
+    ],
+    "correctIndex": 1,
+    "explanation": "ARP operates on local broadcast domains to discover the hardware (MAC) address corresponding to a target IP address."
+  },
+  {
+    "id": 19,
+    "question": "What is the time complexity of building a Binary Heap from an unordered array of n elements?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)"
+    ],
+    "correctIndex": 2,
+    "explanation": "Using bottom-up heapification (Floyd's algorithm), building a heap takes linear time O(n), not O(n log n)."
+  },
+  {
+    "id": 20,
+    "question": "In ACID transactions, which property ensures transactions that execute concurrently do not leave data in an inconsistent state?",
+    "options": [
+      "Atomicity",
+      "Consistency",
+      "Isolation",
+      "Durability"
+    ],
+    "correctIndex": 2,
+    "explanation": "Isolation prevents uncommitted writes or reads of concurrent transactions from interfering with each other."
+  },
+  {
+    "id": 21,
+    "question": "What happens during a TLB shootdown in a multicore system?",
+    "options": [
+      "The MMU reboots due to an uncorrectable ECC error",
+      "One core invalidates stale TLB entries across all other cores via IPIs",
+      "The OS flushes all L3 cache lines to maintain memory coherency",
+      "The CPU dumps registers to stack during a kernel panic"
+    ],
+    "correctIndex": 1,
+    "explanation": "When page table mappings change, the initiating core uses Inter-Processor Interrupts (IPIs) to force other cores to flush their cached TLB mappings."
+  },
+  {
+    "id": 22,
+    "question": "What is the purpose of the Subnet Mask in IPv4 networking?",
+    "options": [
+      "Encrypt packets traveling between subnets",
+      "Distinguish the Network ID portion from the Host ID portion",
+      "Identify the gateway router's MAC address",
+      "Assign priority levels to outgoing packets"
+    ],
+    "correctIndex": 1,
+    "explanation": "Applying a bitwise AND between an IP address and its subnet mask isolates the network prefix from the host address."
+  },
+  {
+    "id": 23,
+    "question": "What is the space complexity of Depth-First Search (DFS) on a tree of maximum depth d and branching factor b?",
+    "options": [
+      "O(b · d)",
+      "O(b^d)",
+      "O(d)",
+      "O(1)"
+    ],
+    "correctIndex": 2,
+    "explanation": "DFS only needs to store the stack frames along the current branch, leading to O(d) memory usage."
+  },
+  {
+    "id": 24,
+    "question": "Which CPU register holds the memory address of the next instruction to fetch?",
+    "options": [
+      "Accumulator (ACC)",
+      "Instruction Register (IR)",
+      "Program Counter (PC)",
+      "Memory Buffer Register (MBR)"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Program Counter (PC, or Instruction Pointer on x86) stores the address of the next instruction to be fetched from memory."
+  },
+  {
+    "id": 25,
+    "question": "What mechanism does an operating system use to prevent user applications from directly executing privileged I/O instructions?",
+    "options": [
+      "Dual-mode execution (Ring 0 vs. Ring 3)",
+      "Virtual address space randomization (ASLR)",
+      "Static code analysis via compilers",
+      "Hardware-enforced software sandboxing"
+    ],
+    "correctIndex": 0,
+    "explanation": "CPUs provide protection rings. User applications run in unprivileged mode (Ring 3) and must transition to supervisor mode (Ring 0) for hardware tasks."
+  },
+  {
+    "id": 26,
+    "question": "What is the primary difference between a process and a thread?",
+    "options": [
+      "Threads have separate virtual address spaces; processes share one",
+      "Threads within the same process share memory space; processes do not",
+      "Processes can run concurrently; threads execute strictly in serial",
+      "Threads are managed only by user-space runtimes without OS knowledge"
+    ],
+    "correctIndex": 1,
+    "explanation": "Threads belong to a process and share its heap, global memory, and file descriptors, while having their own registers and stack."
+  },
+  {
+    "id": 27,
+    "question": "Which protocol operates at the Application Layer to resolve human-readable domain names into IP addresses?",
+    "options": [
+      "DHCP",
+      "DNS",
+      "BGP",
+      "ICMP"
+    ],
+    "correctIndex": 1,
+    "explanation": "DNS (Domain Name System) translates names like `example.com` into routable IP addresses."
+  },
+  {
+    "id": 28,
+    "question": "What is an Inverted Page Table?",
+    "options": [
+      "A page table indexed by virtual page number rather than physical frame",
+      "A page table indexed by physical frame number, containing one entry per frame",
+      "A two-level tree used only for 64-bit address translation",
+      "A table that maps physical disk blocks directly to L2 cache"
+    ],
+    "correctIndex": 1,
+    "explanation": "An inverted page table has one entry for each physical frame in memory rather than every virtual page, saving large amounts of memory."
+  },
+  {
+    "id": 29,
+    "question": "Which sorting algorithm is guaranteed to be stable and run in O(n log n) time in all cases?",
+    "options": [
+      "QuickSort",
+      "HeapSort",
+      "MergeSort",
+      "SelectionSort"
+    ],
+    "correctIndex": 2,
+    "explanation": "MergeSort divides arrays and merges sorted segments without altering relative orders of equal items, guaranteeing O(n log n) stable sorts."
+  },
+  {
+    "id": 30,
+    "question": "What is the purpose of the TTL (Time to Live) field in an IPv4 packet header?",
+    "options": [
+      "Measure total latency between client and host",
+      "Prevent packets from circulating endlessly in routing loops",
+      "Enforce session timeout periods for idle TCP sockets",
+      "Control how long the DNS record remains cached"
+    ],
+    "correctIndex": 1,
+    "explanation": "Each router decrements the TTL field by 1. When it reaches 0, the packet is discarded and an ICMP Time Exceeded message is returned."
+  },
+  {
+    "id": 31,
+    "question": "What does RAID 0 provide across multiple storage drives?",
+    "options": [
+      "Mirroring with high fault tolerance",
+      "Block-level striping with no parity or redundancy",
+      "Byte-level striping with dedicated parity disk",
+      "Distributed parity across all member disks"
+    ],
+    "correctIndex": 1,
+    "explanation": "RAID 0 stripes blocks across drives for read/write performance, but losing one drive causes complete data loss."
+  },
+  {
+    "id": 32,
+    "question": "Which synchronization primitive uses a counter and wake/sleep queues to control access to a finite number of shared resources?",
+    "options": [
+      "Spinlock",
+      "Semaphore",
+      "Barrier",
+      "Memory Fence"
+    ],
+    "correctIndex": 1,
+    "explanation": "A counting semaphore maintains a counter that decrements on acquire (wait/P) and increments on release (signal/V)."
+  },
+  {
+    "id": 33,
+    "question": "What is the primary trade-off when using a B+ Tree instead of a B Tree in relational databases?",
+    "options": [
+      "B+ Trees have slower range scans",
+      "B+ Trees store records only at the leaf nodes, making leaf traversals fast",
+      "B+ Trees have unbounded tree height under random inserts",
+      "B+ Trees cannot use composite primary keys"
+    ],
+    "correctIndex": 1,
+    "explanation": "In B+ Trees, internal nodes only hold keys for routing, and leaves form a linked sequence that simplifies sequential and range scans."
+  },
+  {
+    "id": 34,
+    "question": "What is Amdahl's Law used to calculate?",
+    "options": [
+      "The theoretical maximum speedup of a program using multiple processors",
+      "The probability of cache misses in direct-mapped caches",
+      "The transmission delay across multi-hop WAN links",
+      "The energy dissipation of CMOS logic gates under clock scaling"
+    ],
+    "correctIndex": 0,
+    "explanation": "Amdahl's Law models theoretical speedup as a function of the parallelizable fraction of the workload and the number of processors."
+  },
+  {
+    "id": 35,
+    "question": "What is a Copy-on-Write (COW) mechanism used for during a Unix fork() operation?",
+    "options": [
+      "To instantly duplicate all parent pages to the child immediately",
+      "To share read-only pages until either process writes, saving memory",
+      "To prevent files opened by the parent from being read by the child",
+      "To back up the process image onto swap space"
+    ],
+    "correctIndex": 1,
+    "explanation": "COW marks parent and child pages as read-only. A private copy of a page is created only when one process attempts to write to it."
+  },
+  {
+    "id": 36,
+    "question": "Which routing protocol uses the Bellman-Ford algorithm to calculate network distances?",
+    "options": [
+      "OSPF",
+      "RIP (Routing Information Protocol)",
+      "BGP",
+      "IS-IS"
+    ],
+    "correctIndex": 1,
+    "explanation": "RIP is a distance-vector protocol that uses the Bellman-Ford algorithm, bounding metric path costs by a 15-hop limit."
+  },
+  {
+    "id": 37,
+    "question": "What is the expected average-case complexity to insert an element into an open-addressing Hash Table?",
+    "options": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correctIndex": 0,
+    "explanation": "With a uniform hash distribution and reasonable load factor, average insertion is O(1)."
+  },
+  {
+    "id": 38,
+    "question": "What component in a modern superscalar CPU is responsible for executing instructions out of order while committing them in order?",
+    "options": [
+      "Branch Target Buffer (BTB)",
+      "Reorder Buffer (ROB)",
+      "Memory Management Unit (MMU)",
+      "Level 2 Cache Controller"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Reorder Buffer allows speculative, out-of-order execution while ensuring changes commit to registers in original program order."
+  },
+  {
+    "id": 39,
+    "question": "What network diagnostic tool sends packets with gradually incrementing TTL values to discover intermediate router hops?",
+    "options": [
+      "ping",
+      "traceroute",
+      "netstat",
+      "nslookup"
+    ],
+    "correctIndex": 1,
+    "explanation": "Traceroute sends packets starting with TTL=1, TTL=2, etc., using ICMP Time Exceeded messages to map the path."
+  },
+  {
+    "id": 40,
+    "question": "Which of the following is true about non-maskable interrupts (NMI)?",
+    "options": [
+      "They can be disabled by setting the CPU interrupt flag (e.g., CLI)",
+      "They are typically reserved for critical hardware events like memory parity errors",
+      "They are prioritized lower than regular peripheral I/O interrupts",
+      "They are only generated by software syscall instructions"
+    ],
+    "correctIndex": 1,
+    "explanation": "NMIs cannot be ignored by standard interrupt-masking instructions and are reserved for critical hardware faults."
+  },
+  {
+    "id": 41,
+    "question": "In Big-O analysis, what does the Master Theorem directly solve?",
+    "options": [
+      "The shortest path on an unweighted grid",
+      "Divide-and-conquer recurrence relations of the form T(n) = aT(n/b) + f(n)",
+      "The minimum spanning tree edge costs",
+      "The cache hit ratios of multi-level hierarchies"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Master Theorem provides asymptotic solutions for divide-and-conquer recurrences."
+  },
+  {
+    "id": 42,
+    "question": "What type of attack involves an attacker overflowing the bounds of a local buffer to overwrite the function return address on the stack?",
+    "options": [
+      "Stack Buffer Overflow",
+      "Cross-Site Scripting (XSS)",
+      "SQL Injection",
+      "Man-in-the-Middle (MitM)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stack smashing overwrites the return pointer in the activation frame, directing execution flow to arbitrary code."
+  },
+  {
+    "id": 43,
+    "question": "What is the primary role of the Dynamic Host Configuration Protocol (DHCP)?",
+    "options": [
+      "Map domain names to web servers",
+      "Automatically distribute IP addresses and network configuration parameters to hosts",
+      "Maintain route advertisement tables across the internet",
+      "Convert private IP addresses to public IPs"
+    ],
+    "correctIndex": 1,
+    "explanation": "DHCP leases IP addresses, subnet masks, default gateways, and DNS server addresses to client devices upon connection."
+  },
+  {
+    "id": 44,
+    "question": "What is Spatial Locality in computer memory access?",
+    "options": [
+      "Accessing the exact same memory location repeatedly within a short window",
+      "Accessing memory locations with addresses physically close to recently accessed locations",
+      "Distributing data evenly across all cache ways to minimize conflicts",
+      "Writing dirty blocks back to main memory only on line eviction"
+    ],
+    "correctIndex": 1,
+    "explanation": "Spatial locality refers to the likelihood that adjacent memory addresses will be needed soon (e.g., iterating through an array)."
+  },
+  {
+    "id": 45,
+    "question": "What does the CAP theorem state regarding distributed data stores?",
+    "options": [
+      "A system can simultaneously guarantee Consistency, Availability, and Partition Tolerance",
+      "In the presence of a network partition, a system must choose between Consistency and Availability",
+      "Concurrent transactions cannot be both isolated and durable",
+      "Performance scales linearly only if transactions avoid network hops"
+    ],
+    "correctIndex": 1,
+    "explanation": "The CAP theorem proves that in an asynchronous network prone to partitions (P), a distributed system can maintain Consistency (C) or Availability (A), but not both."
+  },
+  {
+    "id": 46,
+    "question": "Which CPU cache mapping policy allows any memory block to be placed in any cache line?",
+    "options": [
+      "Direct-Mapped",
+      "2-Way Set Associative",
+      "Fully Associative",
+      "Skewed-Associative"
+    ],
+    "correctIndex": 2,
+    "explanation": "In a Fully Associative cache, a memory block can occupy any entry, requiring comparison against all tags simultaneously."
+  },
+  {
+    "id": 47,
+    "question": "What is a zombie process in Unix-like operating systems?",
+    "options": [
+      "A process executing an infinite CPU loop",
+      "A process that has terminated, but whose entry remains in the process table so its parent can read its exit code",
+      "A process whose parent terminated, leaving it adopted by PID 1 (init/systemd)",
+      "A process whose memory pages were swapped out to disk"
+    ],
+    "correctIndex": 1,
+    "explanation": "A process becomes a zombie upon exit until its parent collects its exit status via `wait()` or `waitpid()`."
+  },
+  {
+    "id": 48,
+    "question": "What does CSMA/CD do in Ethernet networks?",
+    "options": [
+      "Enforces dynamic token-passing around a logical ring",
+      "Detects collisions on a shared medium and retransmits using binary exponential backoff",
+      "Allocates specific time slots to nodes to prevent simultaneous transmissions",
+      "Encrypts layer 2 frame payloads"
+    ],
+    "correctIndex": 1,
+    "explanation": "Carrier Sense Multiple Access with Collision Detection monitors the bus and halts transmission upon collision, waiting a random backoff interval before retry."
+  },
+  {
+    "id": 49,
+    "question": "What is the worst-case time complexity of searching for an element in an unaugmented Trie containing N words of maximum length L?",
+    "options": [
+      "O(N)",
+      "O(L)",
+      "O(N · L)",
+      "O(log N)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Looking up a word in a Trie only requires following character transitions down the tree, taking O(L) time where L is the key length."
+  },
+  {
+    "id": 50,
+    "question": "What mechanism does TCP use to prevent a fast sender from overwhelming a slow receiver's buffer?",
+    "options": [
+      "Slow Start",
+      "Flow Control (sliding window advertisement)",
+      "Fast Retransmit",
+      "Selective Acknowledgment (SACK)"
+    ],
+    "correctIndex": 1,
+    "explanation": "TCP Flow Control uses the Receive Window (rwnd) field in the TCP header so the receiver can tell the sender how much buffer capacity is left."
   }
 ]
