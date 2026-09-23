@@ -6,14 +6,14 @@
       "Cache virtual-to-physical address translations",
       "Store branch prediction history",
       "Buffer pending disk I/O interrupts",
-      "Cache L1 CPU instructions"
+      "Cache Level 1 instruction sets"
     ],
     "correctIndex": 0,
-    "explanation": "The TLB is an MMU cache that speeds up virtual-to-physical address translations by storing recent page table mappings."
+    "explanation": "The TLB is a dedicated MMU cache that speeds up virtual memory translation by holding recent virtual-to-physical page mappings."
   },
   {
     "id": 2,
-    "question": "Which scheduling algorithm can cause starvation if new tasks keep arriving?",
+    "question": "Which scheduling algorithm is susceptible to indefinite starvation under continuous new arrivals?",
     "options": [
       "Round Robin",
       "Shortest Job First (SJF)",
@@ -21,6 +21,42 @@
       "Completely Fair Scheduler (CFS)"
     ],
     "correctIndex": 1,
-    "explanation": "SJF prioritizes shorter jobs, so a continuous stream of short processes can starve longer ones indefinitely."
+    "explanation": "SJF always prioritizes shorter tasks, so an ongoing arrival of brief tasks will indefinitely starve longer processes."
+  },
+  {
+    "id": 3,
+    "question": "In networking, what is the size of an IPv4 header without options?",
+    "options": [
+      "20 bytes",
+      "32 bytes",
+      "40 bytes",
+      "64 bytes"
+    ],
+    "correctIndex": 0,
+    "explanation": "A standard IPv4 header consists of five 32-bit words, which equals 20 bytes."
+  },
+  {
+    "id": 4,
+    "question": "What is the worst-case time complexity of QuickSelect when using a naive pivot?",
+    "options": [
+      "O(n log n)",
+      "O(log n)",
+      "O(n)",
+      "O(n²)"
+    ],
+    "correctIndex": 3,
+    "explanation": "QuickSelect has an average time complexity of O(n), but bad pivot choices (such as continually picking extreme values) degrade performance to O(n²)."
+  },
+  {
+    "id": 5,
+    "question": "Which cache coherency protocol state indicates a cache line is present exclusively in the current cache and is clean (matches main memory)?",
+    "options": [
+      "Shared (S)",
+      "Exclusive (E)",
+      "Modified (M)",
+      "Forward (F)"
+    ],
+    "correctIndex": 1,
+    "explanation": "In the MESI protocol, Exclusive (E) means the line resides only in this cache and is identical to main memory."
   }
 ]
