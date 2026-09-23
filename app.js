@@ -1,5 +1,5 @@
-// 1. Paste your deployed Google Apps Script Web App URL here:
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxXWs-B9ez_WH49TiHep7H1urz82uZoNOFyXABbngu4ZPApqBUnUfxUHwipP_HHE34H/exec";
+// Paste your Google Apps Script Web App URL ending in /exec here:
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyim2VUnHrsuBlQWC33a_or0ky30MLltKMCYk_iVcWleY5WONl2QH1x0gxKLZxVBjJv/exec";
 
 let questions = [];
 let currentIndex = 0;
@@ -115,7 +115,7 @@ document.getElementById('next-btn').onclick = () => {
   }
 };
 
-// --- Google Sheets Live Leaderboard ---
+// --- Live Google Sheets Leaderboard via GET ---
 
 async function displayLeaderboard() {
   const list = document.getElementById('leaderboard-list');
@@ -156,31 +156,41 @@ async function saveScore(name) {
   saveBtn.disabled = true;
   saveBtn.textContent = 'Saving...';
 
-  // Use URLSearchParams for clean submission through Google's redirect proxy
   const params = new URLSearchParams({
+    action: 'save',
     name: name.trim() || 'Anonymous',
     score: score.toString(),
     time: totalTimeTaken.toString()
   });
 
   try {
-    await fetch(GOOGLE_SCRIPT_URL, {
-      method: 'POST',
-      mode: 'no-cors',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      body: params.toString()
-    });
+    const res = await fetch(`${GOOGLE_SCRIPT_URL}?${params.toString()}`);
+    const result = await res.json();
 
-    document.getElementById('score-form').classList.add('hidden');
-    // Allow Google Sheets 2 seconds to write the row
-    setTimeout(displayLeaderboard, 2000);
+    if (result.status === "success") {
+      document.getElementById('score-form').classList.add('hidden');
+      displayLeaderboard();
+    } else {
+      throw new Error(result.error || "Save failed");
+    }
   } catch (err) {
     console.error('Error saving score:', err);
     saveBtn.disabled = false;
     saveBtn.textContent = 'Retry';
+    alert("Could not save score. Please verify your Web App URL.");
   }
 }
+
+function escapeHTML(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+document.getElementById('score-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const nameInput = document.getElementById('player-name');
+  saveScore(nameInput.value);
+});
 
 initQuiz();
