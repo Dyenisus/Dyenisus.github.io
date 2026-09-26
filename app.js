@@ -2,19 +2,19 @@
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyhpdj20BgtJ8pd7dSHuEzBz5mrjVQknHAcnnxwUkPKxNofz0C-Lt5oSxKl4s6miB35/exec";
 
 // Admin Credentials
-const ADMIN_ID = '231401007admin';
-const ADMIN_NAME = 'Yekta Soytürk';
+const ADMIN_ID = 'bilisimyk';
+const ADMIN_NAME = 'bravoekip';
 
 let currentLang = localStorage.getItem('quiz_lang') || 'en';
 
 const translations = {
   en: {
     loginTitle: "Welcome to the Tech Quiz!",
-    loginSubtitle: "Enter your details to compete. One attempt per student per day!",
+    loginSubtitle: "Enter your details to compete.",
     labelStudentId: "Student Number",
     labelName: "Full Name",
     placeholderId: "e.g. 210101001",
-    placeholderName: "e.g. Alex Morgan",
+    placeholderName: "e.g. Arthur Morgan",
     btnStart: "Start Quiz",
     checkingAttendance: "Checking attendance...",
     alreadyParticipated: "You have already participated today!",
@@ -44,11 +44,11 @@ const translations = {
   },
   tr: {
     loginTitle: "Teknoloji Kulübü Bilgi Yarışması!",
-    loginSubtitle: "Yarışmak için bilgilerinizi girin. Her öğrenci için günde bir katılım hakkı!",
+    loginSubtitle: "Yarışmak için bilgilerinizi girin.",
     labelStudentId: "Öğrenci Numarası",
     labelName: "Ad Soyad",
     placeholderId: "Örn. 210101001",
-    placeholderName: "Örn. Yekta Soytürk",
+    placeholderName: "Örn. Ahmet Bulut",
     btnStart: "Yarışmaya Başla",
     checkingAttendance: "Katılım kontrol ediliyor...",
     alreadyParticipated: "Bugün zaten katılım sağladınız!",
