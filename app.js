@@ -143,7 +143,6 @@ function renderQuestion() {
 
 function selectOption(selectedOpt, selectedBtn) {
   const allBtns = document.querySelectorAll('.option-btn');
-  const q = questions[currentIndex];
 
   allBtns.forEach(b => b.disabled = true);
 
@@ -152,14 +151,8 @@ function selectOption(selectedOpt, selectedBtn) {
     score++;
   } else {
     selectedBtn.classList.add('incorrect');
-    q.shuffledOptions.forEach((opt, idx) => {
-      if (opt.isCorrect) {
-        allBtns[idx].classList.add('correct');
-      }
-    });
   }
 
-  document.getElementById('explanation-text').textContent = q.explanation;
   document.getElementById('feedback').classList.remove('hidden');
 }
 
