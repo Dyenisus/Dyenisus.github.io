@@ -43,7 +43,7 @@ const translations = {
     noExplanation: "No explanation provided."
   },
   tr: {
-    loginTitle: "Teknoloji Kulübü Bilgi Yarışması!",
+    loginTitle: "Teknoloji Bilgi Yarışmasına Hoşgeldiniz!",
     loginSubtitle: "Yarışmak için bilgilerinizi girin.",
     labelStudentId: "Öğrenci Numarası",
     labelName: "Ad Soyad",
