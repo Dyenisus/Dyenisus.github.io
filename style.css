@@ -191,12 +191,6 @@ body {
   margin-top: 1rem;
 }
 
-#explanation-text {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
-}
 
 /* Action Buttons */
 #start-btn,

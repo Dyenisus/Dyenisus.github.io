@@ -101,6 +101,11 @@ function getLocalized(val) {
   return val;
 }
 
+// Helper: Safely resolve localized vs plain arrays
+function getLocalizedOptions(options) {
+  return Array.isArray(options) ? options : (options[currentLang] || options['en'] || []);
+}
+
 // Update UI Text elements by language
 function applyLanguage(lang) {
   currentLang = lang;
@@ -238,7 +243,7 @@ async function startQuiz() {
     // Keep full question item references so we can dynamically re-translate on language change
     questions = selectedSubset.map(q => {
       // Determine option list for mapping
-      const optionsArray = Array.isArray(q.options) ? q.options : (q.options[currentLang] || q.options['en'] || []);
+      const optionsArray = getLocalizedOptions(q.options);
       const indices = optionsArray.map((_, idx) => idx);
       const shuffledIndices = shuffle(indices);
 
@@ -273,7 +278,7 @@ function renderQuestion() {
   container.innerHTML = '';
   document.getElementById('feedback').classList.add('hidden');
 
-  const optionsArray = Array.isArray(q.raw.options) ? q.raw.options : (q.raw.options[currentLang] || q.raw.options['en'] || []);
+  const optionsArray = getLocalizedOptions(q.raw.options);
 
   q.shuffledIndices.forEach((optIndex) => {
     const btn = document.createElement('button');
@@ -355,12 +360,13 @@ async function autoSaveScore() {
     statusEl.style.color = 'var(--incorrect)';
   }
 
-  displayLeaderboard();
+  fetchAndRenderLeaderboard('leaderboard-list');
 }
 
-// 4. Participant Leaderboard
-async function displayLeaderboard() {
-  const list = document.getElementById('leaderboard-list');
+// 4. Participant & Admin Leaderboard
+async function fetchAndRenderLeaderboard(listId) {
+  const list = document.getElementById(listId);
+  if (!list) return;
   const t = translations[currentLang];
   list.innerHTML = `<li style="color: var(--text-muted);">${t.loadingStandings}</li>`;
 
@@ -390,7 +396,7 @@ async function displayLeaderboard() {
 
 // 5. Admin Dashboard
 async function loadAdminDashboard() {
-  displayAdminLeaderboard();
+  fetchAndRenderLeaderboard('admin-leaderboard-list');
   if (rawQuestionBank.length === 0) {
     try {
       const res = await fetch('questions.json');
@@ -400,35 +406,6 @@ async function loadAdminDashboard() {
     }
   }
   renderAdminQuestions();
-}
-
-async function displayAdminLeaderboard() {
-  const list = document.getElementById('admin-leaderboard-list');
-  const t = translations[currentLang];
-  list.innerHTML = `<li style="color: var(--text-muted);">${t.loadingStandings}</li>`;
-
-  try {
-    const leaderboard = await fetchWithRetry(GOOGLE_SCRIPT_URL);
-
-    list.innerHTML = '';
-    if (!Array.isArray(leaderboard) || leaderboard.length === 0) {
-      list.innerHTML = `<li style="color: var(--text-muted);">${t.noEntries}</li>`;
-      return;
-    }
-
-    leaderboard.forEach((entry, index) => {
-      const li = document.createElement('li');
-      const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `#${index + 1}`;
-      li.innerHTML = `
-        <span><span class="player-rank">${medal}</span> ${escapeHTML(entry.name)}</span>
-        <span class="player-stats">${entry.score}/${QUIZ_LENGTH} (${entry.time}s)</span>
-      `;
-      list.appendChild(li);
-    });
-  } catch (err) {
-    list.innerHTML = `<li style="color: var(--text-muted);">${t.failedLeaderboard}</li>`;
-    console.error(err);
-  }
 }
 
 function renderAdminQuestions() {
@@ -446,7 +423,7 @@ function renderAdminQuestions() {
     const item = document.createElement('div');
     item.className = 'admin-question-item';
 
-    const optionsArray = Array.isArray(q.options) ? q.options : (q.options[currentLang] || q.options['en'] || []);
+    const optionsArray = getLocalizedOptions(q.options);
 
     const optionsList = optionsArray.map((opt, i) => {
       const isCorrect = i === q.correctIndex;
