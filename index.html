@@ -9,25 +9,32 @@
 <body>
   <main class="quiz-container">
     
+    <!-- Language Switcher -->
+    <div class="lang-switch-container">
+      <button type="button" class="lang-btn active" data-lang="en">EN</button>
+      <span class="lang-divider">|</span>
+      <button type="button" class="lang-btn" data-lang="tr">TR</button>
+    </div>
+
     <!-- 1. Registration / Login Screen -->
     <section id="login-screen">
-      <h2>Welcome to the Tech Quiz!</h2>
-      <p class="subtitle">Enter your details to compete. One attempt per student per day!</p>
+      <h2 data-i18n="loginTitle">Welcome to the Tech Quiz!</h2>
+      <p class="subtitle" data-i18n="loginSubtitle">Enter your details to compete. One attempt per student per day!</p>
 
       <form id="login-form" class="auth-form">
         <div class="form-group">
-          <label for="input-student-id">Student Number</label>
+          <label for="input-student-id" data-i18n="labelStudentId">Student Number</label>
           <input type="text" id="input-student-id" placeholder="e.g. 210101001" required />
         </div>
 
         <div class="form-group">
-          <label for="input-name">Full Name</label>
+          <label for="input-name" data-i18n="labelName">Full Name</label>
           <input type="text" id="input-name" maxlength="30" placeholder="e.g. Alex Morgan" required />
         </div>
 
         <div id="login-error" class="error-msg hidden"></div>
 
-        <button type="submit" id="start-btn">Start Quiz</button>
+        <button type="submit" id="start-btn" data-i18n="btnStart">Start Quiz</button>
       </form>
     </section>
 
@@ -38,53 +45,51 @@
       </div>
 
       <div id="quiz-header">
-        <div id="progress">Question <span id="current-q">1</span></div>
+        <div id="progress"><span data-i18n="questionWord">Question</span> <span id="current-q">1</span></div>
         <h2 id="question-text">Loading question...</h2>
       </div>
 
       <div id="options-container" class="options-grid"></div>
 
       <div id="feedback" class="hidden">
-        <button id="next-btn">Next Question</button>
+        <button id="next-btn" data-i18n="btnNext">Next Question</button>
       </div>
     </section>
 
     <!-- 3. Results & Leaderboard Screen -->
     <section id="results" class="hidden">
-      <h2>Quiz Complete!</h2>
+      <h2 data-i18n="resultsTitle">Quiz Complete!</h2>
       <p id="player-greeting"></p>
       <p id="score-text"></p>
       <p id="time-text"></p>
-      <div id="save-status" class="save-status">Saving score to leaderboard...</div>
+      <div id="save-status" class="save-status" data-i18n="statusSaving">Saving score to leaderboard...</div>
 
       <div class="leaderboard-section">
-        <h3>🏆 Live Hall of Fame</h3>
+        <h3 data-i18n="leaderboardTitle">🏆 Live Hall of Fame</h3>
         <ol id="leaderboard-list"></ol>
       </div>
 
-      <button id="restart-btn" class="restart-btn" onclick="location.reload()">Next Player</button>
+      <button id="restart-btn" class="restart-btn" onclick="location.reload()" data-i18n="btnRestart">Next Player</button>
     </section>
 
-	<!-- 4. Admin Dashboard Screen -->
+    <!-- 4. Admin Dashboard Screen -->
     <section id="admin-screen" class="hidden">
       <div class="admin-header">
-        <h2>🛠️ Admin Dashboard</h2>
-        <button class="restart-btn" style="margin: 0; width: auto;" onclick="location.reload()">Log Out</button>
+        <h2 data-i18n="adminTitle">🛠️ Admin Dashboard</h2>
+        <button class="restart-btn" style="margin: 0; width: auto;" onclick="location.reload()" data-i18n="btnLogout">Log Out</button>
       </div>
 
-      <!-- Live Standings (identical structure to the results screen) -->
       <div class="leaderboard-section">
-        <h3>🏆 Live Hall of Fame</h3>
+        <h3 data-i18n="leaderboardTitle">🏆 Live Hall of Fame</h3>
         <ol id="admin-leaderboard-list"></ol>
       </div>
 
-      <!-- Full Question Bank -->
       <div class="admin-questions-section">
-        <h3>📚 Question Bank & Explanations</h3>
+        <h3 data-i18n="adminQuestionsTitle">📚 Question Bank & Explanations</h3>
         <div id="admin-questions-list"></div>
       </div>
     </section>
-	
+
   </main>
   <script src="app.js"></script>
 </body>
