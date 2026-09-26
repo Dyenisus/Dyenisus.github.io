@@ -390,3 +390,38 @@ body {
   padding: 0.6rem 0.75rem;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
+
+/* Language Switcher */
+.lang-switch-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--radius-sm);
+  transition: all 0.15s ease;
+}
+
+.lang-btn:hover {
+  color: var(--text-main);
+}
+
+.lang-btn.active {
+  color: var(--accent);
+  background-color: var(--bg-surface-hover);
+}
+
+.lang-divider {
+  color: var(--border-color);
+  user-select: none;
+}

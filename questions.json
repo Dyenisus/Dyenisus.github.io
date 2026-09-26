@@ -1,602 +1,1302 @@
 [
   {
     "id": 1,
-    "question": "Why was the very first computer bug called an actual 'bug'?",
-    "options": [
-      "A real moth was trapped inside a Harvard Mark II relay",
-      "Thomas Edison coined it for a glitch in his telephone line",
-      "Early punch cards were eaten by silverfish insects",
-      "It was a joke created by the developers of Unix"
-    ],
+    "question": {
+      "en": "Why was the very first computer bug called an actual 'bug'?",
+      "tr": "İlk bilgisayar hatasına (bug) neden gerçek bir 'böcek' adı verilmiştir?"
+    },
+    "options": {
+      "en": [
+        "A real moth was trapped inside a Harvard Mark II relay",
+        "Thomas Edison coined it for a glitch in his telephone line",
+        "Early punch cards were eaten by silverfish insects",
+        "It was a joke created by the developers of Unix"
+      ],
+      "tr": [
+        "Harvard Mark II rölesinin içine gerçek bir güve sıkışmıştı",
+        "Thomas Edison telefon hattındaki bir aksaklık için bu terimi türetmişti",
+        "İlk delikli kartlar gümüşçün böcekleri tarafından yenmişti",
+        "Unix geliştiricileri tarafından yapılmış bir şakaydı"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "In 1947, computer pioneer Grace Hopper's team taped a real moth removed from relay #70 into their logbook with the note: 'First actual case of bug being found.'"
+    "explanation": {
+      "en": "In 1947, computer pioneer Grace Hopper's team taped a real moth removed from relay #70 into their logbook with the note: 'First actual case of bug being found.'",
+      "tr": "1947'de bilgisayar öncüsü Grace Hopper'ın ekibi, 70 numaralı röleden çıkardıkları gerçek bir güveyi seyir defterine yapıştırıp 'İlk gerçek böcek vakası bulundu' notunu düşmüştür."
+    }
   },
   {
     "id": 2,
-    "question": "What does the 'Wi-Fi' name actually stand for?",
-    "options": [
-      "Wireless Fidelity",
-      "Wireless Frequency Interface",
-      "Wide-range Filter",
-      "Nothing, it is a catchy branded marketing term"
-    ],
+    "question": {
+      "en": "What does the 'Wi-Fi' name actually stand for?",
+      "tr": "'Wi-Fi' ismi aslında neyin kısaltmasıdır?"
+    },
+    "options": {
+      "en": [
+        "Wireless Fidelity",
+        "Wireless Frequency Interface",
+        "Wide-range Filter",
+        "Nothing, it is a catchy branded marketing term"
+      ],
+      "tr": [
+        "Wireless Fidelity",
+        "Wireless Frequency Interface",
+        "Wide-range Filter",
+        "Hiçbir şey, akılda kalıcı pazarlama amaçlı bir marka ismidir"
+      ]
+    },
     "correctIndex": 3,
-    "explanation": "Contrary to popular belief, Wi-Fi doesn't stand for 'Wireless Fidelity'. The branding firm Interbrand proposed it simply because it sounded catchy and rhymed with 'hi-fi'."
+    "explanation": {
+      "en": "Contrary to popular belief, Wi-Fi doesn't stand for 'Wireless Fidelity'. The branding firm Interbrand proposed it simply because it sounded catchy and rhymed with 'hi-fi'.",
+      "tr": "Yaygın inanışın aksine Wi-Fi, 'Wireless Fidelity' anlamına gelmez. Marka ajansı Interbrand, 'hi-fi' ile kafiyeli ve akılda kalıcı olduğu için bu ismi önermiştir."
+    }
   },
   {
     "id": 3,
-    "question": "Which programming language was named after a British comedy sketch show?",
-    "options": [
-      "Ruby",
-      "Python",
-      "Perl",
-      "Rust"
-    ],
+    "question": {
+      "en": "Which programming language was named after a British comedy sketch show?",
+      "tr": "Hangi programlama dili adını İngiliz bir komedi skeç programından almıştır?"
+    },
+    "options": {
+      "en": [
+        "Ruby",
+        "Python",
+        "Perl",
+        "Rust"
+      ],
+      "tr": [
+        "Ruby",
+        "Python",
+        "Perl",
+        "Rust"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Guido van Rossum named Python after the BBC show 'Monty Python's Flying Circus' because he was reading the published scripts while developing it."
+    "explanation": {
+      "en": "Guido van Rossum named Python after the BBC show 'Monty Python's Flying Circus' because he was reading the published scripts while developing it.",
+      "tr": "Guido van Rossum, Python'ı geliştirirken BBC'nin 'Monty Python's Flying Circus' skeç senaryolarını okuduğu için dile bu ismi vermiştir."
+    }
   },
   {
     "id": 4,
-    "question": "What was the original name of Google before Larry Page and Sergey Brin renamed it?",
-    "options": [
-      "Backrub",
-      "PageRank",
-      "WebCrawler",
-      "IndexPlus"
-    ],
+    "question": {
+      "en": "What was the original name of Google before Larry Page and Sergey Brin renamed it?",
+      "tr": "Larry Page ve Sergey Brin yeniden adlandırmadan önce Google'ın orijinal adı neydi?"
+    },
+    "options": {
+      "en": [
+        "Backrub",
+        "PageRank",
+        "WebCrawler",
+        "IndexPlus"
+      ],
+      "tr": [
+        "Backrub",
+        "PageRank",
+        "WebCrawler",
+        "IndexPlus"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "Google started out in 1996 under the working title 'Backrub' because its system analyzed backlinks to estimate the importance of websites."
+    "explanation": {
+      "en": "Google started out in 1996 under the working title 'Backrub' because its system analyzed backlinks to estimate the importance of websites.",
+      "tr": "Google, 1996 yılında web sitelerinin önemini belirlemek için geri bağlantıları (backlink) analiz ettiğinden 'Backrub' çalışma adıyla başlamıştır."
+    }
   },
   {
     "id": 5,
-    "question": "What is the famous '404' HTTP status code named after according to popular web lore?",
-    "options": [
-      "A CERN room where the central database server was supposedly kept",
-      "The year the Library of Alexandria burned down",
-      "The telephone area code of Silicon Valley",
-      "Just an arbitrary sequence number chosen by the IETF"
-    ],
+    "question": {
+      "en": "What is the famous '404' HTTP status code named after according to popular web lore?",
+      "tr": "Popüler internet efsanesine göre meşhur '404' HTTP durum kodu adını nereden almıştır?"
+    },
+    "options": {
+      "en": [
+        "A CERN room where the central database server was supposedly kept",
+        "The year the Library of Alexandria burned down",
+        "The telephone area code of Silicon Valley",
+        "Just an arbitrary sequence number chosen by the IETF"
+      ],
+      "tr": [
+        "CERN'de merkezi veritabanı sunucusunun bulunduğu iddia edilen odadan",
+        "İskenderiye Kütüphanesi'nin yandığı yıldan",
+        "Silikon Vadisi'nin telefon alan kodundan",
+        "IETF tarafından rastgele belirlenen bir sıra numarasından"
+      ]
+    },
     "correctIndex": 3,
-    "explanation": "While urban legend claims Room 404 at CERN housed the original web files, Tim Berners-Lee confirmed the number was simply assigned arbitrarily in the 4xx client-error range."
+    "explanation": {
+      "en": "While urban legend claims Room 404 at CERN housed the original web files, Tim Berners-Lee confirmed the number was simply assigned arbitrarily in the 4xx client-error range.",
+      "tr": "Şehir efsanesi CERN'deki 404 numaralı odada web dosyalarının barındığını iddia etse de, Tim Berners-Lee bu numaranın sadece 4xx istemci hatası aralığında rastgele seçildiğini doğrulamıştır."
+    }
   },
   {
     "id": 6,
-    "question": "Which iconic video game easter egg is widely credited as the first popular digital easter egg in gaming?",
-    "options": [
-      "The secret room in Atari 2600's Adventure revealing the developer's name",
-      "The Konami Code in Gradius",
-      "The warp zones in Super Mario Bros.",
-      "The cow level in Diablo"
-    ],
+    "question": {
+      "en": "Which iconic video game easter egg is widely credited as the first popular digital easter egg in gaming?",
+      "tr": "Oyun dünyasında ilk popüler dijital 'paskalya yumurtası' (easter egg) olarak kabul edilen detay hangisidir?"
+    },
+    "options": {
+      "en": [
+        "The secret room in Atari 2600's Adventure revealing the developer's name",
+        "The Konami Code in Gradius",
+        "The warp zones in Super Mario Bros.",
+        "The cow level in Diablo"
+      ],
+      "tr": [
+        "Atari 2600'ün Adventure oyununda geliştiricinin adını gösteren gizli oda",
+        "Gradius oyunundaki Konami Kodu",
+        "Super Mario Bros.'taki ışınlanma (warp) bölgeleri",
+        "Diablo'daki inek seviyesi (cow level)"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "Programmer Warren Robinett hid 'Created by Warren Robinett' in Atari's Adventure (1980) because Atari refused to credit game designers on cartridges."
+    "explanation": {
+      "en": "Programmer Warren Robinett hid 'Created by Warren Robinett' in Atari's Adventure (1980) because Atari refused to credit game designers on cartridges.",
+      "tr": "Programcı Warren Robinett, Atari oyun kartuşlarında tasarımcıların adını yazmayı reddettiği için 1980 yapımı Adventure oyununa 'Warren Robinett Tarafından Oluşturuldu' yazısını gizlemiştir."
+    }
   },
   {
     "id": 7,
-    "question": "What animal is Tux, the famous official mascot of the Linux operating system?",
-    "options": [
-      "Penguin",
-      "Platypus",
-      "Badger",
-      "Gopher"
-    ],
+    "question": {
+      "en": "What animal is Tux, the famous official mascot of the Linux operating system?",
+      "tr": "Linux işletim sisteminin ünlü resmi maskotu Tux hangi hayvandır?"
+    },
+    "options": {
+      "en": [
+        "Penguin",
+        "Platypus",
+        "Badger",
+        "Gopher"
+      ],
+      "tr": [
+        "Penguen",
+        "Ornitenk",
+        "Porsuk",
+        "Sincap / Gopher"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "Tux the penguin was chosen by Linus Torvalds after he visited a zoo in Canberra and was famously pecked by a little penguin."
+    "explanation": {
+      "en": "Tux the penguin was chosen by Linus Torvalds after he visited a zoo in Canberra and was famously pecked by a little penguin.",
+      "tr": "Penguen Tux, Linus Torvalds'ın Canberra'daki bir hayvanat bahçesini ziyareti sırasında küçük bir penguen tarafından gagalanması sonrasında seçilmiştir."
+    }
   },
   {
     "id": 8,
-    "question": "What does the 'Turing Test' originally evaluate?",
-    "options": [
-      "How fast a computer can solve a mathematical puzzle",
-      "Whether a machine can exhibit intelligent behavior indistinguishable from a human",
-      "Whether a system can prove its own consistency without halting",
-      "The durability of silicon chips under electrical stress"
-    ],
+    "question": {
+      "en": "What does the 'Turing Test' originally evaluate?",
+      "tr": "'Turing Testi' orijinalinde neyi değerlendirir?"
+    },
+    "options": {
+      "en": [
+        "How fast a computer can solve a mathematical puzzle",
+        "Whether a machine can exhibit intelligent behavior indistinguishable from a human",
+        "Whether a system can prove its own consistency without halting",
+        "The durability of silicon chips under electrical stress"
+      ],
+      "tr": [
+        "Bir bilgisayarın matematiksel bir bulmacayı ne kadar hızlı çözebildiğini",
+        "Bir makinenin bir insandan ayırt edilemeyecek düzeyde zeki davranış sergileyip sergileyemediğini",
+        "Bir sistemin durma problemi olmadan kendi tutarlılığını kanıtlayıp kanıtlayamadığını",
+        "Silikon çiplerin elektriksel stres altındaki dayanıklılığını"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Proposed by Alan Turing in 1950 (the 'Imitation Game'), it checks whether an evaluator can reliably tell a machine from a human based on text responses."
+    "explanation": {
+      "en": "Proposed by Alan Turing in 1950 (the 'Imitation Game'), it checks whether an evaluator can reliably tell a machine from a human based on text responses.",
+      "tr": "1950 yılında Alan Turing tarafından önerilen bu test ('Taklit Oyunu'), bir değerlendiricinin metin tabanlı yanıtlar üzerinden bir makineyi insandan ayırt edip edemeyeceğini inceler."
+    }
   },
   {
     "id": 9,
-    "question": "What key sequence was invented by David Bradley to reboot an IBM PC without powering it off?",
-    "options": [
-      "Alt + F4",
-      "Ctrl + Alt + Delete",
-      "Cmd + Shift + Esc",
-      "Ctrl + Shift + R"
-    ],
+    "question": {
+      "en": "What key sequence was invented by David Bradley to reboot an IBM PC without powering it off?",
+      "tr": "David Bradley tarafından IBM PC'yi kapatmadan yeniden başlatmak için icat edilen tuş kombinasyonu hangisidir?"
+    },
+    "options": {
+      "en": [
+        "Alt + F4",
+        "Ctrl + Alt + Delete",
+        "Cmd + Shift + Esc",
+        "Ctrl + Shift + R"
+      ],
+      "tr": [
+        "Alt + F4",
+        "Ctrl + Alt + Delete",
+        "Cmd + Shift + Esc",
+        "Ctrl + Shift + R"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "David Bradley designed Ctrl+Alt+Del for PC developers to quickly restart locked systems without wearing out the mechanical power switch."
+    "explanation": {
+      "en": "David Bradley designed Ctrl+Alt+Del for PC developers to quickly restart locked systems without wearing out the mechanical power switch.",
+      "tr": "David Bradley, kilitlenen sistemleri mekanik güç anahtarını yıpratmadan hızlıca yeniden başlatabilmeleri için PC geliştiricilerine Ctrl+Alt+Del kombinasyonunu tasarlamıştır."
+    }
   },
   {
     "id": 10,
-    "question": "Which company originally created JavaScript in just 10 days in 1995?",
-    "options": [
-      "Microsoft",
-      "Sun Microsystems",
-      "Netscape",
-      "Apple"
-    ],
+    "question": {
+      "en": "Which company originally created JavaScript in just 10 days in 1995?",
+      "tr": "1995 yılında sadece 10 günde JavaScript'i geliştiren şirket hangisidir?"
+    },
+    "options": {
+      "en": [
+        "Microsoft",
+        "Sun Microsystems",
+        "Netscape",
+        "Apple"
+      ],
+      "tr": [
+        "Microsoft",
+        "Sun Microsystems",
+        "Netscape",
+        "Apple"
+      ]
+    },
     "correctIndex": 2,
-    "explanation": "Brendan Eich famously wrote the first prototype of JavaScript (under the name Mocha) in May 1995 while working for Netscape Communications."
+    "explanation": {
+      "en": "Brendan Eich famously wrote the first prototype of JavaScript (under the name Mocha) in May 1995 while working for Netscape Communications.",
+      "tr": "Brendan Eich, Netscape Communications bünyesinde çalışırken Mayıs 1995'te JavaScript'in ilk prototipini (Mocha adıyla) 10 günde yazmıştır."
+    }
   },
   {
     "id": 11,
-    "question": "What was the very first message transmitted over ARPANET (the predecessor to the Internet) in 1969?",
-    "options": [
-      "HELLO",
-      "LO",
-      "LOGIN",
-      "PING"
-    ],
+    "question": {
+      "en": "What was the very first message transmitted over ARPANET (the predecessor to the Internet) in 1969?",
+      "tr": "1969'da internetin öncüsü olan ARPANET üzerinden iletilen ilk mesaj neydi?"
+    },
+    "options": {
+      "en": [
+        "HELLO",
+        "LO",
+        "LOGIN",
+        "PING"
+      ],
+      "tr": [
+        "HELLO",
+        "LO",
+        "LOGIN",
+        "PING"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Researchers at UCLA typed 'L-O-G' to log into a Stanford computer, but the system crashed right after typing the 'O', making 'LO' the first message transmitted."
+    "explanation": {
+      "en": "Researchers at UCLA typed 'L-O-G' to log into a Stanford computer, but the system crashed right after typing the 'O', making 'LO' the first message transmitted.",
+      "tr": "UCLA'daki araştırmacılar Stanford'daki bir bilgisayara giriş yapmak için 'L-O-G' yazarken sistem 'O' harfinden sonra çökmüş, bu yüzden iletilen ilk mesaj 'LO' olmuştur."
+    }
   },
   {
     "id": 12,
-    "question": "In the famous 1999 movie 'The Matrix', what were the green falling characters actually made of?",
-    "options": [
-      "Japanese sushi recipe cookbook characters and numerals",
-      "Machine assembly language code from early Intel CPUs",
-      "Random mathematical symbols and Sanskrit script",
-      "Fragmented fragments of the Linux kernel source code"
-    ],
+    "question": {
+      "en": "In the famous 1999 movie 'The Matrix', what were the green falling characters actually made of?",
+      "tr": "Meşhur 1999 yapımı 'The Matrix' filminde yukarıdan dökülen yeşil kodlar aslında neyden oluşuyordu?"
+    },
+    "options": {
+      "en": [
+        "Japanese sushi recipe cookbook characters and numerals",
+        "Machine assembly language code from early Intel CPUs",
+        "Random mathematical symbols and Sanskrit script",
+        "Fragmented fragments of the Linux kernel source code"
+      ],
+      "tr": [
+        "Japon suşi yemek kitabı karakterleri ve rakamlardan",
+        "Erken dönem Intel işlemcilerin makine dili kodlarından",
+        "Rastgele matematiksel semboller ve Sanskritçe alfabesinden",
+        "Linux çekirdek kaynak kodunun parçalarından"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "Production designer Simon Whiteley scanned Japanese Katakana and Kanji characters directly from his wife's Japanese cookbooks to create the digital rain."
+    "explanation": {
+      "en": "Production designer Simon Whiteley scanned Japanese Katakana and Kanji characters directly from his wife's Japanese cookbooks to create the digital rain.",
+      "tr": "Yapım tasarımcısı Simon Whiteley, dijital yağmur efektini oluşturmak için eşinin Japonca yemek kitaplarındaki Katakana ve Kanji karakterlerini taramıştır."
+    }
   },
   {
     "id": 13,
-    "question": "What does 'CAPTCHA' stand for?",
-    "options": [
-      "Computer Automated Prompt to Confirm Human Activity",
-      "Completely Automated Public Turing test to tell Computers and Humans Apart",
-      "Centralized Automated Program for Tracking Computerized Hacker Attacks",
-      "Cryptographic Algorithm for Packet Testing and Cipher Handling"
-    ],
+    "question": {
+      "en": "What does 'CAPTCHA' stand for?",
+      "tr": "'CAPTCHA' neyin kısaltmasıdır?"
+    },
+    "options": {
+      "en": [
+        "Computer Automated Prompt to Confirm Human Activity",
+        "Completely Automated Public Turing test to tell Computers and Humans Apart",
+        "Centralized Automated Program for Tracking Computerized Hacker Attacks",
+        "Cryptographic Algorithm for Packet Testing and Cipher Handling"
+      ],
+      "tr": [
+        "Computer Automated Prompt to Confirm Human Activity",
+        "Completely Automated Public Turing test to tell Computers and Humans Apart",
+        "Centralized Automated Program for Tracking Computerized Hacker Attacks",
+        "Cryptographic Algorithm for Packet Testing and Cipher Handling"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "CAPTCHA stands for 'Completely Automated Public Turing test to tell Computers and Humans Apart', coined at Carnegie Mellon in 2003."
+    "explanation": {
+      "en": "CAPTCHA stands for 'Completely Automated Public Turing test to tell Computers and Humans Apart', coined at Carnegie Mellon in 2003.",
+      "tr": "CAPTCHA, 'Bilgisayarlar ile İnsanları Ayırt Etmeye Yönelik Tam Otomatik Genel Turing Testi' anlamına gelir ve 2003 yılında Carnegie Mellon'da türetilmiştir."
+    }
   },
   {
     "id": 14,
-    "question": "What is the primary reason why incandescent lava lamps are used by Cloudflare in San Francisco?",
-    "options": [
-      "Retro interior aesthetic for tech office tours",
-      "To generate unpredictable random noise for cryptographic keys",
-      "To keep ambient room temperature calibrated for network racks",
-      "To test optical color sensor fidelity"
-    ],
+    "question": {
+      "en": "What is the primary reason why incandescent lava lamps are used by Cloudflare in San Francisco?",
+      "tr": "Cloudflare'in San Francisco ofisinde lav lambaları kullanmasının temel nedeni nedir?"
+    },
+    "options": {
+      "en": [
+        "Retro interior aesthetic for tech office tours",
+        "To generate unpredictable random noise for cryptographic keys",
+        "To keep ambient room temperature calibrated for network racks",
+        "To test optical color sensor fidelity"
+      ],
+      "tr": [
+        "Teknoloji ofisi turları için retro iç mekan estetiği oluşturmak",
+        "Kriptografik anahtarlar için tahmin edilemez rastgele gürültü (entropi) üretmek",
+        "Ağ kabinleri için ortam oda sıcaklığını dengede tutmak",
+        "Optik renk sensörlerinin doğruluğunu test etmek"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Cloudflare points a video camera at a wall of 100 lava lamps; the chaotic movement of floating wax creates physical entropy for high-security encryption."
+    "explanation": {
+      "en": "Cloudflare points a video camera at a wall of 100 lava lamps; the chaotic movement of floating wax creates physical entropy for high-security encryption.",
+      "tr": "Cloudflare, 100 adet lav lambasının bulunduğu duvara bir kamera yönlendirir; eriyen mumun kaotik hareketi, yüksek güvenlikli şifreleme için fiziksel entropi sağlar."
+    }
   },
   {
     "id": 15,
-    "question": "Who is widely celebrated as the world's first computer programmer for writing an algorithm for the Analytical Engine?",
-    "options": [
-      "Alan Turing",
-      "Ada Lovelace",
-      "Charles Babbage",
-      "Katherine Johnson"
-    ],
+    "question": {
+      "en": "Who is widely celebrated as the world's first computer programmer for writing an algorithm for the Analytical Engine?",
+      "tr": "Fark Motoru / Analitik Motor için bir algoritma yazarak dünyanın ilk bilgisayar programcısı olarak kabul edilen kişi kimdir?"
+    },
+    "options": {
+      "en": [
+        "Alan Turing",
+        "Ada Lovelace",
+        "Charles Babbage",
+        "Katherine Johnson"
+      ],
+      "tr": [
+        "Alan Turing",
+        "Ada Lovelace",
+        "Charles Babbage",
+        "Katherine Johnson"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Ada Lovelace published the first algorithm intended to be executed by Charles Babbage's mechanical general-purpose computer in 1843."
+    "explanation": {
+      "en": "Ada Lovelace published the first algorithm intended to be executed by Charles Babbage's mechanical general-purpose computer in 1843.",
+      "tr": "Ada Lovelace, 1843 yılında Charles Babbage'ın mekanik bilgisayarı tarafından çalıştırılması amaçlanan ilk algoritmayı yayımlamıştır."
+    }
   },
   {
     "id": 16,
-    "question": "What is the origin of the term 'spam' for unwanted junk emails?",
-    "options": [
-      "A Monty Python sketch where diners can't escape chanting 'Spam'",
-      "An acronym for 'Simultaneous Promotional Advertising Mail'",
-      "A trademark dispute involving canned meat in 1991",
-      "A nickname given to early Usenet mass-posters from the Midwest"
-    ],
+    "question": {
+      "en": "What is the origin of the term 'spam' for unwanted junk emails?",
+      "tr": "İstenmeyen e-postalar için kullanılan 'spam' teriminin kökeni nedir?"
+    },
+    "options": {
+      "en": [
+        "A Monty Python sketch where diners can't escape chanting 'Spam'",
+        "An acronym for 'Simultaneous Promotional Advertising Mail'",
+        "A trademark dispute involving canned meat in 1991",
+        "A nickname given to early Usenet mass-posters from the Midwest"
+      ],
+      "tr": [
+        "Müşterilerin durmaksızın 'Spam' diye bağırdığı bir Monty Python skeci",
+        "'Simultaneous Promotional Advertising Mail' ifadesinin kısaltması",
+        "1991'deki konserve et markasıyla ilgili bir ticari dava",
+        "Erken dönem Usenet toplu mesaj göndericilerine takılan bir lakap"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "In Monty Python's diner sketch, customers repeat the word 'Spam' so relentlessly that no other conversation can be heard—early internet users applied it to unwanted repeated posts."
+    "explanation": {
+      "en": "In Monty Python's diner sketch, customers repeat the word 'Spam' so relentlessly that no other conversation can be heard—early internet users applied it to unwanted repeated posts.",
+      "tr": "Monty Python skecinde müşteriler 'Spam' kelimesini o kadar çok tekrarlar ki başka hiçbir konuşma duyulamaz; ilk internet kullanıcıları bu durumu istenmeyen tekrarlayan iletilere uyarlamıştır."
+    }
   },
   {
     "id": 17,
-    "question": "Which game famously had its entire 3D infinite sandbox world originally written by one person (Markus Persson / Notch)?",
-    "options": [
-      "Terraria",
-      "Minecraft",
-      "Roblox",
-      "No Man's Sky"
-    ],
+    "question": {
+      "en": "Which game famously had its entire 3D infinite sandbox world originally written by one person (Markus Persson / Notch)?",
+      "tr": "Tüm 3D sonsuz kum havuzu dünyası başlangıçta tek bir kişi (Markus Persson / Notch) tarafından yazılan ünlü oyun hangisidir?"
+    },
+    "options": {
+      "en": [
+        "Terraria",
+        "Minecraft",
+        "Roblox",
+        "No Man's Sky"
+      ],
+      "tr": [
+        "Terraria",
+        "Minecraft",
+        "Roblox",
+        "No Man's Sky"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Swedish developer Markus Persson built the early alpha versions of Minecraft in Java as an indie project over a long weekend in May 2009."
+    "explanation": {
+      "en": "Swedish developer Markus Persson built the early alpha versions of Minecraft in Java as an indie project over a long weekend in May 2009.",
+      "tr": "İsveçli geliştirici Markus Persson, Minecraft'ın erken alfa sürümlerini Mayıs 2009'da Java ile bağımsız bir proje olarak geliştirmiştir."
+    }
   },
   {
     "id": 18,
-    "question": "What is a 'Trojan Horse' in computer security?",
-    "options": [
-      "Malware disguised as legitimate or harmless software",
-      "A physical USB drop attack left in parking lots",
-      "A distributed denial of service attack from smart fridges",
-      "A password guessing bot scanning common wordlists"
-    ],
+    "question": {
+      "en": "What is a 'Trojan Horse' in computer security?",
+      "tr": "Bilgisayar güvenliğinde 'Truva Atı' (Trojan Horse) nedir?"
+    },
+    "options": {
+      "en": [
+        "Malware disguised as legitimate or harmless software",
+        "A physical USB drop attack left in parking lots",
+        "A distributed denial of service attack from smart fridges",
+        "A password guessing bot scanning common wordlists"
+      ],
+      "tr": [
+        "Meşru veya zararsız bir yazılım gibi gizlenen kötü amaçlı yazılım",
+        "Otoparklara bırakılan fiziksel USB saldırısı",
+        "Akıllı buzdolapları üzerinden yapılan dağıtık hizmet engelleme saldırısı (DDoS)",
+        "Yaygın kelime listelerini tarayan şifre tahmin botu"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "Borrowing from Greek mythology, Trojan malware tricks users into downloading and installing it by masquerading as a benign application or game."
+    "explanation": {
+      "en": "Borrowing from Greek mythology, Trojan malware tricks users into downloading and installing it by masquerading as a benign application or game.",
+      "tr": "Adını Yunan mitolojisinden alan Truva atı yazılımları, zararsız bir uygulama veya oyun kılığına girerek kullanıcıları kendisini indirmeye ikna eder."
+    }
   },
   {
     "id": 19,
-    "question": "Which key on a standard QWERTY keyboard is deliberately marked with small physical bumps or ridges for touch typing?",
-    "options": [
-      "C and M",
-      "F and J",
-      "A and L",
-      "G and H"
-    ],
+    "question": {
+      "en": "Which key on a standard QWERTY keyboard is deliberately marked with small physical bumps or ridges for touch typing?",
+      "tr": "Standart bir QWERTY klavyede, on parmak yazımı kolaylaştırmak için üzerinde küçük kabartma çıkıntılar bulunan tuşlar hangileridir?"
+    },
+    "options": {
+      "en": [
+        "C and M",
+        "F and J",
+        "A and L",
+        "G and H"
+      ],
+      "tr": [
+        "C ve M",
+        "F ve J",
+        "A ve L",
+        "G ve H"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "The 'F' and 'J' keys have tactile ridges so touch-typists can position their index fingers on the home row without glancing down."
+    "explanation": {
+      "en": "The 'F' and 'J' keys have tactile ridges so touch-typists can position their index fingers on the home row without glancing down.",
+      "tr": "'F' ve 'J' tuşlarında dokunsal çıkıntılar bulunur, böylece klavyeye bakmadan işaret parmakları ana sıraya kolayca yerleştirilebilir."
+    }
   },
   {
     "id": 20,
-    "question": "What does open-source software mean?",
-    "options": [
-      "The program is free of charge forever with no license restrictions",
-      "Anyone can inspect, modify, and enhance the underlying source code",
-      "The software can only be run on Linux machines",
-      "The developer accepts zero liability for any security breaches"
-    ],
+    "question": {
+      "en": "What does open-source software mean?",
+      "tr": "Açık kaynaklı (open-source) yazılım ne anlama gelir?"
+    },
+    "options": {
+      "en": [
+        "The program is free of charge forever with no license restrictions",
+        "Anyone can inspect, modify, and enhance the underlying source code",
+        "The software can only be run on Linux machines",
+        "The developer accepts zero liability for any security breaches"
+      ],
+      "tr": [
+        "Programın hiçbir lisans kısıtlaması olmaksızın sonsuza kadar ücretsiz olması",
+        "Temel kaynak kodun herkes tarafından incelenebilmesi, değiştirilebilmesi ve geliştirilebilmesi",
+        "Yazılımın yalnızca Linux makinelerde çalıştırılabilmesi",
+        "Geliştiricinin güvenlik ihlalleri için hiçbir sorumluluk kabul etmemesi"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Open-source software provides access to its source code under a license that allows anyone to inspect, modify, and redistribute it."
+    "explanation": {
+      "en": "Open-source software provides access to its source code under a license that allows anyone to inspect, modify, and redistribute it.",
+      "tr": "Açık kaynaklı yazılım, herkesin kodu incelemesine, değiştirmesine ve yeniden dağıtmasına izin veren bir lisans altında kaynak koduna erişim sunar."
+    }
   },
   {
     "id": 21,
-    "question": "Why did early floppy disks have a physical sliding tab or notch on the edge?",
-    "options": [
-      "To toggle write-protection so files couldn't be accidentally deleted",
-      "To accelerate drive read spin speeds",
-      "To release trapped dust from the magnetic diskette inside",
-      "To switch between Apple Macintosh and IBM PC file modes"
-    ],
+    "question": {
+      "en": "Why did early floppy disks have a physical sliding tab or notch on the edge?",
+      "tr": "Eski disketlerin kenarında neden fiziksel bir kayar tırnak veya çentik bulunurdu?"
+    },
+    "options": {
+      "en": [
+        "To toggle write-protection so files couldn't be accidentally deleted",
+        "To accelerate drive read spin speeds",
+        "To release trapped dust from the magnetic diskette inside",
+        "To switch between Apple Macintosh and IBM PC file modes"
+      ],
+      "tr": [
+        "Dosyaların yanlışlıkla silinmesini engellemek için yazma korumasını açıp kapatmak amacıyla",
+        "Sürücünün okuma dönüş hızını artırmak amacıyla",
+        "İçerideki manyetik diskte biriken tozu tahliye etmek amacıyla",
+        "Apple Macintosh ve IBM PC dosya modları arasında geçiş yapmak amacıyla"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "Sliding the plastic tab open prevented the drive's read/write head from writing to or erasing the disk."
+    "explanation": {
+      "en": "Sliding the plastic tab open prevented the drive's read/write head from writing to or erasing the disk.",
+      "tr": "Plastik tırnağı açık konuma getirmek, sürücünün okuma/yazma kafasının diske veri yazmasını veya verileri silmesini engellerdi."
+    }
   },
   {
     "id": 22,
-    "question": "What popular handheld device introduced the world to the 'Slide to Unlock' gesture in 2007?",
-    "options": [
-      "Original iPhone",
-      "BlackBerry Bold",
-      "HTC Dream",
-      "Palm Pre"
-    ],
+    "question": {
+      "en": "What popular handheld device introduced the world to the 'Slide to Unlock' gesture in 2007?",
+      "tr": "2007 yılında 'Kilidi Açmak İçin Kaydırın' (Slide to Unlock) hareketini dünyaya tanıtan popüler cihaz hangisidir?"
+    },
+    "options": {
+      "en": [
+        "Original iPhone",
+        "BlackBerry Bold",
+        "HTC Dream",
+        "Palm Pre"
+      ],
+      "tr": [
+        "Orijinal iPhone",
+        "BlackBerry Bold",
+        "HTC Dream",
+        "Palm Pre"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "Steve Jobs introduced 'Slide to Unlock' on the original iPhone in 2007 to prevent unintentional pocket dialing on a capacitive multi-touch screen."
+    "explanation": {
+      "en": "Steve Jobs introduced 'Slide to Unlock' on the original iPhone in 2007 to prevent unintentional pocket dialing on a capacitive multi-touch screen.",
+      "tr": "Steve Jobs, 2007'de dokunmatik ekranda cepteyken yanlışlıkla arama yapılmasını önlemek için 'Kilidi Açmak İçin Kaydırın' özelliğini tanıtmıştır."
+    }
   },
   {
     "id": 23,
-    "question": "In internet slang, what does 'TL;DR' stand for?",
-    "options": [
-      "Too Long; Didn't Read",
-      "Total Loss; Data Reset",
-      "Technical Logic; Do Retry",
-      "Text Line; Delete Record"
-    ],
+    "question": {
+      "en": "In internet slang, what does 'TL;DR' stand for?",
+      "tr": "İnternet jargonunda 'TL;DR' ne anlama gelir?"
+    },
+    "options": {
+      "en": [
+        "Too Long; Didn't Read",
+        "Total Loss; Data Reset",
+        "Technical Logic; Do Retry",
+        "Text Line; Delete Record"
+      ],
+      "tr": [
+        "Too Long; Didn't Read (Çok Uzundu; Okumadım)",
+        "Total Loss; Data Reset",
+        "Technical Logic; Do Retry",
+        "Text Line; Delete Record"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "'TL;DR' is commonly written before a brief summary of a lengthy article or forum post."
+    "explanation": {
+      "en": "'TL;DR' is commonly written before a brief summary of a lengthy article or forum post.",
+      "tr": "'TL;DR', uzun bir makale veya forum gönderisinin kısa özetinden önce sıklıkla kullanılır."
+    }
   },
   {
     "id": 24,
-    "question": "Which of these everyday devices has enough computing power today to dwarf the Apollo 11 moon guidance computer?",
-    "options": [
-      "A modern smartphone charger block",
-      "A standard electronic musical greeting card",
-      "A simple graphing calculator",
-      "All of the above"
-    ],
+    "question": {
+      "en": "Which of these everyday devices has enough computing power today to dwarf the Apollo 11 moon guidance computer?",
+      "tr": "Günümüzdeki bu cihazlardan hangisi Apollo 11 Ay iniş bilgisayarından çok daha fazla işlem gücüne sahiptir?"
+    },
+    "options": {
+      "en": [
+        "A modern smartphone charger block",
+        "A standard electronic musical greeting card",
+        "A simple graphing calculator",
+        "All of the above"
+      ],
+      "tr": [
+        "Modern bir akıllı telefon şarj adaptörü",
+        "Standart bir elektronik müzikli tebrik kartı",
+        "Basit bir grafik hesap makinesi",
+        "Yukarıdakilerin hepsi"
+      ]
+    },
     "correctIndex": 3,
-    "explanation": "The Apollo Guidance Computer had just 4KB of RAM and ran at 1.024 MHz—even digital greeting cards and USB-C smart charging controllers surpass its specs."
+    "explanation": {
+      "en": "The Apollo Guidance Computer had just 4KB of RAM and ran at 1.024 MHz—even digital greeting cards and USB-C smart charging controllers surpass its specs.",
+      "tr": "Apollo Rehberlik Bilgisayarı sadece 4KB RAM'e sahipti ve 1.024 MHz hızında çalışıyordu; günümüzdeki müzikli kartlar ve akıllı şarj kontrolcüleri bile bu donanımı katbekat geride bırakır."
+    }
   },
   {
     "id": 25,
-    "question": "What does the 'S' in 'HTTPS' stand for?",
-    "options": [
-      "Speed",
-      "Secure",
-      "Standard",
-      "Socket"
-    ],
+    "question": {
+      "en": "What does the 'S' in 'HTTPS' stand for?",
+      "tr": "'HTTPS' protokolündeki 'S' harfi neyi ifade eder?"
+    },
+    "options": {
+      "en": [
+        "Speed",
+        "Secure",
+        "Standard",
+        "Socket"
+      ],
+      "tr": [
+        "Speed",
+        "Secure (Güvenli)",
+        "Standard",
+        "Socket"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Hypertext Transfer Protocol Secure (HTTPS) encrypts communication between the web browser and the server using TLS/SSL."
+    "explanation": {
+      "en": "Hypertext Transfer Protocol Secure (HTTPS) encrypts communication between the web browser and the server using TLS/SSL.",
+      "tr": "Hypertext Transfer Protocol Secure (HTTPS), TLS/SSL kullanarak web tarayıcısı ile sunucu arasındaki iletişimi şifreler."
+    }
   },
   {
     "id": 26,
-    "question": "What is the purpose of the 'Rubber Duck Debugging' technique used by software developers?",
-    "options": [
-      "Testing if electronic components are waterproof",
-      "Explaining code line-by-line out loud to an inanimate object to spot mistakes",
-      "Using machine learning models to highlight syntax errors",
-      "A stress-relief toy during competitive hackathons"
-    ],
+    "question": {
+      "en": "What is the purpose of the 'Rubber Duck Debugging' technique used by software developers?",
+      "tr": "Yazılımcıların kullandığı 'Plastik Ördek Hata Ayıklama' (Rubber Duck Debugging) tekniğinin amacı nedir?"
+    },
+    "options": {
+      "en": [
+        "Testing if electronic components are waterproof",
+        "Explaining code line-by-line out loud to an inanimate object to spot mistakes",
+        "Using machine learning models to highlight syntax errors",
+        "A stress-relief toy during competitive hackathons"
+      ],
+      "tr": [
+        "Elektronik bileşenlerin su geçirmezliğini test etmek",
+        "Hataları fark etmek için kodu cansız bir nesneye sesli olarak satır satır anlatmak",
+        "Sözdizimi hatalarını yakalamak için makine öğrenimi modelleri kullanmak",
+        "Hackathon yarışmaları sırasında stresi azaltmak için kullanılan bir oyuncak olmak"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "By verbally explaining code line-by-line to a rubber duck on your desk, your brain naturally re-evaluates assumptions and spots the bug."
+    "explanation": {
+      "en": "By verbally explaining code line-by-line to a rubber duck on your desk, your brain naturally re-evaluates assumptions and spots the bug.",
+      "tr": "Masadaki plastik bir ördeğe kodu adım adım sesli olarak anlattığınızda, beyniniz varsayımları yeniden sorgular ve hatayı doğal yolla fark eder."
+    }
   },
   {
     "id": 27,
-    "question": "What was the first music video ever uploaded to YouTube in 2005?",
-    "options": [
-      "Gangnam Style",
-      "Never Gonna Give You Up",
-      "Me at the zoo",
-      "Crazy Frog"
-    ],
+    "question": {
+      "en": "What was the first music video ever uploaded to YouTube in 2005?",
+      "tr": "2005 yılında YouTube'a yüklenen ilk video hangisidir?"
+    },
+    "options": {
+      "en": [
+        "Gangnam Style",
+        "Never Gonna Give You Up",
+        "Me at the zoo",
+        "Crazy Frog"
+      ],
+      "tr": [
+        "Gangnam Style",
+        "Never Gonna Give You Up",
+        "Me at the zoo",
+        "Crazy Frog"
+      ]
+    },
     "correctIndex": 2,
-    "explanation": "'Me at the zoo', recorded by co-founder Jawed Karim at the San Diego Zoo, was the first video uploaded to YouTube on April 23, 2005."
+    "explanation": {
+      "en": "'Me at the zoo', recorded by co-founder Jawed Karim at the San Diego Zoo, was the first video uploaded to YouTube on April 23, 2005.",
+      "tr": "YouTube kurucu ortaklarından Jawed Karim'in San Diego Hayvanat Bahçesi'nde kaydettiği 'Me at the zoo', 23 Nisan 2005'te yüklenen ilk videodur."
+    }
   },
   {
     "id": 28,
-    "question": "What does a VPN (Virtual Private Network) do for an average internet user?",
-    "options": [
-      "Triples your download internet speed automatically",
-      "Encrypts your internet traffic and routes it through an intermediary server",
-      "Deletes all cookies and browsing history from server databases",
-      "Blocks every hacker attempt with 100% certainty"
-    ],
+    "question": {
+      "en": "What does a VPN (Virtual Private Network) do for an average internet user?",
+      "tr": "Bir VPN (Sanal Özel Ağ) standart bir kullanıcı için temel olarak ne işe yarar?"
+    },
+    "options": {
+      "en": [
+        "Triples your download internet speed automatically",
+        "Encrypts your internet traffic and routes it through an intermediary server",
+        "Deletes all cookies and browsing history from server databases",
+        "Blocks every hacker attempt with 100% certainty"
+      ],
+      "tr": [
+        "İnternet indirme hızınızı otomatik olarak üç katına çıkarır",
+        "İnternet trafiğinizi şifreler ve bir aracı sunucu üzerinden yönlendirir",
+        "Tüm çerezleri ve geçmişi sunucu veritabanlarından siler",
+        "Tüm bilgisayar korsanı girişimlerini %100 kesinlikle engeller"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "A VPN wraps internet traffic in an encrypted tunnel and masks your real IP address by routing data through a remote server."
+    "explanation": {
+      "en": "A VPN wraps internet traffic in an encrypted tunnel and masks your real IP address by routing data through a remote server.",
+      "tr": "VPN, internet trafiğinizi şifreli bir tünelle sarar ve verileri uzak bir sunucu üzerinden yönlendirerek gerçek IP adresinizi gizler."
+    }
   },
   {
     "id": 29,
-    "question": "Which video game holds the Guinness World Record for the best-selling standalone video game of all time?",
-    "options": [
-      "Grand Theft Auto V",
-      "Minecraft",
-      "Tetris",
-      "Wii Sports"
-    ],
+    "question": {
+      "en": "Which video game holds the Guinness World Record for the best-selling standalone video game of all time?",
+      "tr": "Tüm zamanların en çok satan tekil video oyunu olarak Guinness Dünya Rekoru'nu elinde tutan yapım hangisidir?"
+    },
+    "options": {
+      "en": [
+        "Grand Theft Auto V",
+        "Minecraft",
+        "Tetris",
+        "Wii Sports"
+      ],
+      "tr": [
+        "Grand Theft Auto V",
+        "Minecraft",
+        "Tetris",
+        "Wii Sports"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Minecraft has sold over 300 million copies across platforms, making it the best-selling video game in history."
+    "explanation": {
+      "en": "Minecraft has sold over 300 million copies across platforms, making it the best-selling video game in history.",
+      "tr": "Minecraft platformlar genelinde 300 milyondan fazla kopya satarak tarihin en çok satan video oyunu olmuştur."
+    }
   },
   {
     "id": 30,
-    "question": "What is phishing?",
-    "options": [
-      "Overclocking your GPU until the fans produce a humming sound",
-      "Deceptive emails or messages mimicking trusted entities to steal credentials",
-      "Scanning open Wi-Fi networks in coffee shops for unencrypted photos",
-      "Scraping public social media accounts for training AI chatbots"
-    ],
+    "question": {
+      "en": "What is phishing?",
+      "tr": "Oltalama (Phishing) nedir?"
+    },
+    "options": {
+      "en": [
+        "Overclocking your GPU until the fans produce a humming sound",
+        "Deceptive emails or messages mimicking trusted entities to steal credentials",
+        "Scanning open Wi-Fi networks in coffee shops for unencrypted photos",
+        "Scraping public social media accounts for training AI chatbots"
+      ],
+      "tr": [
+        "Ekran kartını fanlar ses çıkarana kadar hız aşırtmaya (overclock) tabi tutmak",
+        "Giriş bilgilerini çalmak için güvenilir kurumları taklit eden yanıltıcı e-posta veya iletiler göndermek",
+        "Kafelerdeki açık Wi-Fi ağlarını şifrelenmemiş fotoğraflar için taramak",
+        "Yapay zeka modellerini eğitmek için herkese açık sosyal medya hesaplarını kazımak"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Phishing is a social engineering attack where malicious actors impersonate legitimate institutions (banks, services) to trick people into revealing sensitive data."
+    "explanation": {
+      "en": "Phishing is a social engineering attack where malicious actors impersonate legitimate institutions (banks, services) to trick people into revealing sensitive data.",
+      "tr": "Oltalama, saldırganların insanları hassas bilgileri paylaşmaya ikna etmek için meşru kurumları (bankalar, servisler) taklit ettiği bir sosyal mühendislik yöntemidir."
+    }
   },
   {
     "id": 31,
-    "question": "Which giant company had the famous early corporate motto 'Don't be evil'?",
-    "options": [
-      "Microsoft",
-      "Google",
-      "Amazon",
-      "Meta"
-    ],
+    "question": {
+      "en": "Which giant company had the famous early corporate motto 'Don't be evil'?",
+      "tr": "'Kötü olma' (Don't be evil) mottosunu erken dönem şirket ilkesi olarak benimseyen dev teknoloji şirketi hangisidir?"
+    },
+    "options": {
+      "en": [
+        "Microsoft",
+        "Google",
+        "Amazon",
+        "Meta"
+      ],
+      "tr": [
+        "Microsoft",
+        "Google",
+        "Amazon",
+        "Meta"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Google founders adopted 'Don't be evil' in their corporate code of conduct in 2000, later adjusted to 'Do the right thing' under Alphabet."
+    "explanation": {
+      "en": "Google founders adopted 'Don't be evil' in their corporate code of conduct in 2000, later adjusted to 'Do the right thing' under Alphabet.",
+      "tr": "Google kurucuları 2000 yılında 'Don't be evil' ilkesini kabul etmiş, bu ilke Alphabet çatısı altında daha sonra 'Do the right thing' olarak güncellenmiştir."
+    }
   },
   {
     "id": 32,
-    "question": "What does the 'Cloud' actually mean when companies say your data is 'stored in the cloud'?",
-    "options": [
-      "Data is broadcast across satellite microwave frequencies",
-      "Data is stored on physical computers/servers owned by someone else in data centers",
-      "Files are fragmented into microscopic radio waves in the atmosphere",
-      "Data is saved on your device's motherboard ROM chips"
-    ],
+    "question": {
+      "en": "What does the 'Cloud' actually mean when companies say your data is 'stored in the cloud'?",
+      "tr": "Şirketler verilerinizin 'bulutta saklandığını' söylediğinde 'Bulut' (Cloud) gerçekte ne anlama gelir?"
+    },
+    "options": {
+      "en": [
+        "Data is broadcast across satellite microwave frequencies",
+        "Data is stored on physical computers/servers owned by someone else in data centers",
+        "Files are fragmented into microscopic radio waves in the atmosphere",
+        "Data is saved on your device's motherboard ROM chips"
+      ],
+      "tr": [
+        "Verilerin uydu mikrodalga frekansları üzerinden yayınlanması",
+        "Verilerin veri merkezlerinde başkasına ait fiziksel bilgisayarlarda/sunucularda saklanması",
+        "Dosyaların atmosferdeki mikroskobik radyo dalgalarına bölünmesi",
+        "Verilerin cihazınızın anakartındaki ROM çiplerine kaydedilmesi"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "As the common programmer joke goes: 'There is no cloud, it's just someone else's computer in a climate-controlled warehouse.'"
+    "explanation": {
+      "en": "As the common programmer joke goes: 'There is no cloud, it's just someone else's computer in a climate-controlled warehouse.'",
+      "tr": "Yaygın yazılımcı esprisinin de dediği gibi: 'Bulut diye bir şey yoktur, o sadece başka birinin iklimlendirmeli bir depodaki bilgisayarıdır.'"
+    }
   },
   {
     "id": 33,
-    "question": "What was the very first commercial product to be scanned with a modern barcode at a supermarket checkout?",
-    "options": [
-      "A pack of Wrigley's Juicy Fruit chewing gum",
-      "A bottle of Coca-Cola",
-      "A box of Kellogg's Corn Flakes",
-      "A can of Campbell's Tomato Soup"
-    ],
+    "question": {
+      "en": "What was the very first commercial product to be scanned with a modern barcode at a supermarket checkout?",
+      "tr": "Süpermarket kasasında modern bir barkodla taranan ilk ticari ürün neydi?"
+    },
+    "options": {
+      "en": [
+        "A pack of Wrigley's Juicy Fruit chewing gum",
+        "A bottle of Coca-Cola",
+        "A box of Kellogg's Corn Flakes",
+        "A can of Campbell's Tomato Soup"
+      ],
+      "tr": [
+        "Bir paket Wrigley's Juicy Fruit sakızı",
+        "Bir şişe Coca-Cola",
+        "Bir kutu Kellogg's mısır gevreği",
+        "Bir kutu Campbell's domates çorbası"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "On June 26, 1974, a cashier in Troy, Ohio scanned a 10-pack of Wrigley's Juicy Fruit gum using the first commercial UPC barcode scanner."
+    "explanation": {
+      "en": "On June 26, 1974, a cashier in Troy, Ohio scanned a 10-pack of Wrigley's Juicy Fruit gum using the first commercial UPC barcode scanner.",
+      "tr": "26 Haziran 1974'te Ohio'da bir kasiyer, ilk ticari UPC barkod tarayıcısını kullanarak 10'lu bir Wrigley's Juicy Fruit sakız paketini okutmuştur."
+    }
   },
   {
     "id": 34,
-    "question": "What does AI 'hallucination' refer to in large language models like ChatGPT?",
-    "options": [
-      "The model producing psychedelic graphics and pixel noise",
-      "The model generating confident but factually incorrect or fabricated answers",
-      "The computer overheating and shutting down due to graphics load",
-      "The chatbot refusing to answer ethical or dangerous prompts"
-    ],
+    "question": {
+      "en": "What does AI 'hallucination' refer to in large language models like ChatGPT?",
+      "tr": "ChatGPT gibi büyük dil modellerinde yapay zeka 'halüsinasyonu' neyi ifade eder?"
+    },
+    "options": {
+      "en": [
+        "The model producing psychedelic graphics and pixel noise",
+        "The model generating confident but factually incorrect or fabricated answers",
+        "The computer overheating and shutting down due to graphics load",
+        "The chatbot refusing to answer ethical or dangerous prompts"
+      ],
+      "tr": [
+        "Modelin psikedelik grafikler ve piksel parazitleri üretmesini",
+        "Modelin kendinden emin bir dille ancak gerçeğe aykırı veya uydurma yanıtlar üretmesini",
+        "Grafik yükü nedeniyle bilgisayarın aşırı ısınıp kapanmasını",
+        "Sohbet botunun etik veya tehlikeli soruları yanıtlamayı reddetmesini"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Hallucination happens when an AI model strings together plausible-sounding sentences that have no factual grounding in its training data."
+    "explanation": {
+      "en": "Hallucination happens when an AI model strings together plausible-sounding sentences that have no factual grounding in its training data.",
+      "tr": "Halüsinasyon, yapay zeka modelinin kulağa mantıklı gelen ancak eğitim verilerinde hiçbir gerçek dayanağı olmayan cümleler kurması durumudur."
+    }
   },
   {
     "id": 35,
-    "question": "What happens when you open an 'Incognito' or 'Private Browsing' window in your browser?",
-    "options": [
-      "You become completely invisible to your internet service provider and school network",
-      "Your browser doesn't save your history, cookies, or form data locally after closing the tab",
-      "Your IP address is hidden from the websites you visit",
-      "All online advertisements and video popups are permanently disabled"
-    ],
+    "question": {
+      "en": "What happens when you open an 'Incognito' or 'Private Browsing' window in your browser?",
+      "tr": "Tarayıcınızda bir 'Gizli Sekme' açtığınızda gerçekte ne olur?"
+    },
+    "options": {
+      "en": [
+        "You become completely invisible to your internet service provider and school network",
+        "Your browser doesn't save your history, cookies, or form data locally after closing the tab",
+        "Your IP address is hidden from the websites you visit",
+        "All online advertisements and video popups are permanently disabled"
+      ],
+      "tr": [
+        "İnternet servis sağlayıcınız ve okul ağınız için tamamen görünmez olursunuz",
+        "Sekmeyi kapattıktan sonra tarayıcınız geçmişinizi, çerezlerinizi ve form verilerinizi yerel olarak kaydetmez",
+        "IP adresiniz ziyaret ettiğiniz web sitelerinden gizlenir",
+        "Tüm çevrimiçi reklamlar ve video pencereleri kalıcı olarak devre dışı bırakılır"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Incognito mode only prevents local session data (history, cookies, form autofills) from remaining on your device; websites and network admins can still observe traffic."
+    "explanation": {
+      "en": "Incognito mode only prevents local session data (history, cookies, form autofills) from remaining on your device; websites and network admins can still observe traffic.",
+      "tr": "Gizli mod yalnızca yerel oturum verilerinin cihazınızda saklanmasını önler; web siteleri ve ağ yöneticileri trafiğinizi görmeye devam edebilir."
+    }
   },
   {
     "id": 36,
-    "question": "What is the world's most widely used mobile operating system by global market share?",
-    "options": [
-      "iOS",
-      "Android",
-      "HarmonyOS",
-      "KaiOS"
-    ],
+    "question": {
+      "en": "What is the world's most widely used mobile operating system by global market share?",
+      "tr": "Küresel pazar payına göre dünyanın en çok kullanılan mobil işletim sistemi hangisidir?"
+    },
+    "options": {
+      "en": [
+        "iOS",
+        "Android",
+        "HarmonyOS",
+        "KaiOS"
+      ],
+      "tr": [
+        "iOS",
+        "Android",
+        "HarmonyOS",
+        "KaiOS"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Android powers over 70% of smartphones worldwide due to its open availability across multiple hardware manufacturers."
+    "explanation": {
+      "en": "Android powers over 70% of smartphones worldwide due to its open availability across multiple hardware manufacturers.",
+      "tr": "Android, birden fazla donanım üreticisine açık olması sayesinde dünya çapındaki akıllı telefonların %70'inden fazlasına güç vermektedir."
+    }
   },
   {
     "id": 37,
-    "question": "What is a 'Zero-Day' vulnerability in cybersecurity?",
-    "options": [
-      "A security flaw known to attackers before the developer has released a patch or fix",
-      "A bug that only occurs on the first day of a calendar year",
-      "An attack that wipes out all data on a target system within 24 hours",
-      "A virus that fails to execute because its certificate expired"
-    ],
+    "question": {
+      "en": "What is a 'Zero-Day' vulnerability in cybersecurity?",
+      "tr": "Siber güvenlikte 'Sıfır Gün' (Zero-Day) zafiyeti nedir?"
+    },
+    "options": {
+      "en": [
+        "A security flaw known to attackers before the developer has released a patch or fix",
+        "A bug that only occurs on the first day of a calendar year",
+        "An attack that wipes out all data on a target system within 24 hours",
+        "A virus that fails to execute because its certificate expired"
+      ],
+      "tr": [
+        "Geliştirici bir yama veya düzeltme yayınlamadan önce saldırganlar tarafından bilinen güvenlik açığı",
+        "Yalnızca bir takvim yılının ilk gününde meydana gelen bir hata",
+        "Hedef sistemdeki tüm verileri 24 saat içinde silen bir saldırı",
+        "Sertifikasının süresi dolduğu için çalışmayan bir virüs"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "A Zero-Day flaw is named because developers have had 'zero days' to patch it once exposed or actively exploited in the wild."
+    "explanation": {
+      "en": "A Zero-Day flaw is named because developers have had 'zero days' to patch it once exposed or actively exploited in the wild.",
+      "tr": "Sıfır Gün açığı, saldırganlar tarafından aktif olarak kullanılmaya başlandığında geliştiricilerin yamamak için 'sıfır günü' olması nedeniyle böyle adlandırılmıştır."
+    }
   },
   {
     "id": 38,
-    "question": "Which everyday household device was famously targeted to build the historic 2016 Mirai Botnet that took down major internet services?",
-    "options": [
-      "Smart TVs, security cameras, and home routers with default passwords",
-      "Desktop PCs running pirated Windows software",
-      "Tesla vehicles connected to home Wi-Fi chargers",
-      "Smart electric toothbrushes and fitness bands"
-    ],
+    "question": {
+      "en": "Which everyday household device was famously targeted to build the historic 2016 Mirai Botnet that took down major internet services?",
+      "tr": "2016'da büyük internet servislerini çökerten tarihi Mirai Botnet'i oluşturmak için hangi ev aletleri hedef alınmıştır?"
+    },
+    "options": {
+      "en": [
+        "Smart TVs, security cameras, and home routers with default passwords",
+        "Desktop PCs running pirated Windows software",
+        "Tesla vehicles connected to home Wi-Fi chargers",
+        "Smart electric toothbrushes and fitness bands"
+      ],
+      "tr": [
+        "Varsayılan şifreleri değiştirilmemiş akıllı televizyonlar, güvenlik kameraları ve ev yönlendiricileri (router)",
+        "Korsan Windows çalıştıran masaüstü bilgisayarlar",
+        "Ev Wi-Fi şarj cihazlarına bağlı Tesla araçları",
+        "Akıllı elektrikli diş fırçaları ve fitness bileklikleri"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "The Mirai botnet infected hundreds of thousands of cheap IoT gadgets (IP cameras and basic routers) that still used factory default usernames and passwords like 'admin/1234'."
+    "explanation": {
+      "en": "The Mirai botnet infected hundreds of thousands of cheap IoT gadgets (IP cameras and basic routers) that still used factory default usernames and passwords like 'admin/1234'.",
+      "tr": "Mirai botneti, fabrika çıkışı varsayılan 'admin/1234' gibi kullanıcı adı ve şifreleri kullanan yüz binlerce ucuz IoT cihazına (IP kameralar ve modemler) bulaşmıştır."
+    }
   },
   {
     "id": 39,
-    "question": "What does URL stand for in web terminology?",
-    "options": [
-      "Universal Remote Link",
-      "Uniform Resource Locator",
-      "Unified Routing Line",
-      "User Resource Layer"
-    ],
+    "question": {
+      "en": "What does URL stand for in web terminology?",
+      "tr": "Web terminolojisinde URL neyin kısaltmasıdır?"
+    },
+    "options": {
+      "en": [
+        "Universal Remote Link",
+        "Uniform Resource Locator",
+        "Unified Routing Line",
+        "User Resource Layer"
+      ],
+      "tr": [
+        "Universal Remote Link",
+        "Uniform Resource Locator (Tekbiçim Kaynak Bulucu)",
+        "Unified Routing Line",
+        "User Resource Layer"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "A Uniform Resource Locator (URL) is the standard web address format that specifies where a resource lives on the internet."
+    "explanation": {
+      "en": "A Uniform Resource Locator (URL) is the standard web address format that specifies where a resource lives on the internet.",
+      "tr": "Uniform Resource Locator (URL), bir kaynağın internet üzerindeki konumunu belirten standart web adresi formatıdır."
+    }
   },
   {
     "id": 40,
-    "question": "What is the famous Konami Code sequence that appeared in dozens of classic video games?",
-    "options": [
-      "Up, Up, Down, Down, Left, Right, Left, Right, B, A",
-      "Down, Down, Up, Up, Right, Left, Right, Left, A, B",
-      "A, B, A, B, Up, Down, Left, Right, Start",
-      "Select, Start, Up, Down, Left, Right, A, B"
-    ],
+    "question": {
+      "en": "What is the famous Konami Code sequence that appeared in dozens of classic video games?",
+      "tr": "Onlarca klasik video oyununda yer alan meşhur Konami Kodu tuş kombinasyonu hangisidir?"
+    },
+    "options": {
+      "en": [
+        "Up, Up, Down, Down, Left, Right, Left, Right, B, A",
+        "Down, Down, Up, Up, Right, Left, Right, Left, A, B",
+        "A, B, A, B, Up, Down, Left, Right, Start",
+        "Select, Start, Up, Down, Left, Right, A, B"
+      ],
+      "tr": [
+        "Yukarı, Yukarı, Aşağı, Aşağı, Sol, Sağ, Sol, Sağ, B, A",
+        "Aşağı, Aşağı, Yukarı, Yukarı, Sağ, Sol, Sağ, Sol, A, B",
+        "A, B, A, B, Yukarı, Aşağı, Sol, Sağ, Start",
+        "Select, Start, Yukarı, Aşağı, Sol, Sağ, A, B"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "Created by Kazuhisa Hashimoto in 1985 for testing Gradius, ↑ ↑ ↓ ↓ ← → ← → B A granted power-ups in dozens of legendary games."
+    "explanation": {
+      "en": "Created by Kazuhisa Hashimoto in 1985 for testing Gradius, ↑ ↑ ↓ ↓ ← → ← → B A granted power-ups in dozens of legendary games.",
+      "tr": "1985'te Kazuhisa Hashimoto tarafından Gradius oyununu test etmek için oluşturulan ↑ ↑ ↓ ↓ ← → ← → B A dizilimi, pek çok efsanevi oyunda ekstra güç sağlamıştır."
+    }
   },
   {
     "id": 41,
-    "question": "Why are GPUs (Graphics Processing Units) so heavily used for training AI models instead of regular CPUs?",
-    "options": [
-      "They have higher clock speeds than CPUs",
-      "They are designed to perform thousands of simple math operations in parallel",
-      "They consume significantly less electrical power than processors",
-      "They have built-in natural language parsers"
-    ],
+    "question": {
+      "en": "Why are GPUs (Graphics Processing Units) so heavily used for training AI models instead of regular CPUs?",
+      "tr": "Yapay zeka modellerini eğitmek için normal işlemciler (CPU) yerine neden yoğun olarak ekran kartları (GPU) kullanılır?"
+    },
+    "options": {
+      "en": [
+        "They have higher clock speeds than CPUs",
+        "They are designed to perform thousands of simple math operations in parallel",
+        "They consume significantly less electrical power than processors",
+        "They have built-in natural language parsers"
+      ],
+      "tr": [
+        "CPU'lardan daha yüksek saat hızlarına sahip olmaları",
+        "Binlerce basit matematiksel işlemi paralel olarak gerçekleştirecek şekilde tasarlanmış olmaları",
+        "İşlemcilere göre önemli ölçüde daha az elektrik gücü tüketmeleri",
+        "Dahili doğal dil ayrıştırıcılarına sahip olmaları"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "CPUs excel at complex sequential logic, while GPUs are built with thousands of cores designed to crunch massive matrix multiplications simultaneously."
+    "explanation": {
+      "en": "CPUs excel at complex sequential logic, while GPUs are built with thousands of cores designed to crunch massive matrix multiplications simultaneously.",
+      "tr": "CPU'lar karmaşık ardışık mantıkta başarılıyken, GPU'lar devasa matris çarpımlarını aynı anda hesaplayabilen binlerce çekirdekle tasarlanmıştır."
+    }
   },
   {
     "id": 42,
-    "question": "What was the very first item purchased on Amazon when it opened as an online bookstore in 1995?",
-    "options": [
-      "A computer science textbook on fluid concepts and creative analogies",
-      "A Harry Potter novel",
-      "A Sony portable Walkman CD player",
-      "A map of Seattle, Washington"
-    ],
+    "question": {
+      "en": "What was the very first item purchased on Amazon when it opened as an online bookstore in 1995?",
+      "tr": "1995 yılında çevrimiçi bir kitapçı olarak açıldığında Amazon'dan satın alınan ilk ürün neydi?"
+    },
+    "options": {
+      "en": [
+        "A computer science textbook on fluid concepts and creative analogies",
+        "A Harry Potter novel",
+        "A Sony portable Walkman CD player",
+        "A map of Seattle, Washington"
+      ],
+      "tr": [
+        "Akışkan kavramlar ve yaratıcı analojiler üzerine bir bilgisayar bilimi ders kitabı",
+        "Bir Harry Potter romanı",
+        "Taşınabilir bir Sony Walkman CD çalar",
+        "Seattle, Washington şehir haritası"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "The first book ordered on Amazon was Douglas Hofstadter's 'Fluid Concepts and Creative Analogies: Computer Models of the Fundamental Mechanisms of Thought'."
+    "explanation": {
+      "en": "The first book ordered on Amazon was Douglas Hofstadter's 'Fluid Concepts and Creative Analogies: Computer Models of the Fundamental Mechanisms of Thought'.",
+      "tr": "Amazon üzerinden sipariş edilen ilk kitap, Douglas Hofstadter'ın 'Fluid Concepts and Creative Analogies: Computer Models of the Fundamental Mechanisms of Thought' adlı eseriydi."
+    }
   },
   {
     "id": 43,
-    "question": "What does two-factor authentication (2FA) protect you against?",
-    "options": [
-      "Malicious ads showing up on video streaming sites",
-      "An attacker accessing your account using only a stolen password",
-      "Accidentally deleting important files in your cloud storage",
-      "Slow Wi-Fi performance caused by neighboring signals"
-    ],
+    "question": {
+      "en": "What does two-factor authentication (2FA) protect you against?",
+      "tr": "İki faktörlü kimlik doğrulama (2FA) sizi öncelikli olarak neye karşı korur?"
+    },
+    "options": {
+      "en": [
+        "Malicious ads showing up on video streaming sites",
+        "An attacker accessing your account using only a stolen password",
+        "Accidentally deleting important files in your cloud storage",
+        "Slow Wi-Fi performance caused by neighboring signals"
+      ],
+      "tr": [
+        "Video izleme sitelerinde görünen zararlı reklamlar",
+        "Bir saldırganın yalnızca çalınmış bir parolayı kullanarak hesabınıza erişmesi",
+        "Bulut depolama alanınızdaki önemli dosyaları yanlışlıkla silmek",
+        "Komşu sinyallerin neden olduğu yavaş Wi-Fi performansı"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "2FA requires two distinct pieces of evidence (something you know, like a password, and something you have, like a phone prompt), neutralizing stolen passwords."
+    "explanation": {
+      "en": "2FA requires two distinct pieces of evidence (something you know, like a password, and something you have, like a phone prompt), neutralizing stolen passwords.",
+      "tr": "2FA, iki farklı kanıt türü (parola gibi bildiğiniz bir şey ve telefon onayı gibi sahip olduğunuz bir şey) gerektirerek yalnızca çalınan parolaları etkisiz hale getirir."
+    }
   },
   {
     "id": 44,
-    "question": "What is the main idea behind 'Moore's Law'?",
-    "options": [
-      "Internet bandwidth triples every calendar year",
-      "The number of transistors on a microchip roughly doubles every two years",
-      "Software gets 50% slower as hardware gets 50% faster",
-      "Every major software project finishes over budget and late"
-    ],
+    "question": {
+      "en": "What is the main idea behind 'Moore's Law'?",
+      "tr": "'Moore Yasası'nın (Moore's Law) arkasındaki temel fikir nedir?"
+    },
+    "options": {
+      "en": [
+        "Internet bandwidth triples every calendar year",
+        "The number of transistors on a microchip roughly doubles every two years",
+        "Software gets 50% slower as hardware gets 50% faster",
+        "Every major software project finishes over budget and late"
+      ],
+      "tr": [
+        "İnternet bant genişliği her takvim yılında üçe katlanır",
+        "Bir mikroçipteki transistör sayısı yaklaşık her iki yılda bir ikiye katlanır",
+        "Donanım %50 hızlandıkça yazılım %50 yavaşlar",
+        "Her büyük yazılım projesi bütçesini aşar ve gecikmeli biter"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Gordon Moore (co-founder of Intel) observed in 1965 that the transistor density on silicon chips doubles roughly every 18 to 24 months."
+    "explanation": {
+      "en": "Gordon Moore (co-founder of Intel) observed in 1965 that the transistor density on silicon chips doubles roughly every 18 to 24 months.",
+      "tr": "Intel'in kurucu ortağı Gordon Moore, 1965'te silikon çiplerdeki transistör yoğunluğunun her 18 ila 24 ayda bir ikiye katlandığını gözlemlemiştir."
+    }
   },
   {
     "id": 45,
-    "question": "What is the difference between the 'Deep Web' and the 'Dark Web'?",
-    "options": [
-      "They are the exact same thing under two different buzzword names",
-      "The Deep Web is unindexed content (emails, banking portals); the Dark Web requires special routing software like Tor",
-      "The Deep Web is illegal; the Dark Web is legal academic research",
-      "The Deep Web is run by military agencies; the Dark Web is run by tech companies"
-    ],
+    "question": {
+      "en": "What is the difference between the 'Deep Web' and the 'Dark Web'?",
+      "tr": "'Deep Web' (Derin Web) ile 'Dark Web' (Karanlık Web) arasındaki fark nedir?"
+    },
+    "options": {
+      "en": [
+        "They are the exact same thing under two different buzzword names",
+        "The Deep Web is unindexed content (emails, banking portals); the Dark Web requires special routing software like Tor",
+        "The Deep Web is illegal; the Dark Web is legal academic research",
+        "The Deep Web is run by military agencies; the Dark Web is run by tech companies"
+      ],
+      "tr": [
+        "İkisi de iki farklı havalı isimle anılan tamamen aynı şeylerdir",
+        "Deep Web indekslenmemiş içeriklerdir (e-postalar, banka portalları); Dark Web ise Tor gibi özel yönlendirme yazılımları gerektirir",
+        "Deep Web yasa dışıdır; Dark Web ise yasal akademik araştırmalardır",
+        "Deep Web askeri kurumlarca yönetilir; Dark Web ise teknoloji şirketlerince yönetilir"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "The Deep Web is simply non-public content search engines can't crawl (medical records, your private inbox). The Dark Web is a tiny slice intentionally hidden and accessible via anonymity networks."
+    "explanation": {
+      "en": "The Deep Web is simply non-public content search engines can't crawl (medical records, your private inbox). The Dark Web is a tiny slice intentionally hidden and accessible via anonymity networks.",
+      "tr": "Deep Web, arama motorlarının tarayamadığı herkese açık olmayan içeriklerdir (özel gelen kutuları, banka hesapları). Dark Web ise anonim ağlar üzerinden erişilen kasıtlı olarak gizlenmiş küçük bir bölümdür."
+    }
   },
   {
     "id": 46,
-    "question": "Which programming language was developed by Sun Microsystems under the original code name 'Oak'?",
-    "options": [
-      "Java",
-      "C#",
-      "Kotlin",
-      "Swift"
-    ],
+    "question": {
+      "en": "Which programming language was developed by Sun Microsystems under the original code name 'Oak'?",
+      "tr": "Sun Microsystems tarafından başlangıçta 'Oak' kod adıyla geliştirilen programlama dili hangisidir?"
+    },
+    "options": {
+      "en": [
+        "Java",
+        "C#",
+        "Kotlin",
+        "Swift"
+      ],
+      "tr": [
+        "Java",
+        "C#",
+        "Kotlin",
+        "Swift"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "James Gosling named it Oak after an oak tree that stood outside his office window, before it was renamed Java after coffee."
+    "explanation": {
+      "en": "James Gosling named it Oak after an oak tree that stood outside his office window, before it was renamed Java after coffee.",
+      "tr": "James Gosling, ofis penceresinin önünde duran meşe ağacından esinlenerek dile 'Oak' adını vermiş, daha sonra kahveden esinlenilerek Java olarak değiştirilmiştir."
+    }
   },
   {
     "id": 47,
-    "question": "What do the blue checkmarks next to usernames on early social media originally symbolize?",
-    "options": [
-      "The account pays a monthly recurring server maintenance subscription",
-      "The platform verified that the account belongs to the real public figure or brand",
-      "The user passed an online digital citizenship exam",
-      "The user has posted at least 1,000 verified authentic messages"
-    ],
+    "question": {
+      "en": "What do the blue checkmarks next to usernames on early social media originally symbolize?",
+      "tr": "Sosyal medyanın erken dönemlerinde kullanıcı adlarının yanındaki mavi onay rozeti başlangıçta neyi simgeliyordu?"
+    },
+    "options": {
+      "en": [
+        "The account pays a monthly recurring server maintenance subscription",
+        "The platform verified that the account belongs to the real public figure or brand",
+        "The user passed an online digital citizenship exam",
+        "The user has posted at least 1,000 verified authentic messages"
+      ],
+      "tr": [
+        "Hesabın aylık düzenli sunucu bakım aboneliği ödediğini",
+        "Platformun, hesabın gerçek tanınmış kişiye veya markaya ait olduğunu doğruladığını",
+        "Kullanıcının çevrimiçi bir dijital vatandaşlık sınavını geçtiğini",
+        "Kullanıcının en az 1.000 doğrulanmış özgün mesaj paylaştığını"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "Verification badges were introduced by Twitter in 2009 after celebrities were impersonated, confirming that notable accounts were who they claimed to be."
+    "explanation": {
+      "en": "Verification badges were introduced by Twitter in 2009 after celebrities were impersonated, confirming that notable accounts were who they claimed to be.",
+      "tr": "Doğrulama rozetleri, ünlülerin kimliğine bürünülmesini önlemek için 2009'da Twitter tarafından tanıtılmış ve hesabı kullanan kişinin iddia ettiği kişi olduğunu onaylamıştır."
+    }
   },
   {
     "id": 48,
-    "question": "What is the term for a software program that automatically repeats tasks over the web much faster than a human could?",
-    "options": [
-      "Bot",
-      "Cookie",
-      "Glitch",
-      "Proxy"
-    ],
+    "question": {
+      "en": "What is the term for a software program that automatically repeats tasks over the web much faster than a human could?",
+      "tr": "Web üzerinde tekrarlayan görevleri bir insandan çok daha hızlı şekilde otomatik olarak yerine getiren yazılımlara ne ad verilir?"
+    },
+    "options": {
+      "en": [
+        "Bot",
+        "Cookie",
+        "Glitch",
+        "Proxy"
+      ],
+      "tr": [
+        "Bot",
+        "Çerez (Cookie)",
+        "Glitch",
+        "Proxy"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "Derived from 'robot', bots automate repetitive jobs like indexing web pages, buying concert tickets, or chatting with users."
+    "explanation": {
+      "en": "Derived from 'robot', bots automate repetitive jobs like indexing web pages, buying concert tickets, or chatting with users.",
+      "tr": "'Robot' kelimesinden türetilen botlar; web sayfalarını dizine ekleme, bilet satın alma veya kullanıcılarla sohbet etme gibi tekrarlayan işleri otomatikleştirir."
+    }
   },
   {
     "id": 49,
-    "question": "What does a QR code stand for?",
-    "options": [
-      "Quick Response code",
-      "Quality Raster code",
-      "Quantum Radio code",
-      "Quick Recognition code"
-    ],
+    "question": {
+      "en": "What does a QR code stand for?",
+      "tr": "QR kodun açılımı nedir?"
+    },
+    "options": {
+      "en": [
+        "Quick Response code",
+        "Quality Raster code",
+        "Quantum Radio code",
+        "Quick Recognition code"
+      ],
+      "tr": [
+        "Quick Response code (Hızlı Tepki kodu)",
+        "Quality Raster code",
+        "Quantum Radio code",
+        "Quick Recognition code"
+      ]
+    },
     "correctIndex": 0,
-    "explanation": "Developed by the Japanese automotive company Denso Wave in 1994, 'Quick Response' codes were designed to be scanned at high speeds during manufacturing."
+    "explanation": {
+      "en": "Developed by the Japanese automotive company Denso Wave in 1994, 'Quick Response' codes were designed to be scanned at high speeds during manufacturing.",
+      "tr": "1994 yılında Japon otomotiv firması Denso Wave tarafından geliştirilen 'Quick Response' (Hızlı Yanıt) kodları, üretim sırasında yüksek hızlarda taranmak üzere tasarlanmıştır."
+    }
   },
   {
     "id": 50,
-    "question": "What is an 'Easter Egg' in software and tech culture?",
-    "options": [
-      "A critical security vulnerability that detonates on a specific holiday",
-      "A hidden feature, joke, or surprise deliberately left by developers",
-      "A prototype device given only to corporate executives",
-      "A corrupted data packet that causes memory leakage"
-    ],
+    "question": {
+      "en": "What is an 'Easter Egg' in software and tech culture?",
+      "tr": "Yazılım ve teknoloji kültüründe 'Paskalya Yumurtası' (Easter Egg) nedir?"
+    },
+    "options": {
+      "en": [
+        "A critical security vulnerability that detonates on a specific holiday",
+        "A hidden feature, joke, or surprise deliberately left by developers",
+        "A prototype device given only to corporate executives",
+        "A corrupted data packet that causes memory leakage"
+      ],
+      "tr": [
+        "Belirli bir tatil gününde patlak veren kritik bir güvenlik açığı",
+        "Geliştiriciler tarafından kasıtlı olarak gizlenen bir özellik, espri veya sürpriz",
+        "Yalnızca şirket yöneticilerine verilen prototip bir cihaz",
+        "Bellek sızıntısına yol açan bozuk bir veri paketi"
+      ]
+    },
     "correctIndex": 1,
-    "explanation": "An Easter Egg is an intentional hidden inside joke, message, or secret mini-game concealed in software for curious users to discover."
+    "explanation": {
+      "en": "An Easter Egg is an intentional hidden inside joke, message, or secret mini-game concealed in software for curious users to discover.",
+      "tr": "Easter Egg, meraklı kullanıcıların keşfetmesi için yazılımların içine gizlenmiş kasıtlı bir espri, gizli mesaj veya mini oyundur."
+    }
   }
 ]
