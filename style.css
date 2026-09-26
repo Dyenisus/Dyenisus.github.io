@@ -324,3 +324,69 @@ body {
 .hidden {
   display: none !important;
 }
+
+/* Admin Screen Styles */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.admin-questions-section {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+}
+
+.admin-questions-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.admin-question-item {
+  background: var(--bg-surface-hover);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.admin-question-item h4 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-main);
+}
+
+.admin-options-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.admin-options-list li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+}
+
+.admin-options-list li.admin-correct-opt {
+  color: var(--correct);
+  background: var(--correct-bg);
+  font-weight: 600;
+}
+
+.admin-explanation {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border-left: 3px solid var(--accent);
+  padding: 0.6rem 0.75rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
