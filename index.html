@@ -12,7 +12,7 @@
     <!-- 1. Registration / Login Screen -->
     <section id="login-screen">
       <h2>Welcome to the Tech Quiz!</h2>
-      <p class="subtitle">Test your tech trivia and compete for the top spot on our club leaderboard.</p>
+      <p class="subtitle">Enter your details to compete. One attempt per student per day!</p>
 
       <form id="login-form" class="auth-form">
         <div class="form-group">
@@ -24,6 +24,8 @@
           <label for="input-name">Full Name</label>
           <input type="text" id="input-name" maxlength="30" placeholder="e.g. Alex Morgan" required />
         </div>
+
+        <div id="login-error" class="error-msg hidden"></div>
 
         <button type="submit" id="start-btn">Start Quiz</button>
       </form>

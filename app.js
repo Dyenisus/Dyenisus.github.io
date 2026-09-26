@@ -1,12 +1,11 @@
 // Paste your Google Apps Script Web App URL ending in /exec here:
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbycfDwI82WDzeYH-6j2JusKcPpEvRl84tCcUxy0EGz6HBMLZi41MiuoPMsEOWB8uIpE/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxreOi99r8qwR2XREo00POZphVF4IyJiQB5TGGJTTQGtW57dtuy6hrZxRYQ0PAdfvFB/exec";
 
 let questions = [];
 let currentIndex = 0;
 let score = 0;
 const QUIZ_LENGTH = 10;
 
-// User Credentials
 let currentUser = {
   studentId: '',
   name: ''
@@ -23,20 +22,56 @@ function shuffle(array) {
   return array;
 }
 
-// 1. Registration Screen Handler
-document.getElementById('login-form').addEventListener('submit', (e) => {
+// 1. Registration with Daily Attendance Check
+document.getElementById('login-form').addEventListener('submit', async (e) => {
   e.preventDefault();
-  
-  currentUser.studentId = document.getElementById('input-student-id').value.trim();
-  currentUser.name = document.getElementById('input-name').value.trim();
 
-  if (!currentUser.studentId || !currentUser.name) return;
+  const studentIdInput = document.getElementById('input-student-id').value.trim();
+  const nameInput = document.getElementById('input-name').value.trim();
+  const startBtn = document.getElementById('start-btn');
+  const errorBox = document.getElementById('login-error');
 
-  // Switch views
-  document.getElementById('login-screen').classList.add('hidden');
-  document.getElementById('quiz-screen').classList.remove('hidden');
+  errorBox.classList.add('hidden');
+  errorBox.textContent = '';
 
-  startQuiz();
+  if (!studentIdInput || !nameInput) return;
+
+  // Show loading state
+  startBtn.disabled = true;
+  startBtn.textContent = 'Checking attendance...';
+
+  try {
+    const checkParams = new URLSearchParams({
+      action: 'check',
+      student_id: studentIdInput
+    });
+
+    const res = await fetch(`${GOOGLE_SCRIPT_URL}?${checkParams.toString()}`);
+    const checkResult = await res.json();
+
+    if (!checkResult.allowed) {
+      errorBox.textContent = checkResult.message || 'You have already participated today!';
+      errorBox.classList.remove('hidden');
+      startBtn.disabled = false;
+      startBtn.textContent = 'Start Quiz';
+      return;
+    }
+
+    // Allowed: save credentials and start quiz
+    currentUser.studentId = studentIdInput;
+    currentUser.name = nameInput;
+
+    document.getElementById('login-screen').classList.add('hidden');
+    document.getElementById('quiz-screen').classList.remove('hidden');
+
+    startQuiz();
+  } catch (err) {
+    console.error('Check failed:', err);
+    errorBox.textContent = 'Could not verify attendance status. Please check your connection.';
+    errorBox.classList.remove('hidden');
+    startBtn.disabled = false;
+    startBtn.textContent = 'Start Quiz';
+  }
 });
 
 async function startQuiz() {
@@ -125,7 +160,6 @@ document.getElementById('next-btn').onclick = () => {
 function finishQuiz() {
   totalTimeTaken = Math.max(1, Math.floor((Date.now() - startTime) / 1000));
 
-  // Hide quiz screen, show results screen
   document.getElementById('quiz-screen').classList.add('hidden');
   const results = document.getElementById('results');
   results.classList.remove('hidden');
@@ -134,7 +168,6 @@ function finishQuiz() {
   document.getElementById('score-text').textContent = `Score: ${score} / ${questions.length}`;
   document.getElementById('time-text').textContent = `Completed in ${totalTimeTaken} seconds`;
 
-  // Auto-record the score to Google Sheets
   autoSaveScore();
 }
 

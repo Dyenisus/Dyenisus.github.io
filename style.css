@@ -309,6 +309,18 @@ body {
   width: 100%;
 }
 
+/* Login Error Alert */
+.error-msg {
+  background-color: var(--incorrect-bg);
+  color: var(--incorrect);
+  border: 1px solid var(--incorrect);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
 .hidden {
   display: none !important;
 }
