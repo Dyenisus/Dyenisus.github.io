@@ -1,5 +1,5 @@
 // Paste your Google Apps Script Web App URL ending in /exec here:
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyhpdj20BgtJ8pd7dSHuEzBz5mrjVQknHAcnnxwUkPKxNofz0C-Lt5oSxKl4s6miB35/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz3OctpS5CNjm8sKMkNE4Gt5Qd2BerP0uZtXVbObwyJ3wpxv7T0lpLcoPjQkMEgvh-o/exec";
 
 // Admin Credentials
 const ADMIN_ID = 'bilisimyk';
