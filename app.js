@@ -1,5 +1,5 @@
 // Paste your Google Apps Script Web App URL ending in /exec here:
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyJ17pY3u0CzHZLgrVHWTqCGMb7mgT39jsUi9UzNGZxAdgeEsIbWptkGArKQBQXT2MP/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyhpdj20BgtJ8pd7dSHuEzBz5mrjVQknHAcnnxwUkPKxNofz0C-Lt5oSxKl4s6miB35/exec";
 
 let questions = [];
 let currentIndex = 0;
@@ -14,6 +14,7 @@ let currentUser = {
 let startTime = null;
 let totalTimeTaken = 0;
 
+// Fisher-Yates (Knuth) in-place shuffle
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -22,7 +23,21 @@ function shuffle(array) {
   return array;
 }
 
-// 1. Registration with Daily Attendance Check
+// Resilient fetch helper: retries once if network blips or server is busy
+async function fetchWithRetry(url, retries = 1) {
+  for (let i = 0; i <= retries; i++) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return await res.json();
+    } catch (err) {
+      if (i === retries) throw err;
+      await new Promise(r => setTimeout(r, 1000)); // wait 1s before retry
+    }
+  }
+}
+
+// 1. Registration & Daily Attendance Check
 document.getElementById('login-form').addEventListener('submit', async (e) => {
   e.preventDefault();
 
@@ -36,7 +51,6 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
 
   if (!studentIdInput || !nameInput) return;
 
-  // Show loading state
   startBtn.disabled = true;
   startBtn.textContent = 'Checking attendance...';
 
@@ -46,8 +60,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
       student_id: studentIdInput
     });
 
-    const res = await fetch(`${GOOGLE_SCRIPT_URL}?${checkParams.toString()}`);
-    const checkResult = await res.json();
+    const checkResult = await fetchWithRetry(`${GOOGLE_SCRIPT_URL}?${checkParams.toString()}`);
 
     if (!checkResult.allowed) {
       errorBox.textContent = checkResult.message || 'You have already participated today!';
@@ -57,7 +70,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
       return;
     }
 
-    // Allowed: save credentials and start quiz
+    // Allowed: store credentials and switch to quiz screen
     currentUser.studentId = studentIdInput;
     currentUser.name = nameInput;
 
@@ -67,18 +80,20 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
     startQuiz();
   } catch (err) {
     console.error('Check failed:', err);
-    errorBox.textContent = 'Could not verify attendance status. Please check your connection.';
+    errorBox.textContent = 'Connection busy. Please click "Start Quiz" again.';
     errorBox.classList.remove('hidden');
     startBtn.disabled = false;
     startBtn.textContent = 'Start Quiz';
   }
 });
 
+// 2. Quiz Initialization & Preparation
 async function startQuiz() {
   try {
     const res = await fetch('questions.json');
     const data = await res.json();
 
+    // Pick 10 random questions out of the pool
     const selectedSubset = shuffle(data).slice(0, QUIZ_LENGTH);
 
     questions = selectedSubset.map(q => {
@@ -171,6 +186,7 @@ function finishQuiz() {
   autoSaveScore();
 }
 
+// 3. Save Score to Google Sheets
 async function autoSaveScore() {
   const statusEl = document.getElementById('save-status');
 
@@ -183,10 +199,9 @@ async function autoSaveScore() {
   });
 
   try {
-    const res = await fetch(`${GOOGLE_SCRIPT_URL}?${params.toString()}`);
-    const result = await res.json();
+    const result = await fetchWithRetry(`${GOOGLE_SCRIPT_URL}?${params.toString()}`);
 
-    if (result.status === "success") {
+    if (result && result.status === "success") {
       statusEl.textContent = '✅ Recorded to club leaderboard!';
       statusEl.style.color = 'var(--correct)';
     } else {
@@ -202,6 +217,7 @@ async function autoSaveScore() {
   displayLeaderboard();
 }
 
+// 4. Fetch & Render Leaderboard
 async function displayLeaderboard() {
   const list = document.getElementById('leaderboard-list');
   list.innerHTML = '<li style="color: var(--text-muted);">Loading live standings...</li>';
@@ -212,8 +228,7 @@ async function displayLeaderboard() {
   }
 
   try {
-    const res = await fetch(GOOGLE_SCRIPT_URL);
-    const leaderboard = await res.json();
+    const leaderboard = await fetchWithRetry(GOOGLE_SCRIPT_URL);
 
     list.innerHTML = '';
     if (!Array.isArray(leaderboard) || leaderboard.length === 0) {
