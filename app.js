@@ -1,5 +1,5 @@
 // Paste your Google Apps Script Web App URL ending in /exec here:
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxreOi99r8qwR2XREo00POZphVF4IyJiQB5TGGJTTQGtW57dtuy6hrZxRYQ0PAdfvFB/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyJ17pY3u0CzHZLgrVHWTqCGMb7mgT39jsUi9UzNGZxAdgeEsIbWptkGArKQBQXT2MP/exec";
 
 let questions = [];
 let currentIndex = 0;
