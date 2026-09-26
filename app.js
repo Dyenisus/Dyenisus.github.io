@@ -164,7 +164,7 @@ function shuffle(array) {
 async function fetchWithRetry(url, retries = 1) {
   for (let i = 0; i <= retries; i++) {
     try {
-      const res = await fetch(url);
+      const res = await fetch(url, { cache: 'no-store' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.json();
     } catch (err) {
