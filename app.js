@@ -1,10 +1,16 @@
 // Paste your Google Apps Script Web App URL ending in /exec here:
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyim2VUnHrsuBlQWC33a_or0ky30MLltKMCYk_iVcWleY5WONl2QH1x0gxKLZxVBjJv/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbycfDwI82WDzeYH-6j2JusKcPpEvRl84tCcUxy0EGz6HBMLZi41MiuoPMsEOWB8uIpE/exec";
 
 let questions = [];
 let currentIndex = 0;
 let score = 0;
 const QUIZ_LENGTH = 10;
+
+// User Credentials
+let currentUser = {
+  studentId: '',
+  name: ''
+};
 
 let startTime = null;
 let totalTimeTaken = 0;
@@ -17,12 +23,27 @@ function shuffle(array) {
   return array;
 }
 
-async function initQuiz() {
+// 1. Registration Screen Handler
+document.getElementById('login-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  
+  currentUser.studentId = document.getElementById('input-student-id').value.trim();
+  currentUser.name = document.getElementById('input-name').value.trim();
+
+  if (!currentUser.studentId || !currentUser.name) return;
+
+  // Switch views
+  document.getElementById('login-screen').classList.add('hidden');
+  document.getElementById('quiz-screen').classList.remove('hidden');
+
+  startQuiz();
+});
+
+async function startQuiz() {
   try {
     const res = await fetch('questions.json');
     const data = await res.json();
 
-    // Pick 10 random questions out of the 50-pool
     const selectedSubset = shuffle(data).slice(0, QUIZ_LENGTH);
 
     questions = selectedSubset.map(q => {
@@ -97,32 +118,63 @@ document.getElementById('next-btn').onclick = () => {
   if (currentIndex < questions.length) {
     renderQuestion();
   } else {
-    // Record elapsed time in seconds
-    totalTimeTaken = Math.max(1, Math.floor((Date.now() - startTime) / 1000));
-
-    document.getElementById('progress-bar').style.width = '100%';
-    document.getElementById('quiz-header').classList.add('hidden');
-    document.getElementById('options-container').classList.add('hidden');
-    document.getElementById('feedback').classList.add('hidden');
-
-    const results = document.getElementById('results');
-    results.classList.remove('hidden');
-
-    document.getElementById('score-text').textContent = `Score: ${score} / ${questions.length}`;
-    document.getElementById('time-text').textContent = `Completed in ${totalTimeTaken} seconds`;
-
-    displayLeaderboard();
+    finishQuiz();
   }
 };
 
-// --- Live Google Sheets Leaderboard via GET ---
+function finishQuiz() {
+  totalTimeTaken = Math.max(1, Math.floor((Date.now() - startTime) / 1000));
+
+  // Hide quiz screen, show results screen
+  document.getElementById('quiz-screen').classList.add('hidden');
+  const results = document.getElementById('results');
+  results.classList.remove('hidden');
+
+  document.getElementById('player-greeting').textContent = `${currentUser.name} (${currentUser.studentId})`;
+  document.getElementById('score-text').textContent = `Score: ${score} / ${questions.length}`;
+  document.getElementById('time-text').textContent = `Completed in ${totalTimeTaken} seconds`;
+
+  // Auto-record the score to Google Sheets
+  autoSaveScore();
+}
+
+async function autoSaveScore() {
+  const statusEl = document.getElementById('save-status');
+
+  const params = new URLSearchParams({
+    action: 'save',
+    student_id: currentUser.studentId,
+    name: currentUser.name,
+    score: score.toString(),
+    time: totalTimeTaken.toString()
+  });
+
+  try {
+    const res = await fetch(`${GOOGLE_SCRIPT_URL}?${params.toString()}`);
+    const result = await res.json();
+
+    if (result.status === "success") {
+      statusEl.textContent = '✅ Recorded to club leaderboard!';
+      statusEl.style.color = 'var(--correct)';
+    } else {
+      statusEl.textContent = '⚠️ Could not save score.';
+      statusEl.style.color = 'var(--incorrect)';
+    }
+  } catch (err) {
+    console.error('Error saving score:', err);
+    statusEl.textContent = '⚠️ Connection error while saving score.';
+    statusEl.style.color = 'var(--incorrect)';
+  }
+
+  displayLeaderboard();
+}
 
 async function displayLeaderboard() {
   const list = document.getElementById('leaderboard-list');
   list.innerHTML = '<li style="color: var(--text-muted);">Loading live standings...</li>';
 
   if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL.includes("PASTE_YOUR_WEB_APP_URL_HERE")) {
-    list.innerHTML = '<li style="color: var(--text-muted);">Configure GOOGLE_SCRIPT_URL in app.js to show leaderboard.</li>';
+    list.innerHTML = '<li style="color: var(--text-muted);">Configure GOOGLE_SCRIPT_URL in app.js.</li>';
     return;
   }
 
@@ -151,46 +203,8 @@ async function displayLeaderboard() {
   }
 }
 
-async function saveScore(name) {
-  const saveBtn = document.getElementById('save-btn');
-  saveBtn.disabled = true;
-  saveBtn.textContent = 'Saving...';
-
-  const params = new URLSearchParams({
-    action: 'save',
-    name: name.trim() || 'Anonymous',
-    score: score.toString(),
-    time: totalTimeTaken.toString()
-  });
-
-  try {
-    const res = await fetch(`${GOOGLE_SCRIPT_URL}?${params.toString()}`);
-    const result = await res.json();
-
-    if (result.status === "success") {
-      document.getElementById('score-form').classList.add('hidden');
-      displayLeaderboard();
-    } else {
-      throw new Error(result.error || "Save failed");
-    }
-  } catch (err) {
-    console.error('Error saving score:', err);
-    saveBtn.disabled = false;
-    saveBtn.textContent = 'Retry';
-    alert("Could not save score. Please verify your Web App URL.");
-  }
-}
-
 function escapeHTML(str) {
   const div = document.createElement('div');
   div.textContent = str;
   return div.innerHTML;
 }
-
-document.getElementById('score-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const nameInput = document.getElementById('player-name');
-  saveScore(nameInput.value);
-});
-
-initQuiz();

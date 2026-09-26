@@ -59,6 +59,54 @@ body {
   box-shadow: var(--shadow);
 }
 
+/* Login Screen Styles */
+#login-screen h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.form-group input {
+  background: var(--bg-surface-hover);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+  color: var(--text-main);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--accent);
+}
+
+/* Quiz Interface Styles */
 .progress-bar-container {
   width: 100%;
   height: 6px;
@@ -150,44 +198,47 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Action Buttons */
+#start-btn,
 #next-btn,
-#save-btn,
 .restart-btn {
   display: inline-block;
   background-color: var(--accent);
   color: #0f172a;
   border: none;
   border-radius: var(--radius-sm);
-  padding: 0.75rem 1.5rem;
-  font-size: 0.95rem;
+  padding: 0.85rem 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.15s ease;
 }
 
+#start-btn:hover,
 #next-btn:hover,
-#save-btn:hover,
 .restart-btn:hover {
   background-color: var(--accent-hover);
 }
 
-#save-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
+/* Results & Leaderboard */
 #results {
   text-align: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 #results h2 {
   font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+#player-greeting {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
 }
 
 #score-text {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 600;
   color: var(--accent);
   margin-bottom: 0.25rem;
@@ -196,44 +247,15 @@ body {
 #time-text {
   font-size: 0.95rem;
   color: var(--text-muted);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
-/* Leaderboard Input Form */
-.leaderboard-form {
-  margin: 1.5rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: left;
-}
-
-.leaderboard-form label {
+.save-status {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: var(--accent);
+  margin-bottom: 1.25rem;
 }
 
-.input-row {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.input-row input {
-  flex: 1;
-  background: var(--bg-surface-hover);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  padding: 0.75rem 1rem;
-  color: var(--text-main);
-  font-size: 1rem;
-  outline: none;
-}
-
-.input-row input:focus {
-  border-color: var(--accent);
-}
-
-/* Leaderboard List */
 .leaderboard-section {
   margin-top: 1.5rem;
   text-align: left;
@@ -261,7 +283,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: var(--bg-surface-hover);
-  padding: 0.6rem 0.9rem;
+  padding: 0.65rem 0.9rem;
   border-radius: var(--radius-sm);
   font-size: 0.95rem;
 }

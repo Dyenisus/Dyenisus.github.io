@@ -8,43 +8,62 @@
 </head>
 <body>
   <main class="quiz-container">
-    <div class="progress-bar-container">
-      <div id="progress-bar"></div>
-    </div>
+    
+    <!-- 1. Registration / Login Screen -->
+    <section id="login-screen">
+      <h2>Welcome to the Tech Quiz!</h2>
+      <p class="subtitle">Test your tech trivia and compete for the top spot on our club leaderboard.</p>
 
-    <div id="quiz-header">
-      <div id="progress">Question <span id="current-q">1</span></div>
-      <h2 id="question-text">Loading question...</h2>
-    </div>
+      <form id="login-form" class="auth-form">
+        <div class="form-group">
+          <label for="input-student-id">Student Number</label>
+          <input type="text" id="input-student-id" placeholder="e.g. 210101001" required />
+        </div>
 
-    <div id="options-container" class="options-grid"></div>
+        <div class="form-group">
+          <label for="input-name">Full Name</label>
+          <input type="text" id="input-name" maxlength="30" placeholder="e.g. Alex Morgan" required />
+        </div>
 
-    <div id="feedback" class="hidden">
-      <p id="explanation-text"></p>
-      <button id="next-btn">Next Question</button>
-    </div>
+        <button type="submit" id="start-btn">Start Quiz</button>
+      </form>
+    </section>
 
-    <!-- Results & Live Global Leaderboard -->
-    <div id="results" class="hidden">
+    <!-- 2. Active Quiz Screen -->
+    <section id="quiz-screen" class="hidden">
+      <div class="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+
+      <div id="quiz-header">
+        <div id="progress">Question <span id="current-q">1</span></div>
+        <h2 id="question-text">Loading question...</h2>
+      </div>
+
+      <div id="options-container" class="options-grid"></div>
+
+      <div id="feedback" class="hidden">
+        <p id="explanation-text"></p>
+        <button id="next-btn">Next Question</button>
+      </div>
+    </section>
+
+    <!-- 3. Results & Leaderboard Screen -->
+    <section id="results" class="hidden">
       <h2>Quiz Complete!</h2>
+      <p id="player-greeting"></p>
       <p id="score-text"></p>
       <p id="time-text"></p>
-
-      <form id="score-form" class="leaderboard-form">
-        <label for="player-name">Enter your Name or Handle:</label>
-        <div class="input-row">
-          <input type="text" id="player-name" maxlength="20" placeholder="e.g. Alex" required />
-          <button type="submit" id="save-btn">Save Score</button>
-        </div>
-      </form>
+      <div id="save-status" class="save-status">Saving score to leaderboard...</div>
 
       <div class="leaderboard-section">
         <h3>🏆 Live Hall of Fame</h3>
         <ol id="leaderboard-list"></ol>
       </div>
 
-      <button id="restart-btn" class="restart-btn" onclick="location.reload()">Take Quiz Again</button>
-    </div>
+      <button id="restart-btn" class="restart-btn" onclick="location.reload()">Next Player</button>
+    </section>
+
   </main>
   <script src="app.js"></script>
 </body>
