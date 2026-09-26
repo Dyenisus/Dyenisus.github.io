@@ -65,6 +65,26 @@
       <button id="restart-btn" class="restart-btn" onclick="location.reload()">Next Player</button>
     </section>
 
+	<!-- 4. Admin Dashboard Screen -->
+    <section id="admin-screen" class="hidden">
+      <div class="admin-header">
+        <h2>🛠️ Admin Dashboard</h2>
+        <button class="restart-btn" style="margin: 0; width: auto;" onclick="location.reload()">Log Out</button>
+      </div>
+
+      <!-- Live Standings (identical structure to the results screen) -->
+      <div class="leaderboard-section">
+        <h3>🏆 Live Hall of Fame</h3>
+        <ol id="admin-leaderboard-list"></ol>
+      </div>
+
+      <!-- Full Question Bank -->
+      <div class="admin-questions-section">
+        <h3>📚 Question Bank & Explanations</h3>
+        <div id="admin-questions-list"></div>
+      </div>
+    </section>
+	
   </main>
   <script src="app.js"></script>
 </body>

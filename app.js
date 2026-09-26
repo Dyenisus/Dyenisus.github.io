@@ -51,6 +51,14 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
 
   if (!studentIdInput || !nameInput) return;
 
+  // Admin intercept: bypass attendance checks and open the admin view
+  if (studentIdInput === '231401007admin' && nameInput === 'Yekta Soytürk') {
+    document.getElementById('login-screen').classList.add('hidden');
+    document.getElementById('admin-screen').classList.remove('hidden');
+    loadAdminDashboard();
+    return;
+  }
+
   startBtn.disabled = true;
   startBtn.textContent = 'Checking attendance...';
 
@@ -144,8 +152,10 @@ function renderQuestion() {
 function selectOption(selectedOpt, selectedBtn) {
   const allBtns = document.querySelectorAll('.option-btn');
 
+  // Disable buttons to lock answer
   allBtns.forEach(b => b.disabled = true);
 
+  // Only highlight the selected option (no answer reveal, no explanation shown)
   if (selectedOpt.isCorrect) {
     selectedBtn.classList.add('correct');
     score++;
@@ -210,7 +220,7 @@ async function autoSaveScore() {
   displayLeaderboard();
 }
 
-// 4. Fetch & Render Leaderboard
+// 4. Fetch & Render Participant Leaderboard
 async function displayLeaderboard() {
   const list = document.getElementById('leaderboard-list');
   list.innerHTML = '<li style="color: var(--text-muted);">Loading live standings...</li>';
@@ -240,6 +250,77 @@ async function displayLeaderboard() {
     });
   } catch (err) {
     list.innerHTML = '<li style="color: var(--text-muted);">Failed to load leaderboard.</li>';
+    console.error(err);
+  }
+}
+
+// 5. Admin Dashboard Logic
+async function loadAdminDashboard() {
+  displayAdminLeaderboard();
+  loadAllQuestions();
+}
+
+async function displayAdminLeaderboard() {
+  const list = document.getElementById('admin-leaderboard-list');
+  list.innerHTML = '<li style="color: var(--text-muted);">Loading live standings...</li>';
+
+  try {
+    const leaderboard = await fetchWithRetry(GOOGLE_SCRIPT_URL);
+
+    list.innerHTML = '';
+    if (!Array.isArray(leaderboard) || leaderboard.length === 0) {
+      list.innerHTML = '<li style="color: var(--text-muted);">No entries yet!</li>';
+      return;
+    }
+
+    leaderboard.forEach((entry, index) => {
+      const li = document.createElement('li');
+      const medal = index === 0 ? '🥇' : index === 1 ? '🥈' : index === 2 ? '🥉' : `#${index + 1}`;
+      li.innerHTML = `
+        <span><span class="player-rank">${medal}</span> ${escapeHTML(entry.name)}</span>
+        <span class="player-stats">${entry.score}/${QUIZ_LENGTH} (${entry.time}s)</span>
+      `;
+      list.appendChild(li);
+    });
+  } catch (err) {
+    list.innerHTML = '<li style="color: var(--text-muted);">Failed to load leaderboard.</li>';
+    console.error(err);
+  }
+}
+
+async function loadAllQuestions() {
+  const container = document.getElementById('admin-questions-list');
+  container.innerHTML = '<p style="color: var(--text-muted);">Loading questions...</p>';
+
+  try {
+    const res = await fetch('questions.json');
+    const allQuestions = await res.json();
+
+    container.innerHTML = '';
+
+    allQuestions.forEach((q, idx) => {
+      const item = document.createElement('div');
+      item.className = 'admin-question-item';
+
+      const optionsList = q.options.map((opt, i) => {
+        const isCorrect = i === q.correctIndex;
+        return `<li class="${isCorrect ? 'admin-correct-opt' : ''}">${escapeHTML(opt)} ${isCorrect ? '✓ (Correct)' : ''}</li>`;
+      }).join('');
+
+      item.innerHTML = `
+        <h4>${idx + 1}. ${escapeHTML(q.question)}</h4>
+        <ul class="admin-options-list">
+          ${optionsList}
+        </ul>
+        <div class="admin-explanation">
+          <strong>Explanation:</strong> ${escapeHTML(q.explanation || 'No explanation provided.')}
+        </div>
+      `;
+
+      container.appendChild(item);
+    });
+  } catch (err) {
+    container.innerHTML = '<p style="color: var(--incorrect);">Failed to load questions.json.</p>';
     console.error(err);
   }
 }
