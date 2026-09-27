@@ -1,0 +1,50 @@
+/* ==========================================================================
+   EASILY CHANGE THE THEME HERE
+   Just replace the hex color codes below to change the look of the entire quiz!
+   ========================================================================== */
+
+:root {
+  /* DARK THEME COLORS */
+  --bg-primary: #1c1c28;       /* App background (charcoal) */
+  --bg-surface: #06203a;       /* Card background (navy) */
+  --bg-surface-hover: #1085ab; /* Hover state for cards/buttons (cerulean) */
+  --text-main: #f8f6f0;        /* Main text color (off-white) */
+  --text-muted: #91948f;       /* Secondary text color (gray) */
+  --border-color: #1085ab;     /* Borders (cerulean) */
+  
+  --accent: #159da6;           /* Primary brand color (buttons, progress bar - turquoise) */
+  --accent-hover: #91bfe5;     /* Button hover color (light blue) */
+  
+  /* CORRECT/INCORRECT COLORS (Leave these as green/red or change if desired) */
+  --correct: #22c55e;
+  --correct-bg: rgba(34, 197, 94, 0.15);
+  --incorrect: #ef4444;
+  --incorrect-bg: rgba(239, 68, 68, 0.15);
+  
+  /* SIZING & SHADOWS */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+/* 
+  LIGHT THEME COLORS (Applied automatically if user's device is in Light Mode) 
+  You can make these the same as dark theme if you want a forced dark theme.
+*/
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-primary: #f8f6f0;       /* Light app background (off-white) */
+    --bg-surface: #ffffff;       /* Card background (white) */
+    --bg-surface-hover: #e2e8f0; /* Hover state for cards/buttons */
+    --text-main: #1c1c28;        /* Main text color (charcoal) */
+    --text-muted: #91948f;       /* Secondary text color (gray) */
+    --border-color: #91bfe5;     /* Borders (light blue) */
+    
+    --accent: #1085ab;           /* Primary brand color (cerulean) */
+    --accent-hover: #06203a;     /* Button hover color (navy) */
+    
+    --correct-bg: #dcfce7;
+    --incorrect-bg: #fee2e2;
+    --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  }
+}
