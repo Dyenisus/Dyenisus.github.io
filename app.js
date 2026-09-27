@@ -276,7 +276,6 @@ function renderQuestion() {
 
   const container = document.getElementById('options-container');
   container.innerHTML = '';
-  document.getElementById('feedback').classList.add('hidden');
 
   const optionsArray = getLocalizedOptions(q.raw.options);
 
@@ -284,12 +283,31 @@ function renderQuestion() {
     const btn = document.createElement('button');
     btn.className = 'option-btn';
     btn.textContent = optionsArray[optIndex];
-    btn.onclick = () => selectOption(optIndex === q.correctIndex, btn);
+    btn.onclick = () => selectOption(optIndex === q.correctIndex, btn, optIndex);
+    
+    if (q.answered) {
+      btn.disabled = true;
+      if (optIndex === q.selectedOptIndex) {
+        btn.classList.add(optIndex === q.correctIndex ? 'correct' : 'incorrect');
+      }
+    }
+    
     container.appendChild(btn);
   });
+
+  if (q.answered) {
+    document.getElementById('feedback').classList.remove('hidden');
+  } else {
+    document.getElementById('feedback').classList.add('hidden');
+  }
 }
 
-function selectOption(isCorrect, selectedBtn) {
+function selectOption(isCorrect, selectedBtn, optIndex) {
+  const q = questions[currentIndex];
+  if (q.answered) return;
+  q.answered = true;
+  q.selectedOptIndex = optIndex;
+
   const allBtns = document.querySelectorAll('.option-btn');
   allBtns.forEach(b => b.disabled = true);
 
