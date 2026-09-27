@@ -29,6 +29,20 @@ body {
 }
 
 /* Login Screen Styles */
+.club-logo {
+  display: block;
+  max-width: 120px;
+  margin: 0 auto 1.5rem auto;
+  border-radius: var(--radius-md);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
 #login-screen h2 {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
