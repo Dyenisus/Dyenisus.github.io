@@ -235,7 +235,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
 // 2. Quiz Initialization & Preparation
 async function startQuiz() {
   try {
-    const res = await fetch('questions.json');
+    const res = await fetch('data/questions.json');
     rawQuestionBank = await res.json();
 
     const selectedSubset = shuffle([...rawQuestionBank]).slice(0, QUIZ_LENGTH);
@@ -417,7 +417,7 @@ async function loadAdminDashboard() {
   fetchAndRenderLeaderboard('admin-leaderboard-list');
   if (rawQuestionBank.length === 0) {
     try {
-      const res = await fetch('questions.json');
+      const res = await fetch('data/questions.json');
       rawQuestionBank = await res.json();
     } catch (err) {
       console.error(err);
