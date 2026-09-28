@@ -9,7 +9,7 @@ let currentLang = localStorage.getItem('quiz_lang') || 'en';
 
 const translations = {
   en: {
-    loginTitle: "Welcome to the Tech Quiz!",
+    loginTitle: "Welcome to the ACU Bilişim Quiz!",
     loginSubtitle: "Enter your details to compete.",
     labelStudentId: "Student Number",
     labelName: "Full Name",
@@ -43,7 +43,7 @@ const translations = {
     noExplanation: "No explanation provided."
   },
   tr: {
-    loginTitle: "Teknoloji Bilgi Yarışmasına Hoşgeldiniz!",
+    loginTitle: "ACU Bilişim Quizine hoşgeldiniz!",
     loginSubtitle: "Yarışmak için bilgilerinizi girin.",
     labelStudentId: "Öğrenci Numarası",
     labelName: "Ad Soyad",
