@@ -1,6 +1,6 @@
 # Dyenisus.github.io
 
-# Teknoloji Kulübü Bilgi Yarışması - Görevli Kılavuzu
+# Nörobilim Kulübü Bilgi Yarışması - Görevli Kılavuzu
 
 Bu belge, bilgi yarışması sırasında stantta veya etkinlik alanında görev alacak kulüp üyelerinin uyması gereken adımları ve kuralları içermektedir. Lütfen yarışma süresince aşağıdaki yönergelere titizlikle uyun.
 

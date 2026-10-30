@@ -9,7 +9,8 @@ let currentLang = localStorage.getItem('quiz_lang') || 'en';
 
 const translations = {
   en: {
-    loginTitle: "Welcome to the ACU Bilişim Quiz!",
+    pageTitle: "ACU Neuroscience Quiz",
+    loginTitle: "Welcome to the ACU Neuroscience Quiz!",
     loginSubtitle: "Enter your details to compete.",
     labelStudentId: "Student Number",
     labelName: "Full Name",
@@ -43,7 +44,8 @@ const translations = {
     noExplanation: "No explanation provided."
   },
   tr: {
-    loginTitle: "ACU Bilişim Quizine hoşgeldiniz!",
+    pageTitle: "ACU Nörobilim Quiz",
+    loginTitle: "ACU Nörobilim Quizine hoşgeldiniz!",
     loginSubtitle: "Yarışmak için bilgilerinizi girin.",
     labelStudentId: "Öğrenci Numarası",
     labelName: "Ad Soyad",
@@ -116,6 +118,7 @@ function applyLanguage(lang) {
   });
 
   const t = translations[lang];
+  if (t.pageTitle) document.title = t.pageTitle;
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');

@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "question": "İnsan beyninin yaklaşık ağırlığı ne kadardır?",
+    "options": [
+      "500 gram",
+      "1,4 kilogram",
+      "3 kilogram",
+      "5 kilogram"
+    ],
+    "correctIndex": 1,
+    "explanation": "Yetişkin insan beyni ortalama yaklaşık 1,3–1,4 kilogram ağırlığındadır."
+  },
+  {
+    "id": 2,
+    "question": "Sinir sisteminin temel işlevsel hücresi hangisidir?",
+    "options": [
+      "Alyuvar",
+      "Nöron",
+      "Trombosit",
+      "Osteosit"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nöronlar elektriksel ve kimyasal sinyaller aracılığıyla bilgi aktarır."
+  },
+  {
+    "id": 3,
+    "question": "Beynin hangi bölümü denge ve hareket koordinasyonundan sorumludur?",
+    "options": [
+      "Hipokampus",
+      "Amigdala",
+      "Beyincik",
+      "Hipotalamus"
+    ],
+    "correctIndex": 2,
+    "explanation": "Beyincik hareketlerin koordinasyonuna, dengeye ve motor öğrenmeye katkıda bulunur."
+  },
+  {
+    "id": 4,
+    "question": "İnsan beyninin en büyük bölümü hangisidir?",
+    "options": [
+      "Beyincik",
+      "Omurilik soğanı",
+      "Büyük beyin (Serebrum)",
+      "Hipofiz bezi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Serebrum, beynin en büyük bölümüdür ve iki yarım küreden oluşur."
+  },
+  {
+    "id": 5,
+    "question": "Hafıza oluşumunda önemli rol oynayan beyin yapısı hangisidir?",
+    "options": [
+      "Hipokampus",
+      "Beyincik",
+      "Talamus",
+      "Omurilik"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hipokampus özellikle yeni episodik anıların oluşmasında önemlidir."
+  },
+  {
+    "id": 6,
+    "question": "Nöronlar arasında iletişimin gerçekleştiği bağlantı bölgelerine ne ad verilir?",
+    "options": [
+      "Akson",
+      "Sinaps",
+      "Miyelin",
+      "Dendrit"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sinapslar nöronlar arasında kimyasal veya elektriksel sinyal iletimini sağlar."
+  },
+  {
+    "id": 7,
+    "question": "Popüler kültürde sıklıkla 'mutluluk hormonu' olarak anılan nörotransmitter hangisidir?",
+    "options": [
+      "Kortizol",
+      "Adrenalin",
+      "Serotonin",
+      "İnsülin"
+    ],
+    "correctIndex": 2,
+    "explanation": "Serotonin duygudurum dahil birçok süreçte rol oynar; mutluluğu tek başına belirlemez."
+  },
+  {
+    "id": 8,
+    "question": "Vücudun ana biyolojik saatini içeren merkez hangi beyin bölgesindedir?",
+    "options": [
+      "Hipotalamus",
+      "Beyincik",
+      "Oksipital lob",
+      "Hipokampus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ana sirkadiyen saat olan suprakiazmatik çekirdek hipotalamusta bulunur."
+  },
+  {
+    "id": 9,
+    "question": "Görsel bilgilerin işlenmesinde en önemli beyin lobu hangisidir?",
+    "options": [
+      "Frontal lob",
+      "Temporal lob",
+      "Parietal lob",
+      "Oksipital lob"
+    ],
+    "correctIndex": 3,
+    "explanation": "Birincil görme korteksi oksipital lobda yer alır."
+  },
+  {
+    "id": 10,
+    "question": "İşitmeyle yakından ilişkili beyin lobu hangisidir?",
+    "options": [
+      "Temporal lob",
+      "Frontal lob",
+      "Oksipital lob",
+      "Parietal lob"
+    ],
+    "correctIndex": 0,
+    "explanation": "Birincil işitsel korteks temporal lobda bulunur."
+  },
+  {
+    "id": 11,
+    "question": "Bir nöronun diğer hücrelere sinyal ileten uzun uzantısına ne denir?",
+    "options": [
+      "Dendrit",
+      "Akson",
+      "Sinaps",
+      "Soma"
+    ],
+    "correctIndex": 1,
+    "explanation": "Akson, aksiyon potansiyellerini hücre gövdesinden uzak noktalara iletir."
+  },
+  {
+    "id": 12,
+    "question": "Nöronlarda gelen sinyalleri almada görevli dallanmış yapılar hangileridir?",
+    "options": [
+      "Dendritler",
+      "Akson uçları",
+      "Miyelin kılıfları",
+      "Ranvier boğumları"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dendritler başka nöronlardan gelen sinaptik girdilerin çoğunu alır."
+  },
+  {
+    "id": 13,
+    "question": "Sinir liflerini çevreleyerek elektriksel iletimi hızlandıran yapı hangisidir?",
+    "options": [
+      "Miyelin kılıf",
+      "Hücre çekirdeği",
+      "Ribozom",
+      "Lizozom"
+    ],
+    "correctIndex": 0,
+    "explanation": "Miyelin, aksonu yalıtarak sıçrayıcı iletimi destekler."
+  },
+  {
+    "id": 14,
+    "question": "Beynin hangi lobu planlama, karar verme ve davranış kontrolüyle yakından ilişkilidir?",
+    "options": [
+      "Oksipital",
+      "Temporal",
+      "Frontal",
+      "Parietal"
+    ],
+    "correctIndex": 2,
+    "explanation": "Frontal lobun özellikle prefrontal bölgeleri yürütücü işlevlerde önemlidir."
+  },
+  {
+    "id": 15,
+    "question": "Korku gibi duygusal tepkilerin işlenmesinde önemli olan yapı hangisidir?",
+    "options": [
+      "Amigdala",
+      "Beyincik",
+      "Pons",
+      "Omurilik"
+    ],
+    "correctIndex": 0,
+    "explanation": "Amigdala tehdit algısı ve duygusal öğrenme dahil çeşitli süreçlere katılır."
+  },
+  {
+    "id": 16,
+    "question": "İnsan beyni yaklaşık kaç milyar nöron içerir?",
+    "options": [
+      "1 milyar",
+      "10 milyar",
+      "86 milyar",
+      "500 milyar"
+    ],
+    "correctIndex": 2,
+    "explanation": "Yaygın bilimsel tahmin insan beyninde yaklaşık 86 milyar nöron bulunduğudur."
+  },
+  {
+    "id": 17,
+    "question": "Beyin ve omurilik birlikte hangi sistemi oluşturur?",
+    "options": [
+      "Periferik sinir sistemi",
+      "Merkezi sinir sistemi",
+      "Endokrin sistem",
+      "Sindirim sistemi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Merkezi sinir sistemi beyin ve omurilikten oluşur."
+  },
+  {
+    "id": 18,
+    "question": "Nabız ve solunum gibi yaşamsal işlevlerin düzenlenmesinde önemli rol oynayan yapı hangisidir?",
+    "options": [
+      "Hipokampus",
+      "Omurilik soğanı",
+      "Amigdala",
+      "Oksipital lob"
+    ],
+    "correctIndex": 1,
+    "explanation": "Omurilik soğanı solunum ve kardiyovasküler düzenleme için önemli merkezler içerir."
+  },
+  {
+    "id": 19,
+    "question": "Bir sinir hücresinin ürettiği kısa elektriksel uyarıya ne denir?",
+    "options": [
+      "Aksiyon potansiyeli",
+      "Fotosentez",
+      "Difüzyon",
+      "Protein sentezi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Aksiyon potansiyeli hücre zarının elektriksel potansiyelindeki hızlı değişimdir."
+  },
+  {
+    "id": 20,
+    "question": "Parkinson hastalığında özellikle hangi nörotransmitter sistemindeki bozulma öne çıkar?",
+    "options": [
+      "Dopamin",
+      "Histamin",
+      "Glutamat",
+      "Glisin"
+    ],
+    "correctIndex": 0,
+    "explanation": "Parkinson hastalığında substantia nigradaki dopaminerjik nöronların kaybı önemli rol oynar."
+  },
+  {
+    "id": 21,
+    "question": "Alzheimer hastalığında sık görülen erken belirtilerden biri hangisidir?",
+    "options": [
+      "İşitme artışı",
+      "Yakın dönem hafıza sorunları",
+      "Kas kütlesinde artış",
+      "Renk körlüğü"
+    ],
+    "correctIndex": 1,
+    "explanation": "Yeni bilgileri hatırlamada güçlük Alzheimer hastalığının sık görülen erken belirtilerindendir."
+  },
+  {
+    "id": 22,
+    "question": "EEG hangi tür aktiviteyi ölçer?",
+    "options": [
+      "Beyindeki elektriksel aktiviteyi",
+      "Beyindeki kan basıncını",
+      "Kafatası kalınlığını",
+      "Beyin sıcaklığını"
+    ],
+    "correctIndex": 0,
+    "explanation": "EEG, kafa derisindeki elektrotlarla beyin kaynaklı elektriksel potansiyel değişimlerini kaydeder."
+  },
+  {
+    "id": 23,
+    "question": "MRI (MRG) görüntüleme yönteminde temel olarak hangisi kullanılır?",
+    "options": [
+      "X-ışınları",
+      "Ses dalgaları",
+      "Manyetik alan ve radyo dalgaları",
+      "Kızılötesi ışık"
+    ],
+    "correctIndex": 2,
+    "explanation": "MRG güçlü manyetik alanlardan ve radyofrekans darbelerinden yararlanır."
+  },
+  {
+    "id": 24,
+    "question": "Beynin öğrenmeye ve deneyime bağlı olarak değişebilme özelliği nedir?",
+    "options": [
+      "Nöroplastisite",
+      "Nekroz",
+      "Refleks",
+      "Homeostaz"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nöroplastisite sinaptik bağlantıların ve sinir ağlarının deneyimle değişebilmesidir."
+  },
+  {
+    "id": 25,
+    "question": "Refleks hareketlerinin hızlı gerçekleşmesinde genellikle hangi yapı önemli rol oynar?",
+    "options": [
+      "Omurilik",
+      "Hipokampus",
+      "Görme korteksi",
+      "Amigdala"
+    ],
+    "correctIndex": 0,
+    "explanation": "Birçok refleksin sinir devresi omurilikte tamamlanır; tüm refleksler spinal değildir."
+  },
+  {
+    "id": 26,
+    "question": "Beyin vücuttaki toplam oksijen tüketiminin yaklaşık ne kadarını kullanır?",
+    "options": [
+      "%2",
+      "%5",
+      "%20",
+      "%60"
+    ],
+    "correctIndex": 2,
+    "explanation": "Yetişkin beyninin dinlenme hâlindeki oksijen tüketimi toplamın yaklaşık %20'sidir."
+  },
+  {
+    "id": 27,
+    "question": "Aşağıdakilerden hangisi bir nörotransmitterdir?",
+    "options": [
+      "Hemoglobin",
+      "Dopamin",
+      "Kolajen",
+      "Keratin"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dopamin sinir hücreleri arasında kimyasal haberci olarak görev yapar."
+  },
+  {
+    "id": 28,
+    "question": "Vücudun savaş ya da kaç tepkisiyle en yakından ilişkili sinir sistemi bölümü hangisidir?",
+    "options": [
+      "Parasempatik",
+      "Somatik duyu sistemi",
+      "Sempatik",
+      "Enterik"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sempatik sistem stres anında kalp atış hızını ve uyanıklığı artıran tepkileri destekler."
+  },
+  {
+    "id": 29,
+    "question": "Dinlenme ve sindirim faaliyetlerini destekleyen sistem hangisidir?",
+    "options": [
+      "Sempatik",
+      "Parasempatik",
+      "Merkezi görme sistemi",
+      "Motor korteks"
+    ],
+    "correctIndex": 1,
+    "explanation": "Parasempatik sistem sindirim ve dinlenmeyle ilişkili otonom işlevleri destekler."
+  },
+  {
+    "id": 30,
+    "question": "Dil üretimiyle yakından ilişkili klasik beyin bölgesi hangisidir?",
+    "options": [
+      "Broca alanı",
+      "Görme korteksi",
+      "Hipotalamus",
+      "Beyincik"
+    ],
+    "correctIndex": 0,
+    "explanation": "Broca alanı özellikle konuşma üretiminin dilsel yönleriyle ilişkilidir."
+  },
+  {
+    "id": 31,
+    "question": "Konuşulan dilin anlaşılmasıyla klasik olarak ilişkilendirilen bölge hangisidir?",
+    "options": [
+      "Motor korteks",
+      "Wernicke alanı",
+      "Amigdala",
+      "Hipofiz"
+    ],
+    "correctIndex": 1,
+    "explanation": "Wernicke alanı geleneksel dil modelinde anlamayla ilişkilendirilir; dil işleme daha geniş bir ağ içerir."
+  },
+  {
+    "id": 32,
+    "question": "Sağ ve sol beyin yarım kürelerini birbirine bağlayan büyük sinir lifi demeti hangisidir?",
+    "options": [
+      "Korpus kallozum",
+      "Talamus",
+      "Hipokampus",
+      "Pons"
+    ],
+    "correctIndex": 0,
+    "explanation": "Korpus kallozum iki beyin yarım küresi arasında bilgi aktarımını sağlar."
+  },
+  {
+    "id": 33,
+    "question": "Beyni çevreleyen koruyucu zarların genel adı nedir?",
+    "options": [
+      "Menenksler",
+      "Alveoller",
+      "Tendonlar",
+      "Kapillerler"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dura mater, araknoid mater ve pia mater menenksleri oluşturur."
+  },
+  {
+    "id": 34,
+    "question": "Beyin ve omuriliği çevreleyerek koruyucu destek sağlayan sıvı hangisidir?",
+    "options": [
+      "Lenf",
+      "Beyin omurilik sıvısı (BOS)",
+      "Safra",
+      "Plazma"
+    ],
+    "correctIndex": 1,
+    "explanation": "BOS mekanik koruma sağlar ve merkezi sinir sisteminin kimyasal ortamına katkıda bulunur."
+  },
+  {
+    "id": 35,
+    "question": "Uyku-uyanıklık döngüsüyle yakından ilişkili hormon hangisidir?",
+    "options": [
+      "Melatonin",
+      "İnsülin",
+      "Glukagon",
+      "Testosteron"
+    ],
+    "correctIndex": 0,
+    "explanation": "Melatonin karanlıkta salgılanması artan ve sirkadiyen zamanlamaya katkıda bulunan bir hormondur."
+  },
+  {
+    "id": 36,
+    "question": "İstemli iskelet kası hareketlerinin başlatılmasında önemli rol oynayan kortikal bölge hangisidir?",
+    "options": [
+      "Birincil motor korteks",
+      "Birincil görme korteksi",
+      "İşitsel korteks",
+      "Hipokampus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Birincil motor korteks istemli hareketlerin kontrolüne katkıda bulunur."
+  },
+  {
+    "id": 37,
+    "question": "Epilepsi temel olarak neyle karakterizedir?",
+    "options": [
+      "Tekrarlayan epileptik nöbetlere yatkınlıkla",
+      "Kan şekeri yüksekliğiyle",
+      "Kasların sürekli büyümesiyle",
+      "Görme keskinliğinin artmasıyla"
+    ],
+    "correctIndex": 0,
+    "explanation": "Epilepsi, beyinde anormal elektriksel aktiviteye bağlı nöbetlere kalıcı yatkınlıkla tanımlanır."
+  },
+  {
+    "id": 38,
+    "question": "Beyindeki sinir hücrelerine destek sağlayan hücreler genel olarak ne adlandırılır?",
+    "options": [
+      "Glia hücreleri",
+      "Eritrositler",
+      "Trombositler",
+      "Kondrositler"
+    ],
+    "correctIndex": 0,
+    "explanation": "Glia hücreleri nöronların beslenme, korunma ve işlevsel düzenlenmesine katkı sağlar."
+  },
+  {
+    "id": 39,
+    "question": "Multipl skleroz (MS) hastalığında esas olarak hangi yapı zarar görür?",
+    "options": [
+      "Miyelin",
+      "Kemik iliği",
+      "Retina pigmenti",
+      "Kas tendonları"
+    ],
+    "correctIndex": 0,
+    "explanation": "MS, merkezi sinir sisteminde miyelin hasarıyla ilişkili bağışıklık aracılı bir hastalıktır."
+  },
+  {
+    "id": 40,
+    "question": "İnsanlarda kaç çift kraniyal sinir vardır?",
+    "options": [
+      "6",
+      "10",
+      "12",
+      "24"
+    ],
+    "correctIndex": 2,
+    "explanation": "Geleneksel anatomik sınıflandırmada 12 çift kraniyal sinir bulunur."
+  },
+  {
+    "id": 41,
+    "question": "Aşağıdakilerden hangisi beyin görüntüleme yöntemidir?",
+    "options": [
+      "EKG",
+      "EMG",
+      "fMRI",
+      "Spirometri"
+    ],
+    "correctIndex": 2,
+    "explanation": "Fonksiyonel manyetik rezonans görüntüleme (fMRI) beyin fonksiyonuyla ilişkili hemodinamik değişimleri haritalar."
+  },
+  {
+    "id": 42,
+    "question": "fMRI çoğunlukla hangi değişimleri kullanarak beyin aktivitesini dolaylı olarak inceler?",
+    "options": [
+      "Kan oksijenlenmesine bağlı değişimleri",
+      "Kemik yoğunluğunu",
+      "Deri sıcaklığını",
+      "Mide asidini"
+    ],
+    "correctIndex": 0,
+    "explanation": "BOLD fMRI, kanın oksijenlenme düzeyindeki değişimlere duyarlıdır."
+  },
+  {
+    "id": 43,
+    "question": "Dokunma duyusunun kortikal olarak işlenmesinde hangi lob özellikle önemlidir?",
+    "options": [
+      "Parietal lob",
+      "Oksipital lob",
+      "Temporal lob",
+      "Frontal lob"
+    ],
+    "correctIndex": 0,
+    "explanation": "Birincil somatosensoriyel korteks parietal lobun postsantral girusunda bulunur."
+  },
+  {
+    "id": 44,
+    "question": "Olfaktör sistem hangi duyuyla ilişkilidir?",
+    "options": [
+      "Tat",
+      "Koku",
+      "Görme",
+      "Denge"
+    ],
+    "correctIndex": 1,
+    "explanation": "Olfaktör sistem çevredeki koku moleküllerinin algılanmasını sağlar."
+  },
+  {
+    "id": 45,
+    "question": "Retina hangi organın bir parçasıdır?",
+    "options": [
+      "Kulak",
+      "Burun",
+      "Göz",
+      "Dil"
+    ],
+    "correctIndex": 2,
+    "explanation": "Retina gözün arka bölümündeki ışığa duyarlı sinir dokusudur."
+  },
+  {
+    "id": 46,
+    "question": "Beynin yaklaşık yüzde kaçı sudan oluşur?",
+    "options": [
+      "%10",
+      "%25",
+      "%50",
+      "%75"
+    ],
+    "correctIndex": 3,
+    "explanation": "Beyin dokusunun su içeriği bölge ve ölçüm yöntemine göre değişse de yaklaşık %75 olarak verilir."
+  },
+  {
+    "id": 47,
+    "question": "Aşağıdakilerden hangisi nörodejeneratif bir hastalıktır?",
+    "options": [
+      "Parkinson hastalığı",
+      "Grip",
+      "Astım",
+      "Apandisit"
+    ],
+    "correctIndex": 0,
+    "explanation": "Parkinson hastalığında belirli sinir hücreleri zamanla dejenerasyona uğrar."
+  },
+  {
+    "id": 48,
+    "question": "Öğrenme sırasında nöronlar arasındaki bağlantıların güçlenmesine örnek olan mekanizma hangisidir?",
+    "options": [
+      "Uzun süreli potansiyasyon (LTP)",
+      "Kan pıhtılaşması",
+      "Kas hipertrofisi",
+      "Kemik mineralizasyonu"
+    ],
+    "correctIndex": 0,
+    "explanation": "LTP, sinaptik iletimin uzun süreli güçlenmesi olup öğrenmeyle bağlantılı bir plastisite mekanizmasıdır."
+  },
+  {
+    "id": 49,
+    "question": "Sinir sistemini inceleyen bilim dalının adı nedir?",
+    "options": [
+      "İmmünoloji",
+      "Nörobilim",
+      "Hematoloji",
+      "Dermatoloji"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nörobilim sinir sisteminin yapısını, işlevini ve hastalıklarını araştırır."
+  },
+  {
+    "id": 50,
+    "question": "Ödül ve motivasyon süreçlerinde önemli rol oynayan nörotransmitter hangisidir?",
+    "options": [
+      "Dopamin",
+      "Glisin",
+      "GABA",
+      "Asetilkolin"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dopamin, ödül öğrenmesi ve motivasyonla ilişkili sinir devrelerinde önemli rol oynar."
+  }
+]
